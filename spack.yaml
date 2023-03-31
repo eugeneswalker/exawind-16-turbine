@@ -155,7 +155,7 @@ spack:
       version: [0.6.3]
 
   specs:
-  - exawind +ninja +hypre +amr_wind_gpu +nalu_wind_gpu +rocm
+  - exawind +hypre +amr_wind_gpu +nalu_wind_gpu +rocm ^amr-wind ~tests ^nalu-wind ~tests
 
   compilers:
   - compiler:
