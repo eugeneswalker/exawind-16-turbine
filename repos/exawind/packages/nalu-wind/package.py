@@ -9,8 +9,6 @@ from spack import *
 from spack.pkg.builtin.nalu_wind import NaluWind as bNaluWind
 from spack.pkg.builtin.kokkos import Kokkos
 import os
-from manager_cmds.find_machine import find_machine
-from smpackages import *
 
 
 def trilinos_version_filter(name):
@@ -20,7 +18,7 @@ def trilinos_version_filter(name):
     else:
         return "stable"
 
-class NaluWind(SMCMakeExtension, bNaluWind, ROCmPackage):
+class NaluWind(bNaluWind, ROCmPackage):
     version("master", branch="master", submodules=True)
 
     variant("asan", default=False,
@@ -84,12 +82,8 @@ class NaluWind(SMCMakeExtension, bNaluWind, ROCmPackage):
         cmake_options.append(self.define_from_variant("CMAKE_CXX_STANDARD", "cxxstd"))
         cmake_options.append(self.define_from_variant("BUILD_SHARED_LIBS", "shared"))
 
-        if find_machine(verbose=False) == "eagle" and "%intel" in spec:
-            cmake_options.append(self.define("ENABLE_UNIT_TESTS", False))
-
-        if find_machine(verbose=False) == "crusher":
-            cmake_options.append(self.define("MPIEXEC_EXECUTABLE", "srun"))
-            cmake_options.append(self.define("MPIEXEC_NUMPROC_FLAG", "--ntasks"))
+        cmake_options.append(self.define("MPIEXEC_EXECUTABLE", "srun"))
+        cmake_options.append(self.define("MPIEXEC_NUMPROC_FLAG", "--ntasks"))
 
         if spec.satisfies("dev_path=*"):
             cmake_options.append(self.define("CMAKE_EXPORT_COMPILE_COMMANDS",True))
@@ -116,19 +110,5 @@ class NaluWind(SMCMakeExtension, bNaluWind, ROCmPackage):
         if "+fsi" in spec:
             cmake_options.append(self.define("OpenFAST_DIR", spec["openfast"].prefix))
             cmake_options.append(self.define("ENABLE_OPENFAST", True))
-
-        if spec.satisfies("+tests") or self.run_tests or spec.satisfies("dev_path=*"):
-            spack_manager_local_golds = os.path.join(os.getenv("SPACK_MANAGER"), "golds")
-            spack_manager_golds_dir = os.getenv("SPACK_MANAGER_GOLDS_DIR", default=spack_manager_local_golds)
-            if "+snl" in spec:
-                spack_manager_golds_dir = "{}-{}".format(spack_manager_golds_dir, trilinos_version_filter(spec["trilinos"].version))
-
-            saved_golds = os.path.join(spack_manager_golds_dir, "tmp", "nalu-wind")
-            current_golds = os.path.join(spack_manager_golds_dir, "current", "nalu-wind")
-            os.makedirs(saved_golds, exist_ok=True)
-            os.makedirs(current_golds, exist_ok=True)
-            cmake_options.append(self.define("NALU_WIND_SAVE_GOLDS", True))
-            cmake_options.append(self.define("NALU_WIND_SAVED_GOLDS_DIR", saved_golds))
-            cmake_options.append(self.define("NALU_WIND_REFERENCE_GOLDS_DIR", current_golds))
 
         return cmake_options

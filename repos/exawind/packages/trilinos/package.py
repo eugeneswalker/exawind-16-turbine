@@ -8,11 +8,8 @@
 from spack import *
 from spack.pkg.builtin.trilinos import Trilinos as bTrilinos
 import os
-import manager_cmds.find_machine as fm
-from manager_cmds.find_machine import find_machine
-from smpackages import *
 
-class Trilinos(bTrilinos, SMCMakeExtension):
+class Trilinos(bTrilinos, CMakePackage):
     version("13.4.0.2023.02.28", commit="8b3e2e1")
     version("13.4.0.2022.10.27", commit="da54d929ea62e78ba8e19c7d5aa83dc1e1f767c1")
     version("13.2.0.2022.06.05", commit="7498bcb9b0392c830b83787f3fb0c17079431f06")
@@ -28,10 +25,6 @@ class Trilinos(bTrilinos, SMCMakeExtension):
     patch("kokkos_zero_length_team.patch", when="@:13.3.0")
     patch("rocm_seacas.patch", when="@develop+rocm")
     patch("kokkos_hip_subview.patch", when="@develop+rocm")
-
-    machine = find_machine(verbose=False, full_machine_name=False)
-    if machine == "eagle":
-        patch("stk-coupling-versions-func-overload.patch", when="@13.3.0:13.5.0.2022.12.15")
 
     def setup_build_environment(self, env):
         spec = self.spec

@@ -9,10 +9,9 @@ from spack import *
 #from spack.pkg.builtin.exawind import Exawind as bExawind
 from shutil import copyfile
 import os
-from smpackages import *
 
 
-class Exawind(SMCMakeExtension, CudaPackage, ROCmPackage):
+class Exawind(CMakePackage, CudaPackage, ROCmPackage):
     """Multi-application driver for Exawind project."""
 
     homepage = "https://github.com/Exawind/exawind-driver"
@@ -74,9 +73,6 @@ class Exawind(SMCMakeExtension, CudaPackage, ROCmPackage):
     depends_on("amr-wind+hypre", when="+hypre")
     depends_on("amr-wind~hypre", when="~hypre")
     depends_on("nalu-wind~hypre", when="~hypre")
-    depends_on("trilinos+ninja", when="+ninja")
-    depends_on("nalu-wind+ninja", when="+ninja")
-    depends_on("amr-wind+ninja", when="+ninja")
     # not required but added so these get picked up as a
     # direct dependency when creating snapshots
     depends_on("trilinos")

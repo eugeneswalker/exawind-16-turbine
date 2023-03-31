@@ -8,9 +8,8 @@
 from spack import *
 from spack.pkg.builtin.tioga import Tioga as bTioga
 import os
-from smpackages import *
 
-class Tioga(bTioga, SMCMakeExtension):
+class Tioga(bTioga, CMakePackage):
     git = "https://github.com/Exawind/tioga.git"
 
     variant("asan", default=False,
