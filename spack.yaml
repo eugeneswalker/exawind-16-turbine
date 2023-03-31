@@ -36,7 +36,7 @@ spack:
       - spec: rocprim@5.4.0
         prefix: /opt/rocm-5.4.0/rocprim
         modules:
-        - rocm/5.4.0
+        - amd-mixed/5.4.0
         - craype-accel-amd-gfx90a
     rocrand:
       buildable: false
@@ -45,7 +45,7 @@ spack:
       - spec: rocrand@5.4.0
         prefix: /opt/rocm-5.4.0/rocrand
         modules:
-        - rocm/5.4.0
+        - amd-mixed/5.4.0
         - craype-accel-amd-gfx90a
     rocthrust:
       buildable: false
@@ -54,7 +54,7 @@ spack:
       - spec: rocthrust@5.4.0
         prefix: /opt/rocm-5.4.0/rocthrust
         modules:
-        - rocm/5.4.0
+        - amd-mixed/5.4.0
         - craype-accel-amd-gfx90a
     rocsparse:
       buildable: false
@@ -63,7 +63,7 @@ spack:
       - spec: rocsparse@5.4.0
         prefix: /opt/rocm-5.4.0/rocsparse
         modules:
-        - rocm/5.4.0
+        - amd-mixed/5.4.0
         - craype-accel-amd-gfx90a
     hip:
       require: '@5.4.0'
@@ -72,7 +72,7 @@ spack:
       - spec: hip@5.4.0
         prefix: /opt/rocm-5.4.0
         modules:
-        - rocm/5.4.0
+        - amd-mixed/5.4.0
         - craype-accel-amd-gfx90a
     hsa-rocr-dev:
       buildable: false
@@ -81,7 +81,7 @@ spack:
       - spec: hsa-rocr-dev@5.4.0
         prefix: /opt/rocm-5.4.0/hsa
         modules:
-        - rocm/5.4.0
+        - amd-mixed/5.4.0
         - craype-accel-amd-gfx90a
     llvm-amdgpu:
       buildable: false
@@ -90,7 +90,7 @@ spack:
       - spec: llvm-amdgpu@5.4.0
         prefix: /opt/rocm-5.4.0/llvm
         modules:
-        - rocm/5.4.0
+        - amd-mixed/5.4.0
         - craype-accel-amd-gfx90a
 
     # FACILITY-INSTALLED, NON-CRAY EXTERNALS
@@ -170,8 +170,7 @@ spack:
       target: any
       modules:
       - PrgEnv-cray-amd/8.3.3
-      - rocm/5.4.0
-      - amd/5.4.0
+      - amd-mixed/5.4.0
       - libfabric
       - craype-x86-trento
       extra_rpaths: []
