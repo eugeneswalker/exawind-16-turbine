@@ -1,0 +1,50 @@
+==> Starting concretization
+==> Environment concretized in 44.12 seconds.
+==> Concretized exawind+amr_wind_gpu+hypre+nalu_wind_gpu+rocm ^amr-wind~tests ^nalu-wind~tests
+[+]  6k7rpvs  exawind@master%clang@15.0.0+amr_wind_gpu~asan~cuda~fsi+hypre~ipo+nalu_wind_gpu~openfast+rocm~stk_simd~tiny_profile~umpire amdgpu_target=gfx90a build_system=cmake build_type=Release arch=linux-sles15-zen3
+[+]  b6eeax7      ^amr-wind@main%clang@15.0.0~asan~ascent~clangtidy~cppcheck~cuda~hdf5+hypre~ipo~masa+mpi+netcdf~openfast~openmp+rocm+shared~tests+tiny_profile~umpire amdgpu_target=gfx90a build_system=cmake build_type=RelWithDebInfo arch=linux-sles15-zen3
+[+]  uqi6dvi          ^hypre@develop%clang@15.0.0~complex~cublas~cuda~debug~fortran~gptune~gpu-aware-mpi~int64~internal-superlu~mixedint+mpi~openmp~rocblas+rocm+shared~superlu-dist~sycl~umpire~unified-memory amdgpu_target=gfx90a build_system=autotools arch=linux-sles15-zen3
+[+]  5lzsdtt              ^rocprim@5.4.0%clang@15.0.0~ipo amdgpu_target=gfx90a build_system=cmake build_type=Release arch=linux-sles15-zen3
+[+]  xcwdlpc              ^rocrand@5.4.0%clang@15.0.0~ipo amdgpu_target=gfx90a build_system=cmake build_type=Release patches=a35e689 arch=linux-sles15-zen3
+[+]  o7rl6ld              ^rocsparse@5.4.0%clang@15.0.0~ipo~test amdgpu_target=gfx90a build_system=cmake build_type=Release arch=linux-sles15-zen3
+[+]  uuy5cxk              ^rocthrust@5.4.0%clang@15.0.0~ipo amdgpu_target=gfx90a build_system=cmake build_type=Release arch=linux-sles15-zen3
+[+]  j4vcjpr          ^netcdf-c@4.7.4%clang@15.0.0~dap~fsync~hdf4~jna+mpi+optimize+parallel-netcdf+pic+shared build_system=autotools patches=2c88dfb arch=linux-sles15-zen3
+[+]  2dn3dft              ^m4@1.4.19%clang@15.0.0+sigsegv build_system=autotools patches=9dc5fbd,bfdffa7 arch=linux-sles15-zen3
+[+]  fy6bx6y                  ^diffutils@3.8%clang@15.0.0 build_system=autotools arch=linux-sles15-zen3
+[+]  qzctv3d                  ^libsigsegv@2.13%clang@15.0.0 build_system=autotools arch=linux-sles15-zen3
+[+]  2vvbg7d      ^cmake@3.25.2%clang@15.0.0~doc+ncurses+ownlibs~qt build_system=generic build_type=Release arch=linux-sles15-zen3
+[+]  ofauveg          ^ncurses@6.4%clang@15.0.0~symlinks+termlib abi=none build_system=autotools arch=linux-sles15-zen3
+[+]  oizcqfu              ^pkgconf@1.8.0%clang@15.0.0 build_system=autotools arch=linux-sles15-zen3
+[+]  5kthmc3          ^openssl@1.1.1t%clang@15.0.0~docs~shared build_system=generic certs=mozilla arch=linux-sles15-zen3
+[+]  tsxw2g7              ^ca-certificates-mozilla@2023-01-10%clang@15.0.0 build_system=generic arch=linux-sles15-zen3
+[+]  zc4reen              ^perl@5.36.0%clang@15.0.0+cpanm+open+shared+threads build_system=generic arch=linux-sles15-zen3
+[+]  fft6w4l                  ^berkeley-db@18.1.40%clang@15.0.0+cxx~docs+stl build_system=autotools patches=26090f4,b231fcc arch=linux-sles15-zen3
+[+]  q7tke7c                  ^bzip2@1.0.8%clang@15.0.0~debug~pic+shared build_system=generic arch=linux-sles15-zen3
+[+]  o3hpvym                  ^gdbm@1.23%clang@15.0.0 build_system=autotools arch=linux-sles15-zen3
+[+]  qep5efm                      ^readline@8.2%clang@15.0.0 build_system=autotools patches=bbf97f1 arch=linux-sles15-zen3
+[+]  nxpeqt6      ^cray-mpich@8.1.17%clang@15.0.0+wrappers build_system=generic arch=linux-sles15-zen3
+[+]  rctcot2      ^hip@5.4.0%clang@15.0.0~cuda~ipo+rocm build_system=cmake build_type=Release patches=ca523f1 arch=linux-sles15-zen3
+[+]  bmr2kfm      ^hsa-rocr-dev@5.4.0%clang@15.0.0+image~ipo+shared build_system=cmake build_type=Release patches=71e6851 arch=linux-sles15-zen3
+[+]  e7k2mdx      ^llvm-amdgpu@5.4.0%clang@15.0.0~ipo~link_llvm_dylib~llvm_dylib~openmp+rocm-device-libs build_system=cmake build_type=Release patches=a08bbe1 arch=linux-sles15-zen3
+[+]  hh7oz5m      ^nalu-wind@master%clang@15.0.0~asan~boost~catalyst~cuda~fftw~fsi+hypre~hypre2~ipo~openfast+pic+rocm~shared~stk_simd~tests+tioga+trilinos-solvers~umpire+unit-tests~wind-utils abs_tol=1e-15 amdgpu_target=gfx90a build_system=cmake build_type=RelWithDebInfo cxxstd=17 rel_tol=1e-12 arch=linux-sles15-zen3
+[+]  ydutvah          ^nccmp@1.9.0.1%clang@15.0.0~ipo build_system=cmake build_type=Release arch=linux-sles15-zen3
+[+]  atdw6pr      ^tioga@develop%clang@15.0.0~asan~ipo~nodegid+pic+shared~stats~timers build_system=cmake build_type=Release arch=linux-sles15-zen3
+[+]  uzlzh7y      ^trilinos@13.4.0.2023.02.28%clang@15.0.0~adelus~adios2~amesos+amesos2~anasazi~asan~aztec~basker+belos+boost~chaco~complex~cuda~cuda_rdc~debug~dtk~epetra~epetraext~epetraextbtf~epetraextexperimental~epetraextgraphreorderings+exodus+explicit_template_instantiation~float~fortran+gtest+hdf5~hypre~ifpack+ifpack2~intrepid~intrepid2~ipo~isorropia+kokkos~mesquite~minitensor~ml+mpi+muelu~mumps~nox~openmp~panzer~phalanx+pic~piro~python+rocm~rocm_rdc~rol~rythmos~sacado~scorec+shards~shared~shylu+stk~stk_simd~stk_unit_tests~stokhos~stratimikos~strumpack~suite-sparse~superlu~superlu-dist~teko~tempus~thyra+tpetra~trilinoscouplings~wrapper~x11+zoltan+zoltan2 amdgpu_target=gfx90a build_system=cmake build_type=Release cxxstd=17 gotype=long arch=linux-sles15-zen3
+[+]  4no2v7t          ^boost@1.76.0%clang@15.0.0~atomic~chrono~clanglibcpp~container~context~contract~coroutine~date_time~debug+exception~fiber~filesystem+graph~graph_parallel~icu~iostreams~json~locale~log+math~mpi+multithreaded~nowide~numpy~pic~program_options~python~random~regex~serialization+shared~signals~singlethreaded+stacktrace~system~taggedlayout~test~thread~timer~type_erasure~versionedlayout~wave build_system=generic cxxstd=17 patches=a440f96 visibility=hidden arch=linux-sles15-zen3
+[+]  nw4ipgn          ^cgns@4.3.0%clang@15.0.0~base_scope~fortran+hdf5~int64~ipo~legacy~mem_debug+mpi+scoping+shared~static~testing build_system=cmake build_type=Release arch=linux-sles15-zen3
+[+]  k3ny2dk          ^hdf5@1.10.7%clang@15.0.0+cxx~fortran+hl~ipo~java+mpi+shared~szip~threadsafe+tools api=default build_system=cmake build_type=RelWithDebInfo patches=2a1e311 arch=linux-sles15-zen3
+[+]  zzjts67          ^hwloc@2.9.0%clang@15.0.0~cairo~cuda~gl~libudev+libxml2~netloc~nvml~oneapi-level-zero~opencl+pci~rocm build_system=autotools libs=shared,static arch=linux-sles15-zen3
+[+]  mapeygk              ^libpciaccess@0.16%clang@15.0.0 build_system=autotools arch=linux-sles15-zen3
+[+]  ktrenbh                  ^libtool@2.4.7%clang@15.0.0 build_system=autotools arch=linux-sles15-zen3
+[+]  wtuhsm7                  ^util-macros@1.19.3%clang@15.0.0 build_system=autotools arch=linux-sles15-zen3
+[+]  rvhmalp              ^libxml2@2.10.3%clang@15.0.0~python build_system=autotools arch=linux-sles15-zen3
+[+]  6m3ig2m                  ^libiconv@1.17%clang@15.0.0 build_system=autotools libs=shared,static arch=linux-sles15-zen3
+[+]  dyb23ip                  ^xz@5.4.1%clang@15.0.0~pic build_system=autotools libs=shared,static arch=linux-sles15-zen3
+[+]  tvzx2l2          ^matio@1.5.17%clang@15.0.0+hdf5+shared+zlib build_system=autotools arch=linux-sles15-zen3
+[+]  dghlwhr          ^metis@5.1.0%clang@15.0.0~gdb~int64~ipo~real64+shared build_system=cmake build_type=Release patches=4991da9,93a7903 arch=linux-sles15-zen3
+[+]  ssnr335          ^openblas@0.3.17%clang@15.0.0~bignuma~consistent_fpcsr~ilp64+locking+pic+shared build_system=makefile patches=114f95f symbol_suffix=none threads=none arch=linux-sles15-zen3
+[+]  3vd5nmy          ^parallel-netcdf@1.12.2%clang@15.0.0~burstbuffer+cxx~fortran+pic+shared build_system=autotools arch=linux-sles15-zen3
+[+]  fn5sril          ^parmetis@4.0.3%clang@15.0.0~gdb~int64~ipo+shared build_system=cmake build_type=Release patches=4f89253,50ed208,704b84f arch=linux-sles15-zen3
+[+]  abrb3at          ^zlib@1.2.13%clang@15.0.0+optimize+pic+shared build_system=makefile arch=linux-sles15-zen3
+[+]  kdjsjp6      ^yaml-cpp@0.6.3%clang@15.0.0~ipo+pic+shared~tests build_system=cmake build_type=Release arch=linux-sles15-zen3
+
