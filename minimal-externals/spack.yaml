@@ -95,7 +95,7 @@ spack:
 
     # FACILITY-INSTALLED, NON-CRAY EXTERNALS
     openblas:
-      require: '@0.3.17 ~bignuma ~consistent_fpcsr ~ilp64 +locking +pic +shared threads=none'
+      require: '@0.3.17 ~bignuma ~consistent_fpcsr ~ilp64 +locking +pic +shared threads=none %gcc@7.5.0'
     umpire:
       require: '@6.0.0 build_type=RelWithDebInfo +c ~cuda ~device_alloc ~deviceconst ~examples ~fortran ~ipo ~numa ~openmp +shared tests=none +rocm amdgpu_target=gfx90a'
     trilinos:
@@ -165,3 +165,16 @@ spack:
       environment:
         prepend_path:
           PKG_CONFIG_PATH: /opt/cray/xpmem/2.4.4-2.3_11.2__gff0e1d9.shasta/lib64/pkgconfig
+  - compiler:
+      spec: gcc@7.5.0
+      paths:
+        cc: /usr/bin/gcc
+        cxx: /usr/bin/g++
+        f77: /usr/bin/gfortran
+        fc: /usr/bin/gfortran
+      flags: {}
+      operating_system: sles15
+      target: x86_64
+      modules: []
+      environment: {}
+      extra_rpaths: []
