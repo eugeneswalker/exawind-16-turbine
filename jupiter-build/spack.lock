@@ -6,56 +6,18 @@
   },
   "roots": [
     {
-      "hash": "rtm2oaagxi7v534vcj2ga2c332ezomrg",
+      "hash": "wjpybxu2kbslnomcf2sjoupjha3wzotp",
       "spec": "exawind+amr_wind_gpu+hypre+nalu_wind_gpu+rocm ^amr-wind~tests ^nalu-wind~tests"
     }
   ],
   "concrete_specs": {
-    "rtm2oaagxi7v534vcj2ga2c332ezomrg": {
+    "wjpybxu2kbslnomcf2sjoupjha3wzotp": {
       "name": "exawind",
       "version": "master",
       "arch": {
         "platform": "linux",
         "platform_os": "ubuntu20.04",
-        "target": {
-          "name": "cascadelake",
-          "vendor": "GenuineIntel",
-          "features": [
-            "adx",
-            "aes",
-            "avx",
-            "avx2",
-            "avx512_vnni",
-            "avx512bw",
-            "avx512cd",
-            "avx512dq",
-            "avx512f",
-            "avx512vl",
-            "bmi1",
-            "bmi2",
-            "clflushopt",
-            "clwb",
-            "f16c",
-            "fma",
-            "mmx",
-            "movbe",
-            "pclmulqdq",
-            "popcnt",
-            "rdrand",
-            "rdseed",
-            "sse",
-            "sse2",
-            "sse4_1",
-            "sse4_2",
-            "ssse3",
-            "xsavec",
-            "xsaveopt"
-          ],
-          "generation": 0,
-          "parents": [
-            "skylake_avx512"
-          ]
-        }
+        "target": "x86_64"
       },
       "compiler": {
         "name": "gcc",
@@ -91,7 +53,7 @@
       "dependencies": [
         {
           "name": "amr-wind",
-          "hash": "eb34zlreo62qc2dweepzzcchbzulhh4u",
+          "hash": "dqu527rgrvw6gxnzdugcrzmpae4zxexq",
           "type": [
             "build",
             "link"
@@ -99,7 +61,7 @@
         },
         {
           "name": "cmake",
-          "hash": "mauutu2p4b3y6tcdhdwypocm64y5vt4w",
+          "hash": "7mgkvd5ixhk2gvf2sduiq5lkm2f6gn4i",
           "type": [
             "build",
             "link"
@@ -107,7 +69,7 @@
         },
         {
           "name": "hip",
-          "hash": "kerlnttvbf736mj4ew2i7ayydnrsu7wg",
+          "hash": "qf2vtz2lzvjkqyrf2lo2v7tgmu2i66hu",
           "type": [
             "build",
             "link"
@@ -115,7 +77,7 @@
         },
         {
           "name": "hsa-rocr-dev",
-          "hash": "w7wgrnxlo7oombe3tmmfy6msef6h4773",
+          "hash": "k62edx3xsbh7sj6rpunbg3lczcrmwnzf",
           "type": [
             "build",
             "link"
@@ -123,7 +85,7 @@
         },
         {
           "name": "llvm-amdgpu",
-          "hash": "rpq35wu7v7zb2lw7fa7jbuht3ifz3xdr",
+          "hash": "ihrq566rfkzbh2zeixwcueqmxbnbsefl",
           "type": [
             "build",
             "link"
@@ -131,7 +93,7 @@
         },
         {
           "name": "mpich",
-          "hash": "hzrrrhzra5ggmqjhbjyawthjhfeswjdq",
+          "hash": "mqyckyt7dx446puub74tzrfcqcrx4plk",
           "type": [
             "build",
             "link"
@@ -139,7 +101,7 @@
         },
         {
           "name": "nalu-wind",
-          "hash": "gh2eib4hobt4chh3q5p4u3tbwhj6kyqk",
+          "hash": "pvrl7j5rg4dnkmz52x6ttkez3w2reh4a",
           "type": [
             "build",
             "link"
@@ -147,7 +109,7 @@
         },
         {
           "name": "tioga",
-          "hash": "y5zx7zgxrwxcd7wkvegt6lp4pj375a2a",
+          "hash": "uyer326o55bejnebg3tonkcuftou7ay3",
           "type": [
             "build",
             "link"
@@ -155,7 +117,7 @@
         },
         {
           "name": "trilinos",
-          "hash": "gusct74pbqxbbqztmsslv4okfgpv5h6p",
+          "hash": "qdtbpgcnhd7qtv5ptolxfpzijfcuosdm",
           "type": [
             "build",
             "link"
@@ -163,60 +125,22 @@
         },
         {
           "name": "yaml-cpp",
-          "hash": "ijww6ct5xqcrpojnsbtyt7znpekipqoz",
+          "hash": "cxb6ojarxbnyynlso576cegwa435n6s6",
           "type": [
             "build",
             "link"
           ]
         }
       ],
-      "hash": "rtm2oaagxi7v534vcj2ga2c332ezomrg"
+      "hash": "wjpybxu2kbslnomcf2sjoupjha3wzotp"
     },
-    "eb34zlreo62qc2dweepzzcchbzulhh4u": {
+    "dqu527rgrvw6gxnzdugcrzmpae4zxexq": {
       "name": "amr-wind",
       "version": "main",
       "arch": {
         "platform": "linux",
         "platform_os": "ubuntu20.04",
-        "target": {
-          "name": "cascadelake",
-          "vendor": "GenuineIntel",
-          "features": [
-            "adx",
-            "aes",
-            "avx",
-            "avx2",
-            "avx512_vnni",
-            "avx512bw",
-            "avx512cd",
-            "avx512dq",
-            "avx512f",
-            "avx512vl",
-            "bmi1",
-            "bmi2",
-            "clflushopt",
-            "clwb",
-            "f16c",
-            "fma",
-            "mmx",
-            "movbe",
-            "pclmulqdq",
-            "popcnt",
-            "rdrand",
-            "rdseed",
-            "sse",
-            "sse2",
-            "sse4_1",
-            "sse4_2",
-            "ssse3",
-            "xsavec",
-            "xsaveopt"
-          ],
-          "generation": 0,
-          "parents": [
-            "skylake_avx512"
-          ]
-        }
+        "target": "x86_64"
       },
       "compiler": {
         "name": "gcc",
@@ -258,14 +182,14 @@
       "dependencies": [
         {
           "name": "cmake",
-          "hash": "mauutu2p4b3y6tcdhdwypocm64y5vt4w",
+          "hash": "7mgkvd5ixhk2gvf2sduiq5lkm2f6gn4i",
           "type": [
             "build"
           ]
         },
         {
           "name": "hip",
-          "hash": "kerlnttvbf736mj4ew2i7ayydnrsu7wg",
+          "hash": "qf2vtz2lzvjkqyrf2lo2v7tgmu2i66hu",
           "type": [
             "build",
             "link"
@@ -273,7 +197,7 @@
         },
         {
           "name": "hsa-rocr-dev",
-          "hash": "w7wgrnxlo7oombe3tmmfy6msef6h4773",
+          "hash": "k62edx3xsbh7sj6rpunbg3lczcrmwnzf",
           "type": [
             "build",
             "link"
@@ -281,7 +205,7 @@
         },
         {
           "name": "hypre",
-          "hash": "sbpajbtyydvtcid3vsug3br6ygxdsepq",
+          "hash": "msp2lsvczyihe3mycff66ajr45ntg6jl",
           "type": [
             "build",
             "link"
@@ -289,7 +213,7 @@
         },
         {
           "name": "llvm-amdgpu",
-          "hash": "rpq35wu7v7zb2lw7fa7jbuht3ifz3xdr",
+          "hash": "ihrq566rfkzbh2zeixwcueqmxbnbsefl",
           "type": [
             "build",
             "link"
@@ -297,7 +221,7 @@
         },
         {
           "name": "mpich",
-          "hash": "hzrrrhzra5ggmqjhbjyawthjhfeswjdq",
+          "hash": "mqyckyt7dx446puub74tzrfcqcrx4plk",
           "type": [
             "build",
             "link"
@@ -305,60 +229,22 @@
         },
         {
           "name": "netcdf-c",
-          "hash": "d35tmc3vgxkunqdjo6ck4hdex74iri6u",
+          "hash": "dogqwhxu6yzhmlsk276ngrlbpw2mhxka",
           "type": [
             "build",
             "link"
           ]
         }
       ],
-      "hash": "eb34zlreo62qc2dweepzzcchbzulhh4u"
+      "hash": "dqu527rgrvw6gxnzdugcrzmpae4zxexq"
     },
-    "mauutu2p4b3y6tcdhdwypocm64y5vt4w": {
+    "7mgkvd5ixhk2gvf2sduiq5lkm2f6gn4i": {
       "name": "cmake",
       "version": "3.25.2",
       "arch": {
         "platform": "linux",
         "platform_os": "ubuntu20.04",
-        "target": {
-          "name": "cascadelake",
-          "vendor": "GenuineIntel",
-          "features": [
-            "adx",
-            "aes",
-            "avx",
-            "avx2",
-            "avx512_vnni",
-            "avx512bw",
-            "avx512cd",
-            "avx512dq",
-            "avx512f",
-            "avx512vl",
-            "bmi1",
-            "bmi2",
-            "clflushopt",
-            "clwb",
-            "f16c",
-            "fma",
-            "mmx",
-            "movbe",
-            "pclmulqdq",
-            "popcnt",
-            "rdrand",
-            "rdseed",
-            "sse",
-            "sse2",
-            "sse4_1",
-            "sse4_2",
-            "ssse3",
-            "xsavec",
-            "xsaveopt"
-          ],
-          "generation": 0,
-          "parents": [
-            "skylake_avx512"
-          ]
-        }
+        "target": "x86_64"
       },
       "compiler": {
         "name": "gcc",
@@ -383,7 +269,7 @@
       "dependencies": [
         {
           "name": "ncurses",
-          "hash": "jvmqbafm4e3sw56jdvvqu3yhhr5hp3rr",
+          "hash": "w5d2qa23mw4wccvrrzs2ggwvn7fnuha7",
           "type": [
             "build",
             "link"
@@ -391,60 +277,22 @@
         },
         {
           "name": "openssl",
-          "hash": "4qwezra2xv3d4ygtn47hrrpc7ljsyql5",
+          "hash": "mvxj5nk6amfnb4obu5ypkcgru7syx4hz",
           "type": [
             "build",
             "link"
           ]
         }
       ],
-      "hash": "mauutu2p4b3y6tcdhdwypocm64y5vt4w"
+      "hash": "7mgkvd5ixhk2gvf2sduiq5lkm2f6gn4i"
     },
-    "jvmqbafm4e3sw56jdvvqu3yhhr5hp3rr": {
+    "w5d2qa23mw4wccvrrzs2ggwvn7fnuha7": {
       "name": "ncurses",
       "version": "6.4",
       "arch": {
         "platform": "linux",
         "platform_os": "ubuntu20.04",
-        "target": {
-          "name": "cascadelake",
-          "vendor": "GenuineIntel",
-          "features": [
-            "adx",
-            "aes",
-            "avx",
-            "avx2",
-            "avx512_vnni",
-            "avx512bw",
-            "avx512cd",
-            "avx512dq",
-            "avx512f",
-            "avx512vl",
-            "bmi1",
-            "bmi2",
-            "clflushopt",
-            "clwb",
-            "f16c",
-            "fma",
-            "mmx",
-            "movbe",
-            "pclmulqdq",
-            "popcnt",
-            "rdrand",
-            "rdseed",
-            "sse",
-            "sse2",
-            "sse4_1",
-            "sse4_2",
-            "ssse3",
-            "xsavec",
-            "xsaveopt"
-          ],
-          "generation": 0,
-          "parents": [
-            "skylake_avx512"
-          ]
-        }
+        "target": "x86_64"
       },
       "compiler": {
         "name": "gcc",
@@ -467,59 +315,21 @@
       "dependencies": [
         {
           "name": "pkgconf",
-          "hash": "efjbkluodrd5u3dv3woh3s7l4g3wgdyr",
+          "hash": "k4gexxg5idxhadssdjkifiqkgr5az4bk",
           "type": [
             "build"
           ]
         }
       ],
-      "hash": "jvmqbafm4e3sw56jdvvqu3yhhr5hp3rr"
+      "hash": "w5d2qa23mw4wccvrrzs2ggwvn7fnuha7"
     },
-    "efjbkluodrd5u3dv3woh3s7l4g3wgdyr": {
+    "k4gexxg5idxhadssdjkifiqkgr5az4bk": {
       "name": "pkgconf",
       "version": "1.8.0",
       "arch": {
         "platform": "linux",
         "platform_os": "ubuntu20.04",
-        "target": {
-          "name": "cascadelake",
-          "vendor": "GenuineIntel",
-          "features": [
-            "adx",
-            "aes",
-            "avx",
-            "avx2",
-            "avx512_vnni",
-            "avx512bw",
-            "avx512cd",
-            "avx512dq",
-            "avx512f",
-            "avx512vl",
-            "bmi1",
-            "bmi2",
-            "clflushopt",
-            "clwb",
-            "f16c",
-            "fma",
-            "mmx",
-            "movbe",
-            "pclmulqdq",
-            "popcnt",
-            "rdrand",
-            "rdseed",
-            "sse",
-            "sse2",
-            "sse4_1",
-            "sse4_2",
-            "ssse3",
-            "xsavec",
-            "xsaveopt"
-          ],
-          "generation": 0,
-          "parents": [
-            "skylake_avx512"
-          ]
-        }
+        "target": "x86_64"
       },
       "compiler": {
         "name": "gcc",
@@ -536,53 +346,15 @@
         "ldlibs": []
       },
       "package_hash": "olr5zscvqru56pgiiqlnzc4ud5e7iuyntj6fsplcrjh3jngqjpja====",
-      "hash": "efjbkluodrd5u3dv3woh3s7l4g3wgdyr"
+      "hash": "k4gexxg5idxhadssdjkifiqkgr5az4bk"
     },
-    "4qwezra2xv3d4ygtn47hrrpc7ljsyql5": {
+    "mvxj5nk6amfnb4obu5ypkcgru7syx4hz": {
       "name": "openssl",
       "version": "1.1.1t",
       "arch": {
         "platform": "linux",
         "platform_os": "ubuntu20.04",
-        "target": {
-          "name": "cascadelake",
-          "vendor": "GenuineIntel",
-          "features": [
-            "adx",
-            "aes",
-            "avx",
-            "avx2",
-            "avx512_vnni",
-            "avx512bw",
-            "avx512cd",
-            "avx512dq",
-            "avx512f",
-            "avx512vl",
-            "bmi1",
-            "bmi2",
-            "clflushopt",
-            "clwb",
-            "f16c",
-            "fma",
-            "mmx",
-            "movbe",
-            "pclmulqdq",
-            "popcnt",
-            "rdrand",
-            "rdseed",
-            "sse",
-            "sse2",
-            "sse4_1",
-            "sse4_2",
-            "ssse3",
-            "xsavec",
-            "xsaveopt"
-          ],
-          "generation": 0,
-          "parents": [
-            "skylake_avx512"
-          ]
-        }
+        "target": "x86_64"
       },
       "compiler": {
         "name": "gcc",
@@ -605,74 +377,36 @@
       "dependencies": [
         {
           "name": "ca-certificates-mozilla",
-          "hash": "5mzoq3anlzpdbzapgczxk7we6rnzm2tj",
+          "hash": "u4lngtfk3p22ie6jiaii3dhuknmgz23c",
           "type": [
             "build"
           ]
         },
         {
           "name": "perl",
-          "hash": "ghidyznr2uxgohumlnlpww6l3oqa4dun",
+          "hash": "ilztdwxzillcczeqar73im3bzvoxamgx",
           "type": [
             "build"
           ]
         },
         {
           "name": "zlib",
-          "hash": "pxmyjlb3lf2ukznymvffyio7fq3ojy76",
+          "hash": "4a4hcyyb5o4jztxdzjxzu2sri67xebjf",
           "type": [
             "build",
             "link"
           ]
         }
       ],
-      "hash": "4qwezra2xv3d4ygtn47hrrpc7ljsyql5"
+      "hash": "mvxj5nk6amfnb4obu5ypkcgru7syx4hz"
     },
-    "5mzoq3anlzpdbzapgczxk7we6rnzm2tj": {
+    "u4lngtfk3p22ie6jiaii3dhuknmgz23c": {
       "name": "ca-certificates-mozilla",
       "version": "2023-01-10",
       "arch": {
         "platform": "linux",
         "platform_os": "ubuntu20.04",
-        "target": {
-          "name": "cascadelake",
-          "vendor": "GenuineIntel",
-          "features": [
-            "adx",
-            "aes",
-            "avx",
-            "avx2",
-            "avx512_vnni",
-            "avx512bw",
-            "avx512cd",
-            "avx512dq",
-            "avx512f",
-            "avx512vl",
-            "bmi1",
-            "bmi2",
-            "clflushopt",
-            "clwb",
-            "f16c",
-            "fma",
-            "mmx",
-            "movbe",
-            "pclmulqdq",
-            "popcnt",
-            "rdrand",
-            "rdseed",
-            "sse",
-            "sse2",
-            "sse4_1",
-            "sse4_2",
-            "ssse3",
-            "xsavec",
-            "xsaveopt"
-          ],
-          "generation": 0,
-          "parents": [
-            "skylake_avx512"
-          ]
-        }
+        "target": "x86_64"
       },
       "compiler": {
         "name": "gcc",
@@ -689,53 +423,15 @@
         "ldlibs": []
       },
       "package_hash": "rjs43v3dkqcisnwgzsiy3qo64oeqwpgmzncy6ypa4ckhtswcwhqa====",
-      "hash": "5mzoq3anlzpdbzapgczxk7we6rnzm2tj"
+      "hash": "u4lngtfk3p22ie6jiaii3dhuknmgz23c"
     },
-    "ghidyznr2uxgohumlnlpww6l3oqa4dun": {
+    "ilztdwxzillcczeqar73im3bzvoxamgx": {
       "name": "perl",
       "version": "5.36.0",
       "arch": {
         "platform": "linux",
         "platform_os": "ubuntu20.04",
-        "target": {
-          "name": "cascadelake",
-          "vendor": "GenuineIntel",
-          "features": [
-            "adx",
-            "aes",
-            "avx",
-            "avx2",
-            "avx512_vnni",
-            "avx512bw",
-            "avx512cd",
-            "avx512dq",
-            "avx512f",
-            "avx512vl",
-            "bmi1",
-            "bmi2",
-            "clflushopt",
-            "clwb",
-            "f16c",
-            "fma",
-            "mmx",
-            "movbe",
-            "pclmulqdq",
-            "popcnt",
-            "rdrand",
-            "rdseed",
-            "sse",
-            "sse2",
-            "sse4_1",
-            "sse4_2",
-            "ssse3",
-            "xsavec",
-            "xsaveopt"
-          ],
-          "generation": 0,
-          "parents": [
-            "skylake_avx512"
-          ]
-        }
+        "target": "x86_64"
       },
       "compiler": {
         "name": "gcc",
@@ -759,7 +455,7 @@
       "dependencies": [
         {
           "name": "berkeley-db",
-          "hash": "he3difo57zqfzjxvhol6xfp3vlddvhxx",
+          "hash": "3npiopnzlhscrvkuicxzbjoodnmivch3",
           "type": [
             "build",
             "link"
@@ -767,7 +463,7 @@
         },
         {
           "name": "bzip2",
-          "hash": "jzuk7wlgdx3yepo455kdralkzn4vmeed",
+          "hash": "l62f6prnl4mfmfskqxtvhcstemom5vte",
           "type": [
             "build",
             "link"
@@ -775,7 +471,7 @@
         },
         {
           "name": "gdbm",
-          "hash": "if5x5rmfcvwl3v5lc2pxijw2n5l7jhhm",
+          "hash": "yfzzydfjnhqpru7ravupi43sozilamcc",
           "type": [
             "build",
             "link"
@@ -783,60 +479,22 @@
         },
         {
           "name": "zlib",
-          "hash": "pxmyjlb3lf2ukznymvffyio7fq3ojy76",
+          "hash": "4a4hcyyb5o4jztxdzjxzu2sri67xebjf",
           "type": [
             "build",
             "link"
           ]
         }
       ],
-      "hash": "ghidyznr2uxgohumlnlpww6l3oqa4dun"
+      "hash": "ilztdwxzillcczeqar73im3bzvoxamgx"
     },
-    "he3difo57zqfzjxvhol6xfp3vlddvhxx": {
+    "3npiopnzlhscrvkuicxzbjoodnmivch3": {
       "name": "berkeley-db",
       "version": "18.1.40",
       "arch": {
         "platform": "linux",
         "platform_os": "ubuntu20.04",
-        "target": {
-          "name": "cascadelake",
-          "vendor": "GenuineIntel",
-          "features": [
-            "adx",
-            "aes",
-            "avx",
-            "avx2",
-            "avx512_vnni",
-            "avx512bw",
-            "avx512cd",
-            "avx512dq",
-            "avx512f",
-            "avx512vl",
-            "bmi1",
-            "bmi2",
-            "clflushopt",
-            "clwb",
-            "f16c",
-            "fma",
-            "mmx",
-            "movbe",
-            "pclmulqdq",
-            "popcnt",
-            "rdrand",
-            "rdseed",
-            "sse",
-            "sse2",
-            "sse4_1",
-            "sse4_2",
-            "ssse3",
-            "xsavec",
-            "xsaveopt"
-          ],
-          "generation": 0,
-          "parents": [
-            "skylake_avx512"
-          ]
-        }
+        "target": "x86_64"
       },
       "compiler": {
         "name": "gcc",
@@ -864,53 +522,15 @@
         "26090f418891757af46ac3b89a9f43d6eb5989f7a3dce3d1cfc99fba547203b3"
       ],
       "package_hash": "vpd5eetcurni5woqzl6jrukuo4a6fr5yoluxz32gxezgx5ftpxza====",
-      "hash": "he3difo57zqfzjxvhol6xfp3vlddvhxx"
+      "hash": "3npiopnzlhscrvkuicxzbjoodnmivch3"
     },
-    "jzuk7wlgdx3yepo455kdralkzn4vmeed": {
+    "l62f6prnl4mfmfskqxtvhcstemom5vte": {
       "name": "bzip2",
       "version": "1.0.8",
       "arch": {
         "platform": "linux",
         "platform_os": "ubuntu20.04",
-        "target": {
-          "name": "cascadelake",
-          "vendor": "GenuineIntel",
-          "features": [
-            "adx",
-            "aes",
-            "avx",
-            "avx2",
-            "avx512_vnni",
-            "avx512bw",
-            "avx512cd",
-            "avx512dq",
-            "avx512f",
-            "avx512vl",
-            "bmi1",
-            "bmi2",
-            "clflushopt",
-            "clwb",
-            "f16c",
-            "fma",
-            "mmx",
-            "movbe",
-            "pclmulqdq",
-            "popcnt",
-            "rdrand",
-            "rdseed",
-            "sse",
-            "sse2",
-            "sse4_1",
-            "sse4_2",
-            "ssse3",
-            "xsavec",
-            "xsaveopt"
-          ],
-          "generation": 0,
-          "parents": [
-            "skylake_avx512"
-          ]
-        }
+        "target": "x86_64"
       },
       "compiler": {
         "name": "gcc",
@@ -933,59 +553,21 @@
       "dependencies": [
         {
           "name": "diffutils",
-          "hash": "qizyllbirxujjqelwremtqwac4vginey",
+          "hash": "q5jegbplfyk5gt6oyjkpv45cvetawfx5",
           "type": [
             "build"
           ]
         }
       ],
-      "hash": "jzuk7wlgdx3yepo455kdralkzn4vmeed"
+      "hash": "l62f6prnl4mfmfskqxtvhcstemom5vte"
     },
-    "qizyllbirxujjqelwremtqwac4vginey": {
+    "q5jegbplfyk5gt6oyjkpv45cvetawfx5": {
       "name": "diffutils",
       "version": "3.8",
       "arch": {
         "platform": "linux",
         "platform_os": "ubuntu20.04",
-        "target": {
-          "name": "cascadelake",
-          "vendor": "GenuineIntel",
-          "features": [
-            "adx",
-            "aes",
-            "avx",
-            "avx2",
-            "avx512_vnni",
-            "avx512bw",
-            "avx512cd",
-            "avx512dq",
-            "avx512f",
-            "avx512vl",
-            "bmi1",
-            "bmi2",
-            "clflushopt",
-            "clwb",
-            "f16c",
-            "fma",
-            "mmx",
-            "movbe",
-            "pclmulqdq",
-            "popcnt",
-            "rdrand",
-            "rdseed",
-            "sse",
-            "sse2",
-            "sse4_1",
-            "sse4_2",
-            "ssse3",
-            "xsavec",
-            "xsaveopt"
-          ],
-          "generation": 0,
-          "parents": [
-            "skylake_avx512"
-          ]
-        }
+        "target": "x86_64"
       },
       "compiler": {
         "name": "gcc",
@@ -1005,60 +587,22 @@
       "dependencies": [
         {
           "name": "libiconv",
-          "hash": "m2sofhlfcn3bbmp36qtmel2vambzxmsb",
+          "hash": "m3pvej7psgqle3np2lvba64uvoea2csg",
           "type": [
             "build",
             "link"
           ]
         }
       ],
-      "hash": "qizyllbirxujjqelwremtqwac4vginey"
+      "hash": "q5jegbplfyk5gt6oyjkpv45cvetawfx5"
     },
-    "m2sofhlfcn3bbmp36qtmel2vambzxmsb": {
+    "m3pvej7psgqle3np2lvba64uvoea2csg": {
       "name": "libiconv",
       "version": "1.17",
       "arch": {
         "platform": "linux",
         "platform_os": "ubuntu20.04",
-        "target": {
-          "name": "cascadelake",
-          "vendor": "GenuineIntel",
-          "features": [
-            "adx",
-            "aes",
-            "avx",
-            "avx2",
-            "avx512_vnni",
-            "avx512bw",
-            "avx512cd",
-            "avx512dq",
-            "avx512f",
-            "avx512vl",
-            "bmi1",
-            "bmi2",
-            "clflushopt",
-            "clwb",
-            "f16c",
-            "fma",
-            "mmx",
-            "movbe",
-            "pclmulqdq",
-            "popcnt",
-            "rdrand",
-            "rdseed",
-            "sse",
-            "sse2",
-            "sse4_1",
-            "sse4_2",
-            "ssse3",
-            "xsavec",
-            "xsaveopt"
-          ],
-          "generation": 0,
-          "parents": [
-            "skylake_avx512"
-          ]
-        }
+        "target": "x86_64"
       },
       "compiler": {
         "name": "gcc",
@@ -1079,53 +623,15 @@
         "ldlibs": []
       },
       "package_hash": "b7u3icizfdwbv2p2bsoazku4gbodr4ww3p2ah5jcxuvnjsrb7sha====",
-      "hash": "m2sofhlfcn3bbmp36qtmel2vambzxmsb"
+      "hash": "m3pvej7psgqle3np2lvba64uvoea2csg"
     },
-    "if5x5rmfcvwl3v5lc2pxijw2n5l7jhhm": {
+    "yfzzydfjnhqpru7ravupi43sozilamcc": {
       "name": "gdbm",
       "version": "1.23",
       "arch": {
         "platform": "linux",
         "platform_os": "ubuntu20.04",
-        "target": {
-          "name": "cascadelake",
-          "vendor": "GenuineIntel",
-          "features": [
-            "adx",
-            "aes",
-            "avx",
-            "avx2",
-            "avx512_vnni",
-            "avx512bw",
-            "avx512cd",
-            "avx512dq",
-            "avx512f",
-            "avx512vl",
-            "bmi1",
-            "bmi2",
-            "clflushopt",
-            "clwb",
-            "f16c",
-            "fma",
-            "mmx",
-            "movbe",
-            "pclmulqdq",
-            "popcnt",
-            "rdrand",
-            "rdseed",
-            "sse",
-            "sse2",
-            "sse4_1",
-            "sse4_2",
-            "ssse3",
-            "xsavec",
-            "xsaveopt"
-          ],
-          "generation": 0,
-          "parents": [
-            "skylake_avx512"
-          ]
-        }
+        "target": "x86_64"
       },
       "compiler": {
         "name": "gcc",
@@ -1145,60 +651,22 @@
       "dependencies": [
         {
           "name": "readline",
-          "hash": "rfnq7nqzwvkfsz7wcxbu3rrppuu5pyup",
+          "hash": "2d5q4vgm7nyhu5bj64c5j3bim245blub",
           "type": [
             "build",
             "link"
           ]
         }
       ],
-      "hash": "if5x5rmfcvwl3v5lc2pxijw2n5l7jhhm"
+      "hash": "yfzzydfjnhqpru7ravupi43sozilamcc"
     },
-    "rfnq7nqzwvkfsz7wcxbu3rrppuu5pyup": {
+    "2d5q4vgm7nyhu5bj64c5j3bim245blub": {
       "name": "readline",
       "version": "8.2",
       "arch": {
         "platform": "linux",
         "platform_os": "ubuntu20.04",
-        "target": {
-          "name": "cascadelake",
-          "vendor": "GenuineIntel",
-          "features": [
-            "adx",
-            "aes",
-            "avx",
-            "avx2",
-            "avx512_vnni",
-            "avx512bw",
-            "avx512cd",
-            "avx512dq",
-            "avx512f",
-            "avx512vl",
-            "bmi1",
-            "bmi2",
-            "clflushopt",
-            "clwb",
-            "f16c",
-            "fma",
-            "mmx",
-            "movbe",
-            "pclmulqdq",
-            "popcnt",
-            "rdrand",
-            "rdseed",
-            "sse",
-            "sse2",
-            "sse4_1",
-            "sse4_2",
-            "ssse3",
-            "xsavec",
-            "xsaveopt"
-          ],
-          "generation": 0,
-          "parents": [
-            "skylake_avx512"
-          ]
-        }
+        "target": "x86_64"
       },
       "compiler": {
         "name": "gcc",
@@ -1224,60 +692,22 @@
       "dependencies": [
         {
           "name": "ncurses",
-          "hash": "jvmqbafm4e3sw56jdvvqu3yhhr5hp3rr",
+          "hash": "w5d2qa23mw4wccvrrzs2ggwvn7fnuha7",
           "type": [
             "build",
             "link"
           ]
         }
       ],
-      "hash": "rfnq7nqzwvkfsz7wcxbu3rrppuu5pyup"
+      "hash": "2d5q4vgm7nyhu5bj64c5j3bim245blub"
     },
-    "pxmyjlb3lf2ukznymvffyio7fq3ojy76": {
+    "4a4hcyyb5o4jztxdzjxzu2sri67xebjf": {
       "name": "zlib",
       "version": "1.2.13",
       "arch": {
         "platform": "linux",
         "platform_os": "ubuntu20.04",
-        "target": {
-          "name": "cascadelake",
-          "vendor": "GenuineIntel",
-          "features": [
-            "adx",
-            "aes",
-            "avx",
-            "avx2",
-            "avx512_vnni",
-            "avx512bw",
-            "avx512cd",
-            "avx512dq",
-            "avx512f",
-            "avx512vl",
-            "bmi1",
-            "bmi2",
-            "clflushopt",
-            "clwb",
-            "f16c",
-            "fma",
-            "mmx",
-            "movbe",
-            "pclmulqdq",
-            "popcnt",
-            "rdrand",
-            "rdseed",
-            "sse",
-            "sse2",
-            "sse4_1",
-            "sse4_2",
-            "ssse3",
-            "xsavec",
-            "xsaveopt"
-          ],
-          "generation": 0,
-          "parents": [
-            "skylake_avx512"
-          ]
-        }
+        "target": "x86_64"
       },
       "compiler": {
         "name": "gcc",
@@ -1297,53 +727,15 @@
         "ldlibs": []
       },
       "package_hash": "y6ahhnjjjsfh5dx2y7sci7fhthq5aolyl5dgwif57qqbtjxwdwbq====",
-      "hash": "pxmyjlb3lf2ukznymvffyio7fq3ojy76"
+      "hash": "4a4hcyyb5o4jztxdzjxzu2sri67xebjf"
     },
-    "kerlnttvbf736mj4ew2i7ayydnrsu7wg": {
+    "qf2vtz2lzvjkqyrf2lo2v7tgmu2i66hu": {
       "name": "hip",
       "version": "5.4.3",
       "arch": {
         "platform": "linux",
         "platform_os": "ubuntu20.04",
-        "target": {
-          "name": "cascadelake",
-          "vendor": "GenuineIntel",
-          "features": [
-            "adx",
-            "aes",
-            "avx",
-            "avx2",
-            "avx512_vnni",
-            "avx512bw",
-            "avx512cd",
-            "avx512dq",
-            "avx512f",
-            "avx512vl",
-            "bmi1",
-            "bmi2",
-            "clflushopt",
-            "clwb",
-            "f16c",
-            "fma",
-            "mmx",
-            "movbe",
-            "pclmulqdq",
-            "popcnt",
-            "rdrand",
-            "rdseed",
-            "sse",
-            "sse2",
-            "sse4_1",
-            "sse4_2",
-            "ssse3",
-            "xsavec",
-            "xsaveopt"
-          ],
-          "generation": 0,
-          "parents": [
-            "skylake_avx512"
-          ]
-        }
+        "target": "x86_64"
       },
       "compiler": {
         "name": "gcc",
@@ -1375,53 +767,15 @@
         "ca523f177897a7509257ab15561efa11092383cfb9bc91b737db3496df388530"
       ],
       "package_hash": "eybymstzjp5xyigsq5mwd6bemvwa2nz4bm7podkzyezyk26hb26a====",
-      "hash": "kerlnttvbf736mj4ew2i7ayydnrsu7wg"
+      "hash": "qf2vtz2lzvjkqyrf2lo2v7tgmu2i66hu"
     },
-    "w7wgrnxlo7oombe3tmmfy6msef6h4773": {
+    "k62edx3xsbh7sj6rpunbg3lczcrmwnzf": {
       "name": "hsa-rocr-dev",
       "version": "5.4.3",
       "arch": {
         "platform": "linux",
         "platform_os": "ubuntu20.04",
-        "target": {
-          "name": "cascadelake",
-          "vendor": "GenuineIntel",
-          "features": [
-            "adx",
-            "aes",
-            "avx",
-            "avx2",
-            "avx512_vnni",
-            "avx512bw",
-            "avx512cd",
-            "avx512dq",
-            "avx512f",
-            "avx512vl",
-            "bmi1",
-            "bmi2",
-            "clflushopt",
-            "clwb",
-            "f16c",
-            "fma",
-            "mmx",
-            "movbe",
-            "pclmulqdq",
-            "popcnt",
-            "rdrand",
-            "rdseed",
-            "sse",
-            "sse2",
-            "sse4_1",
-            "sse4_2",
-            "ssse3",
-            "xsavec",
-            "xsaveopt"
-          ],
-          "generation": 0,
-          "parents": [
-            "skylake_avx512"
-          ]
-        }
+        "target": "x86_64"
       },
       "compiler": {
         "name": "gcc",
@@ -1453,53 +807,15 @@
         "71e6851d9be8113bfb8d71b66a3171e0d0401bae5e6f161c9e7fe32558261a46"
       ],
       "package_hash": "u3juf2fovqegwimnlbk6ci55ykuhczq7yzbbguzj76f3jxslwa6q====",
-      "hash": "w7wgrnxlo7oombe3tmmfy6msef6h4773"
+      "hash": "k62edx3xsbh7sj6rpunbg3lczcrmwnzf"
     },
-    "sbpajbtyydvtcid3vsug3br6ygxdsepq": {
+    "msp2lsvczyihe3mycff66ajr45ntg6jl": {
       "name": "hypre",
       "version": "develop",
       "arch": {
         "platform": "linux",
         "platform_os": "ubuntu20.04",
-        "target": {
-          "name": "cascadelake",
-          "vendor": "GenuineIntel",
-          "features": [
-            "adx",
-            "aes",
-            "avx",
-            "avx2",
-            "avx512_vnni",
-            "avx512bw",
-            "avx512cd",
-            "avx512dq",
-            "avx512f",
-            "avx512vl",
-            "bmi1",
-            "bmi2",
-            "clflushopt",
-            "clwb",
-            "f16c",
-            "fma",
-            "mmx",
-            "movbe",
-            "pclmulqdq",
-            "popcnt",
-            "rdrand",
-            "rdseed",
-            "sse",
-            "sse2",
-            "sse4_1",
-            "sse4_2",
-            "ssse3",
-            "xsavec",
-            "xsaveopt"
-          ],
-          "generation": 0,
-          "parents": [
-            "skylake_avx512"
-          ]
-        }
+        "target": "x86_64"
       },
       "compiler": {
         "name": "gcc",
@@ -1541,7 +857,7 @@
       "dependencies": [
         {
           "name": "hip",
-          "hash": "kerlnttvbf736mj4ew2i7ayydnrsu7wg",
+          "hash": "qf2vtz2lzvjkqyrf2lo2v7tgmu2i66hu",
           "type": [
             "build",
             "link"
@@ -1549,7 +865,7 @@
         },
         {
           "name": "hsa-rocr-dev",
-          "hash": "w7wgrnxlo7oombe3tmmfy6msef6h4773",
+          "hash": "k62edx3xsbh7sj6rpunbg3lczcrmwnzf",
           "type": [
             "build",
             "link"
@@ -1557,7 +873,7 @@
         },
         {
           "name": "llvm-amdgpu",
-          "hash": "rpq35wu7v7zb2lw7fa7jbuht3ifz3xdr",
+          "hash": "ihrq566rfkzbh2zeixwcueqmxbnbsefl",
           "type": [
             "build",
             "link"
@@ -1565,7 +881,7 @@
         },
         {
           "name": "mpich",
-          "hash": "hzrrrhzra5ggmqjhbjyawthjhfeswjdq",
+          "hash": "mqyckyt7dx446puub74tzrfcqcrx4plk",
           "type": [
             "build",
             "link"
@@ -1573,7 +889,7 @@
         },
         {
           "name": "netlib-lapack",
-          "hash": "czz5ydik7jk6xj4ldanchtqd5km254rt",
+          "hash": "hn54hhoh4e7u6nabyuucgr5pg3g2mhhq",
           "type": [
             "build",
             "link"
@@ -1581,7 +897,7 @@
         },
         {
           "name": "rocprim",
-          "hash": "lparxblzoirk4sxbteeurzjxpslyntfi",
+          "hash": "lgmwrqwalgqrzw3je6cif7lrp2n3upa2",
           "type": [
             "build",
             "link"
@@ -1589,7 +905,7 @@
         },
         {
           "name": "rocrand",
-          "hash": "pjinuavz6667yg4ojqy4r7sjtunoufru",
+          "hash": "e6bzhtltseolkjmymjbtsu6rbhi7llzu",
           "type": [
             "build",
             "link"
@@ -1597,7 +913,7 @@
         },
         {
           "name": "rocsparse",
-          "hash": "mczim2vtuhkoxvcvoeplzohbe6wblrkd",
+          "hash": "oyk7qnckzz72wdr3gtqb53fk4gaozbui",
           "type": [
             "build",
             "link"
@@ -1605,60 +921,22 @@
         },
         {
           "name": "rocthrust",
-          "hash": "kry6ixsvjazvjdxxqaix4vnxahqx6w22",
+          "hash": "rfdgcqjzu5u7ld35d5m56puy2mvzlhhl",
           "type": [
             "build",
             "link"
           ]
         }
       ],
-      "hash": "sbpajbtyydvtcid3vsug3br6ygxdsepq"
+      "hash": "msp2lsvczyihe3mycff66ajr45ntg6jl"
     },
-    "rpq35wu7v7zb2lw7fa7jbuht3ifz3xdr": {
+    "ihrq566rfkzbh2zeixwcueqmxbnbsefl": {
       "name": "llvm-amdgpu",
       "version": "5.4.3",
       "arch": {
         "platform": "linux",
         "platform_os": "ubuntu20.04",
-        "target": {
-          "name": "cascadelake",
-          "vendor": "GenuineIntel",
-          "features": [
-            "adx",
-            "aes",
-            "avx",
-            "avx2",
-            "avx512_vnni",
-            "avx512bw",
-            "avx512cd",
-            "avx512dq",
-            "avx512f",
-            "avx512vl",
-            "bmi1",
-            "bmi2",
-            "clflushopt",
-            "clwb",
-            "f16c",
-            "fma",
-            "mmx",
-            "movbe",
-            "pclmulqdq",
-            "popcnt",
-            "rdrand",
-            "rdseed",
-            "sse",
-            "sse2",
-            "sse4_1",
-            "sse4_2",
-            "ssse3",
-            "xsavec",
-            "xsaveopt"
-          ],
-          "generation": 0,
-          "parents": [
-            "skylake_avx512"
-          ]
-        }
+        "target": "x86_64"
       },
       "compiler": {
         "name": "gcc",
@@ -1692,53 +970,15 @@
         "a08bbe106983acfcbadb1d29310201feca8407a242d86abfe6e5829c325c2a6a"
       ],
       "package_hash": "ghrbfiib7togrrxkvavpbeja5aeyx3xgwmbjsaq6ftfzbb6bxlea====",
-      "hash": "rpq35wu7v7zb2lw7fa7jbuht3ifz3xdr"
+      "hash": "ihrq566rfkzbh2zeixwcueqmxbnbsefl"
     },
-    "hzrrrhzra5ggmqjhbjyawthjhfeswjdq": {
+    "mqyckyt7dx446puub74tzrfcqcrx4plk": {
       "name": "mpich",
       "version": "4.1",
       "arch": {
         "platform": "linux",
         "platform_os": "ubuntu20.04",
-        "target": {
-          "name": "cascadelake",
-          "vendor": "GenuineIntel",
-          "features": [
-            "adx",
-            "aes",
-            "avx",
-            "avx2",
-            "avx512_vnni",
-            "avx512bw",
-            "avx512cd",
-            "avx512dq",
-            "avx512f",
-            "avx512vl",
-            "bmi1",
-            "bmi2",
-            "clflushopt",
-            "clwb",
-            "f16c",
-            "fma",
-            "mmx",
-            "movbe",
-            "pclmulqdq",
-            "popcnt",
-            "rdrand",
-            "rdseed",
-            "sse",
-            "sse2",
-            "sse4_1",
-            "sse4_2",
-            "ssse3",
-            "xsavec",
-            "xsaveopt"
-          ],
-          "generation": 0,
-          "parents": [
-            "skylake_avx512"
-          ]
-        }
+        "target": "x86_64"
       },
       "compiler": {
         "name": "gcc",
@@ -1776,14 +1016,14 @@
       "dependencies": [
         {
           "name": "findutils",
-          "hash": "6onaj5vjjo22tsvptyhuywq2d7uqa74v",
+          "hash": "ybkua77t7kp4siyorz2zyihjgfnhxvoq",
           "type": [
             "build"
           ]
         },
         {
           "name": "hwloc",
-          "hash": "pjfjuc72ptsrwo6bw2o6krolw3wddiqi",
+          "hash": "4b3sb3ut5hm2mq6qi72gltn6zlumbvuu",
           "type": [
             "build",
             "link"
@@ -1791,7 +1031,7 @@
         },
         {
           "name": "libfabric",
-          "hash": "25rr5nk2oucje56kyjnlyjsvzs6k2adw",
+          "hash": "2kqs3hq3ec6oirn6aa6gxt4kov3hdjeo",
           "type": [
             "build",
             "link"
@@ -1799,7 +1039,7 @@
         },
         {
           "name": "libpciaccess",
-          "hash": "5kgwnkay673shirvrkyuyekdd7glsve3",
+          "hash": "3uwybxz3b6jcoo76d6ucm5kqibtxufnx",
           "type": [
             "build",
             "link"
@@ -1807,7 +1047,7 @@
         },
         {
           "name": "libxml2",
-          "hash": "yyjylmpbedev2cs2v5a72u2qyt2ghfr5",
+          "hash": "yarrongbw75g5lox22mc2wnbk2dviuef",
           "type": [
             "build",
             "link"
@@ -1815,67 +1055,29 @@
         },
         {
           "name": "pkgconf",
-          "hash": "efjbkluodrd5u3dv3woh3s7l4g3wgdyr",
+          "hash": "k4gexxg5idxhadssdjkifiqkgr5az4bk",
           "type": [
             "build"
           ]
         },
         {
           "name": "yaksa",
-          "hash": "ah7uos6wicvxvz5x7bwkf4tz7iseqc4t",
+          "hash": "c4p3af7ktx36vvajjqdx67zvboajzevb",
           "type": [
             "build",
             "link"
           ]
         }
       ],
-      "hash": "hzrrrhzra5ggmqjhbjyawthjhfeswjdq"
+      "hash": "mqyckyt7dx446puub74tzrfcqcrx4plk"
     },
-    "6onaj5vjjo22tsvptyhuywq2d7uqa74v": {
+    "ybkua77t7kp4siyorz2zyihjgfnhxvoq": {
       "name": "findutils",
       "version": "4.9.0",
       "arch": {
         "platform": "linux",
         "platform_os": "ubuntu20.04",
-        "target": {
-          "name": "cascadelake",
-          "vendor": "GenuineIntel",
-          "features": [
-            "adx",
-            "aes",
-            "avx",
-            "avx2",
-            "avx512_vnni",
-            "avx512bw",
-            "avx512cd",
-            "avx512dq",
-            "avx512f",
-            "avx512vl",
-            "bmi1",
-            "bmi2",
-            "clflushopt",
-            "clwb",
-            "f16c",
-            "fma",
-            "mmx",
-            "movbe",
-            "pclmulqdq",
-            "popcnt",
-            "rdrand",
-            "rdseed",
-            "sse",
-            "sse2",
-            "sse4_1",
-            "sse4_2",
-            "ssse3",
-            "xsavec",
-            "xsaveopt"
-          ],
-          "generation": 0,
-          "parents": [
-            "skylake_avx512"
-          ]
-        }
+        "target": "x86_64"
       },
       "compiler": {
         "name": "gcc",
@@ -1898,53 +1100,15 @@
         "440b9543365b4692a2e6e0b5674809659846658d34d1dfc542c4397c8d668b92"
       ],
       "package_hash": "2sgl24um676pxizvcju4i42f4k3bnpq7jdctrvxzceyikvaj2mra====",
-      "hash": "6onaj5vjjo22tsvptyhuywq2d7uqa74v"
+      "hash": "ybkua77t7kp4siyorz2zyihjgfnhxvoq"
     },
-    "pjfjuc72ptsrwo6bw2o6krolw3wddiqi": {
+    "4b3sb3ut5hm2mq6qi72gltn6zlumbvuu": {
       "name": "hwloc",
       "version": "2.9.0",
       "arch": {
         "platform": "linux",
         "platform_os": "ubuntu20.04",
-        "target": {
-          "name": "cascadelake",
-          "vendor": "GenuineIntel",
-          "features": [
-            "adx",
-            "aes",
-            "avx",
-            "avx2",
-            "avx512_vnni",
-            "avx512bw",
-            "avx512cd",
-            "avx512dq",
-            "avx512f",
-            "avx512vl",
-            "bmi1",
-            "bmi2",
-            "clflushopt",
-            "clwb",
-            "f16c",
-            "fma",
-            "mmx",
-            "movbe",
-            "pclmulqdq",
-            "popcnt",
-            "rdrand",
-            "rdseed",
-            "sse",
-            "sse2",
-            "sse4_1",
-            "sse4_2",
-            "ssse3",
-            "xsavec",
-            "xsaveopt"
-          ],
-          "generation": 0,
-          "parents": [
-            "skylake_avx512"
-          ]
-        }
+        "target": "x86_64"
       },
       "compiler": {
         "name": "gcc",
@@ -1979,7 +1143,7 @@
       "dependencies": [
         {
           "name": "libpciaccess",
-          "hash": "5kgwnkay673shirvrkyuyekdd7glsve3",
+          "hash": "3uwybxz3b6jcoo76d6ucm5kqibtxufnx",
           "type": [
             "build",
             "link"
@@ -1987,7 +1151,7 @@
         },
         {
           "name": "libxml2",
-          "hash": "yyjylmpbedev2cs2v5a72u2qyt2ghfr5",
+          "hash": "yarrongbw75g5lox22mc2wnbk2dviuef",
           "type": [
             "build",
             "link"
@@ -1995,7 +1159,7 @@
         },
         {
           "name": "ncurses",
-          "hash": "jvmqbafm4e3sw56jdvvqu3yhhr5hp3rr",
+          "hash": "w5d2qa23mw4wccvrrzs2ggwvn7fnuha7",
           "type": [
             "build",
             "link"
@@ -2003,59 +1167,21 @@
         },
         {
           "name": "pkgconf",
-          "hash": "efjbkluodrd5u3dv3woh3s7l4g3wgdyr",
+          "hash": "k4gexxg5idxhadssdjkifiqkgr5az4bk",
           "type": [
             "build"
           ]
         }
       ],
-      "hash": "pjfjuc72ptsrwo6bw2o6krolw3wddiqi"
+      "hash": "4b3sb3ut5hm2mq6qi72gltn6zlumbvuu"
     },
-    "5kgwnkay673shirvrkyuyekdd7glsve3": {
+    "3uwybxz3b6jcoo76d6ucm5kqibtxufnx": {
       "name": "libpciaccess",
       "version": "0.16",
       "arch": {
         "platform": "linux",
         "platform_os": "ubuntu20.04",
-        "target": {
-          "name": "cascadelake",
-          "vendor": "GenuineIntel",
-          "features": [
-            "adx",
-            "aes",
-            "avx",
-            "avx2",
-            "avx512_vnni",
-            "avx512bw",
-            "avx512cd",
-            "avx512dq",
-            "avx512f",
-            "avx512vl",
-            "bmi1",
-            "bmi2",
-            "clflushopt",
-            "clwb",
-            "f16c",
-            "fma",
-            "mmx",
-            "movbe",
-            "pclmulqdq",
-            "popcnt",
-            "rdrand",
-            "rdseed",
-            "sse",
-            "sse2",
-            "sse4_1",
-            "sse4_2",
-            "ssse3",
-            "xsavec",
-            "xsaveopt"
-          ],
-          "generation": 0,
-          "parents": [
-            "skylake_avx512"
-          ]
-        }
+        "target": "x86_64"
       },
       "compiler": {
         "name": "gcc",
@@ -2075,73 +1201,35 @@
       "dependencies": [
         {
           "name": "libtool",
-          "hash": "jnr6cxbsyvjjwib34bvw4p45avv2csd6",
+          "hash": "q3utowsf3loyoriuzjvfirg37vovcm5d",
           "type": [
             "build"
           ]
         },
         {
           "name": "pkgconf",
-          "hash": "efjbkluodrd5u3dv3woh3s7l4g3wgdyr",
+          "hash": "k4gexxg5idxhadssdjkifiqkgr5az4bk",
           "type": [
             "build"
           ]
         },
         {
           "name": "util-macros",
-          "hash": "bgstyuczjoviq7a5hp2fjyvhhf6tuyos",
+          "hash": "v64trbucf4avek2lkostsafu7pymzdbe",
           "type": [
             "build"
           ]
         }
       ],
-      "hash": "5kgwnkay673shirvrkyuyekdd7glsve3"
+      "hash": "3uwybxz3b6jcoo76d6ucm5kqibtxufnx"
     },
-    "jnr6cxbsyvjjwib34bvw4p45avv2csd6": {
+    "q3utowsf3loyoriuzjvfirg37vovcm5d": {
       "name": "libtool",
       "version": "2.4.7",
       "arch": {
         "platform": "linux",
         "platform_os": "ubuntu20.04",
-        "target": {
-          "name": "cascadelake",
-          "vendor": "GenuineIntel",
-          "features": [
-            "adx",
-            "aes",
-            "avx",
-            "avx2",
-            "avx512_vnni",
-            "avx512bw",
-            "avx512cd",
-            "avx512dq",
-            "avx512f",
-            "avx512vl",
-            "bmi1",
-            "bmi2",
-            "clflushopt",
-            "clwb",
-            "f16c",
-            "fma",
-            "mmx",
-            "movbe",
-            "pclmulqdq",
-            "popcnt",
-            "rdrand",
-            "rdseed",
-            "sse",
-            "sse2",
-            "sse4_1",
-            "sse4_2",
-            "ssse3",
-            "xsavec",
-            "xsaveopt"
-          ],
-          "generation": 0,
-          "parents": [
-            "skylake_avx512"
-          ]
-        }
+        "target": "x86_64"
       },
       "compiler": {
         "name": "gcc",
@@ -2161,59 +1249,21 @@
       "dependencies": [
         {
           "name": "m4",
-          "hash": "a5lbbtk2db573dn2e6ocw6nd4efdbvka",
+          "hash": "kub57xstdlwdaf37r5m2zlwgv3p35jyj",
           "type": [
             "build"
           ]
         }
       ],
-      "hash": "jnr6cxbsyvjjwib34bvw4p45avv2csd6"
+      "hash": "q3utowsf3loyoriuzjvfirg37vovcm5d"
     },
-    "a5lbbtk2db573dn2e6ocw6nd4efdbvka": {
+    "kub57xstdlwdaf37r5m2zlwgv3p35jyj": {
       "name": "m4",
       "version": "1.4.19",
       "arch": {
         "platform": "linux",
         "platform_os": "ubuntu20.04",
-        "target": {
-          "name": "cascadelake",
-          "vendor": "GenuineIntel",
-          "features": [
-            "adx",
-            "aes",
-            "avx",
-            "avx2",
-            "avx512_vnni",
-            "avx512bw",
-            "avx512cd",
-            "avx512dq",
-            "avx512f",
-            "avx512vl",
-            "bmi1",
-            "bmi2",
-            "clflushopt",
-            "clwb",
-            "f16c",
-            "fma",
-            "mmx",
-            "movbe",
-            "pclmulqdq",
-            "popcnt",
-            "rdrand",
-            "rdseed",
-            "sse",
-            "sse2",
-            "sse4_1",
-            "sse4_2",
-            "ssse3",
-            "xsavec",
-            "xsaveopt"
-          ],
-          "generation": 0,
-          "parents": [
-            "skylake_avx512"
-          ]
-        }
+        "target": "x86_64"
       },
       "compiler": {
         "name": "gcc",
@@ -2242,67 +1292,29 @@
       "dependencies": [
         {
           "name": "diffutils",
-          "hash": "qizyllbirxujjqelwremtqwac4vginey",
+          "hash": "q5jegbplfyk5gt6oyjkpv45cvetawfx5",
           "type": [
             "build"
           ]
         },
         {
           "name": "libsigsegv",
-          "hash": "6l5d3qxvzebtqrrvsqsfok6rubrvr6w2",
+          "hash": "qhzhqvirejgrey6l4hnrdf3rnhd2xvxu",
           "type": [
             "build",
             "link"
           ]
         }
       ],
-      "hash": "a5lbbtk2db573dn2e6ocw6nd4efdbvka"
+      "hash": "kub57xstdlwdaf37r5m2zlwgv3p35jyj"
     },
-    "6l5d3qxvzebtqrrvsqsfok6rubrvr6w2": {
+    "qhzhqvirejgrey6l4hnrdf3rnhd2xvxu": {
       "name": "libsigsegv",
       "version": "2.13",
       "arch": {
         "platform": "linux",
         "platform_os": "ubuntu20.04",
-        "target": {
-          "name": "cascadelake",
-          "vendor": "GenuineIntel",
-          "features": [
-            "adx",
-            "aes",
-            "avx",
-            "avx2",
-            "avx512_vnni",
-            "avx512bw",
-            "avx512cd",
-            "avx512dq",
-            "avx512f",
-            "avx512vl",
-            "bmi1",
-            "bmi2",
-            "clflushopt",
-            "clwb",
-            "f16c",
-            "fma",
-            "mmx",
-            "movbe",
-            "pclmulqdq",
-            "popcnt",
-            "rdrand",
-            "rdseed",
-            "sse",
-            "sse2",
-            "sse4_1",
-            "sse4_2",
-            "ssse3",
-            "xsavec",
-            "xsaveopt"
-          ],
-          "generation": 0,
-          "parents": [
-            "skylake_avx512"
-          ]
-        }
+        "target": "x86_64"
       },
       "compiler": {
         "name": "gcc",
@@ -2319,53 +1331,15 @@
         "ldlibs": []
       },
       "package_hash": "nmoykqybj2ahbtvuts4ajbnyyzzdezs5s7cozp2o54gmtsvc6wiq====",
-      "hash": "6l5d3qxvzebtqrrvsqsfok6rubrvr6w2"
+      "hash": "qhzhqvirejgrey6l4hnrdf3rnhd2xvxu"
     },
-    "bgstyuczjoviq7a5hp2fjyvhhf6tuyos": {
+    "v64trbucf4avek2lkostsafu7pymzdbe": {
       "name": "util-macros",
       "version": "1.19.3",
       "arch": {
         "platform": "linux",
         "platform_os": "ubuntu20.04",
-        "target": {
-          "name": "cascadelake",
-          "vendor": "GenuineIntel",
-          "features": [
-            "adx",
-            "aes",
-            "avx",
-            "avx2",
-            "avx512_vnni",
-            "avx512bw",
-            "avx512cd",
-            "avx512dq",
-            "avx512f",
-            "avx512vl",
-            "bmi1",
-            "bmi2",
-            "clflushopt",
-            "clwb",
-            "f16c",
-            "fma",
-            "mmx",
-            "movbe",
-            "pclmulqdq",
-            "popcnt",
-            "rdrand",
-            "rdseed",
-            "sse",
-            "sse2",
-            "sse4_1",
-            "sse4_2",
-            "ssse3",
-            "xsavec",
-            "xsaveopt"
-          ],
-          "generation": 0,
-          "parents": [
-            "skylake_avx512"
-          ]
-        }
+        "target": "x86_64"
       },
       "compiler": {
         "name": "gcc",
@@ -2382,53 +1356,15 @@
         "ldlibs": []
       },
       "package_hash": "5atggv5uirdl2trmzmewkonyvzmzg6sg46zpvurdk43wi2gpr7pa====",
-      "hash": "bgstyuczjoviq7a5hp2fjyvhhf6tuyos"
+      "hash": "v64trbucf4avek2lkostsafu7pymzdbe"
     },
-    "yyjylmpbedev2cs2v5a72u2qyt2ghfr5": {
+    "yarrongbw75g5lox22mc2wnbk2dviuef": {
       "name": "libxml2",
       "version": "2.10.3",
       "arch": {
         "platform": "linux",
         "platform_os": "ubuntu20.04",
-        "target": {
-          "name": "cascadelake",
-          "vendor": "GenuineIntel",
-          "features": [
-            "adx",
-            "aes",
-            "avx",
-            "avx2",
-            "avx512_vnni",
-            "avx512bw",
-            "avx512cd",
-            "avx512dq",
-            "avx512f",
-            "avx512vl",
-            "bmi1",
-            "bmi2",
-            "clflushopt",
-            "clwb",
-            "f16c",
-            "fma",
-            "mmx",
-            "movbe",
-            "pclmulqdq",
-            "popcnt",
-            "rdrand",
-            "rdseed",
-            "sse",
-            "sse2",
-            "sse4_1",
-            "sse4_2",
-            "ssse3",
-            "xsavec",
-            "xsaveopt"
-          ],
-          "generation": 0,
-          "parents": [
-            "skylake_avx512"
-          ]
-        }
+        "target": "x86_64"
       },
       "compiler": {
         "name": "gcc",
@@ -2449,7 +1385,7 @@
       "dependencies": [
         {
           "name": "libiconv",
-          "hash": "m2sofhlfcn3bbmp36qtmel2vambzxmsb",
+          "hash": "m3pvej7psgqle3np2lvba64uvoea2csg",
           "type": [
             "build",
             "link"
@@ -2457,14 +1393,14 @@
         },
         {
           "name": "pkgconf",
-          "hash": "efjbkluodrd5u3dv3woh3s7l4g3wgdyr",
+          "hash": "k4gexxg5idxhadssdjkifiqkgr5az4bk",
           "type": [
             "build"
           ]
         },
         {
           "name": "xz",
-          "hash": "23g7c3x7n66wgzfpkbhbsv75dznqdu6p",
+          "hash": "wtu7z3rb4klpxi65yoexaa3anjrba37o",
           "type": [
             "build",
             "link"
@@ -2472,60 +1408,22 @@
         },
         {
           "name": "zlib",
-          "hash": "pxmyjlb3lf2ukznymvffyio7fq3ojy76",
+          "hash": "4a4hcyyb5o4jztxdzjxzu2sri67xebjf",
           "type": [
             "build",
             "link"
           ]
         }
       ],
-      "hash": "yyjylmpbedev2cs2v5a72u2qyt2ghfr5"
+      "hash": "yarrongbw75g5lox22mc2wnbk2dviuef"
     },
-    "23g7c3x7n66wgzfpkbhbsv75dznqdu6p": {
+    "wtu7z3rb4klpxi65yoexaa3anjrba37o": {
       "name": "xz",
       "version": "5.4.1",
       "arch": {
         "platform": "linux",
         "platform_os": "ubuntu20.04",
-        "target": {
-          "name": "cascadelake",
-          "vendor": "GenuineIntel",
-          "features": [
-            "adx",
-            "aes",
-            "avx",
-            "avx2",
-            "avx512_vnni",
-            "avx512bw",
-            "avx512cd",
-            "avx512dq",
-            "avx512f",
-            "avx512vl",
-            "bmi1",
-            "bmi2",
-            "clflushopt",
-            "clwb",
-            "f16c",
-            "fma",
-            "mmx",
-            "movbe",
-            "pclmulqdq",
-            "popcnt",
-            "rdrand",
-            "rdseed",
-            "sse",
-            "sse2",
-            "sse4_1",
-            "sse4_2",
-            "ssse3",
-            "xsavec",
-            "xsaveopt"
-          ],
-          "generation": 0,
-          "parents": [
-            "skylake_avx512"
-          ]
-        }
+        "target": "x86_64"
       },
       "compiler": {
         "name": "gcc",
@@ -2547,53 +1445,15 @@
         "ldlibs": []
       },
       "package_hash": "2rb22kpvzjmn2b54zydvvja6nwuwdzv44lp4ptzfbszing56qsoq====",
-      "hash": "23g7c3x7n66wgzfpkbhbsv75dznqdu6p"
+      "hash": "wtu7z3rb4klpxi65yoexaa3anjrba37o"
     },
-    "25rr5nk2oucje56kyjnlyjsvzs6k2adw": {
+    "2kqs3hq3ec6oirn6aa6gxt4kov3hdjeo": {
       "name": "libfabric",
       "version": "1.16.1",
       "arch": {
         "platform": "linux",
         "platform_os": "ubuntu20.04",
-        "target": {
-          "name": "cascadelake",
-          "vendor": "GenuineIntel",
-          "features": [
-            "adx",
-            "aes",
-            "avx",
-            "avx2",
-            "avx512_vnni",
-            "avx512bw",
-            "avx512cd",
-            "avx512dq",
-            "avx512f",
-            "avx512vl",
-            "bmi1",
-            "bmi2",
-            "clflushopt",
-            "clwb",
-            "f16c",
-            "fma",
-            "mmx",
-            "movbe",
-            "pclmulqdq",
-            "popcnt",
-            "rdrand",
-            "rdseed",
-            "sse",
-            "sse2",
-            "sse4_1",
-            "sse4_2",
-            "ssse3",
-            "xsavec",
-            "xsaveopt"
-          ],
-          "generation": 0,
-          "parents": [
-            "skylake_avx512"
-          ]
-        }
+        "target": "x86_64"
       },
       "compiler": {
         "name": "gcc",
@@ -2617,53 +1477,15 @@
         "ldlibs": []
       },
       "package_hash": "pexbvropvtfuti7zxltojqud3jw23rymvkfr435mp2whsms6seoa====",
-      "hash": "25rr5nk2oucje56kyjnlyjsvzs6k2adw"
+      "hash": "2kqs3hq3ec6oirn6aa6gxt4kov3hdjeo"
     },
-    "ah7uos6wicvxvz5x7bwkf4tz7iseqc4t": {
+    "c4p3af7ktx36vvajjqdx67zvboajzevb": {
       "name": "yaksa",
       "version": "0.2",
       "arch": {
         "platform": "linux",
         "platform_os": "ubuntu20.04",
-        "target": {
-          "name": "cascadelake",
-          "vendor": "GenuineIntel",
-          "features": [
-            "adx",
-            "aes",
-            "avx",
-            "avx2",
-            "avx512_vnni",
-            "avx512bw",
-            "avx512cd",
-            "avx512dq",
-            "avx512f",
-            "avx512vl",
-            "bmi1",
-            "bmi2",
-            "clflushopt",
-            "clwb",
-            "f16c",
-            "fma",
-            "mmx",
-            "movbe",
-            "pclmulqdq",
-            "popcnt",
-            "rdrand",
-            "rdseed",
-            "sse",
-            "sse2",
-            "sse4_1",
-            "sse4_2",
-            "ssse3",
-            "xsavec",
-            "xsaveopt"
-          ],
-          "generation": 0,
-          "parents": [
-            "skylake_avx512"
-          ]
-        }
+        "target": "x86_64"
       },
       "compiler": {
         "name": "gcc",
@@ -2685,87 +1507,49 @@
       "dependencies": [
         {
           "name": "autoconf",
-          "hash": "7q2maq5oelf26upekuymdirvkd55s6wb",
+          "hash": "zrfrxytfb2itflwia5i52q45pyj7xm4z",
           "type": [
             "build"
           ]
         },
         {
           "name": "automake",
-          "hash": "h5mwa553vaq6ezkqcht5kpeyp2q6qlpb",
+          "hash": "eysm2tkbispgj2abuvjiic6quq4ogok4",
           "type": [
             "build"
           ]
         },
         {
           "name": "libtool",
-          "hash": "jnr6cxbsyvjjwib34bvw4p45avv2csd6",
+          "hash": "q3utowsf3loyoriuzjvfirg37vovcm5d",
           "type": [
             "build"
           ]
         },
         {
           "name": "m4",
-          "hash": "a5lbbtk2db573dn2e6ocw6nd4efdbvka",
+          "hash": "kub57xstdlwdaf37r5m2zlwgv3p35jyj",
           "type": [
             "build"
           ]
         },
         {
           "name": "python",
-          "hash": "kgwjxruomf4qrgmxzer4w5fjll5ldfe2",
+          "hash": "3ewastha5fcfmqbvwz4dw3gkluse76dq",
           "type": [
             "build"
           ]
         }
       ],
-      "hash": "ah7uos6wicvxvz5x7bwkf4tz7iseqc4t"
+      "hash": "c4p3af7ktx36vvajjqdx67zvboajzevb"
     },
-    "7q2maq5oelf26upekuymdirvkd55s6wb": {
+    "zrfrxytfb2itflwia5i52q45pyj7xm4z": {
       "name": "autoconf",
       "version": "2.69",
       "arch": {
         "platform": "linux",
         "platform_os": "ubuntu20.04",
-        "target": {
-          "name": "cascadelake",
-          "vendor": "GenuineIntel",
-          "features": [
-            "adx",
-            "aes",
-            "avx",
-            "avx2",
-            "avx512_vnni",
-            "avx512bw",
-            "avx512cd",
-            "avx512dq",
-            "avx512f",
-            "avx512vl",
-            "bmi1",
-            "bmi2",
-            "clflushopt",
-            "clwb",
-            "f16c",
-            "fma",
-            "mmx",
-            "movbe",
-            "pclmulqdq",
-            "popcnt",
-            "rdrand",
-            "rdseed",
-            "sse",
-            "sse2",
-            "sse4_1",
-            "sse4_2",
-            "ssse3",
-            "xsavec",
-            "xsaveopt"
-          ],
-          "generation": 0,
-          "parents": [
-            "skylake_avx512"
-          ]
-        }
+        "target": "x86_64"
       },
       "compiler": {
         "name": "gcc",
@@ -2795,7 +1579,7 @@
       "dependencies": [
         {
           "name": "m4",
-          "hash": "a5lbbtk2db573dn2e6ocw6nd4efdbvka",
+          "hash": "kub57xstdlwdaf37r5m2zlwgv3p35jyj",
           "type": [
             "build",
             "run"
@@ -2803,60 +1587,22 @@
         },
         {
           "name": "perl",
-          "hash": "ghidyznr2uxgohumlnlpww6l3oqa4dun",
+          "hash": "ilztdwxzillcczeqar73im3bzvoxamgx",
           "type": [
             "build",
             "run"
           ]
         }
       ],
-      "hash": "7q2maq5oelf26upekuymdirvkd55s6wb"
+      "hash": "zrfrxytfb2itflwia5i52q45pyj7xm4z"
     },
-    "h5mwa553vaq6ezkqcht5kpeyp2q6qlpb": {
+    "eysm2tkbispgj2abuvjiic6quq4ogok4": {
       "name": "automake",
       "version": "1.16.5",
       "arch": {
         "platform": "linux",
         "platform_os": "ubuntu20.04",
-        "target": {
-          "name": "cascadelake",
-          "vendor": "GenuineIntel",
-          "features": [
-            "adx",
-            "aes",
-            "avx",
-            "avx2",
-            "avx512_vnni",
-            "avx512bw",
-            "avx512cd",
-            "avx512dq",
-            "avx512f",
-            "avx512vl",
-            "bmi1",
-            "bmi2",
-            "clflushopt",
-            "clwb",
-            "f16c",
-            "fma",
-            "mmx",
-            "movbe",
-            "pclmulqdq",
-            "popcnt",
-            "rdrand",
-            "rdseed",
-            "sse",
-            "sse2",
-            "sse4_1",
-            "sse4_2",
-            "ssse3",
-            "xsavec",
-            "xsaveopt"
-          ],
-          "generation": 0,
-          "parents": [
-            "skylake_avx512"
-          ]
-        }
+        "target": "x86_64"
       },
       "compiler": {
         "name": "gcc",
@@ -2876,67 +1622,29 @@
       "dependencies": [
         {
           "name": "autoconf",
-          "hash": "7q2maq5oelf26upekuymdirvkd55s6wb",
+          "hash": "zrfrxytfb2itflwia5i52q45pyj7xm4z",
           "type": [
             "build"
           ]
         },
         {
           "name": "perl",
-          "hash": "ghidyznr2uxgohumlnlpww6l3oqa4dun",
+          "hash": "ilztdwxzillcczeqar73im3bzvoxamgx",
           "type": [
             "build",
             "run"
           ]
         }
       ],
-      "hash": "h5mwa553vaq6ezkqcht5kpeyp2q6qlpb"
+      "hash": "eysm2tkbispgj2abuvjiic6quq4ogok4"
     },
-    "kgwjxruomf4qrgmxzer4w5fjll5ldfe2": {
+    "3ewastha5fcfmqbvwz4dw3gkluse76dq": {
       "name": "python",
       "version": "3.10.8",
       "arch": {
         "platform": "linux",
         "platform_os": "ubuntu20.04",
-        "target": {
-          "name": "cascadelake",
-          "vendor": "GenuineIntel",
-          "features": [
-            "adx",
-            "aes",
-            "avx",
-            "avx2",
-            "avx512_vnni",
-            "avx512bw",
-            "avx512cd",
-            "avx512dq",
-            "avx512f",
-            "avx512vl",
-            "bmi1",
-            "bmi2",
-            "clflushopt",
-            "clwb",
-            "f16c",
-            "fma",
-            "mmx",
-            "movbe",
-            "pclmulqdq",
-            "popcnt",
-            "rdrand",
-            "rdseed",
-            "sse",
-            "sse2",
-            "sse4_1",
-            "sse4_2",
-            "ssse3",
-            "xsavec",
-            "xsaveopt"
-          ],
-          "generation": 0,
-          "parents": [
-            "skylake_avx512"
-          ]
-        }
+        "target": "x86_64"
       },
       "compiler": {
         "name": "gcc",
@@ -2985,7 +1693,7 @@
       "dependencies": [
         {
           "name": "bzip2",
-          "hash": "jzuk7wlgdx3yepo455kdralkzn4vmeed",
+          "hash": "l62f6prnl4mfmfskqxtvhcstemom5vte",
           "type": [
             "build",
             "link"
@@ -2993,7 +1701,7 @@
         },
         {
           "name": "expat",
-          "hash": "uirw5l535co7uph6od4i2rsmiked52qk",
+          "hash": "mc2w3wp6dllwkuzgpngfaxdtuxhsefms",
           "type": [
             "build",
             "link"
@@ -3001,7 +1709,7 @@
         },
         {
           "name": "gdbm",
-          "hash": "if5x5rmfcvwl3v5lc2pxijw2n5l7jhhm",
+          "hash": "yfzzydfjnhqpru7ravupi43sozilamcc",
           "type": [
             "build",
             "link"
@@ -3009,7 +1717,7 @@
         },
         {
           "name": "gettext",
-          "hash": "nmjnju6fvwasivy5aghme5hlma34y7be",
+          "hash": "tapsqxrck4rqfjtgwk3kzjyipv2eomab",
           "type": [
             "build",
             "link"
@@ -3017,7 +1725,7 @@
         },
         {
           "name": "libffi",
-          "hash": "qwcuvb4tpe7wv4odhwvvp3vgksuqgwec",
+          "hash": "aybp4dx2izhl4hmm6zqppx2sabryef2k",
           "type": [
             "build",
             "link"
@@ -3025,7 +1733,7 @@
         },
         {
           "name": "libxcrypt",
-          "hash": "cae6pvu4bzcjzqusexjipslcc5yclgwq",
+          "hash": "5agjq6aorthtit7ybxo4fpc5vbb6ymgz",
           "type": [
             "build",
             "link"
@@ -3033,7 +1741,7 @@
         },
         {
           "name": "ncurses",
-          "hash": "jvmqbafm4e3sw56jdvvqu3yhhr5hp3rr",
+          "hash": "w5d2qa23mw4wccvrrzs2ggwvn7fnuha7",
           "type": [
             "build",
             "link"
@@ -3041,7 +1749,7 @@
         },
         {
           "name": "openssl",
-          "hash": "4qwezra2xv3d4ygtn47hrrpc7ljsyql5",
+          "hash": "mvxj5nk6amfnb4obu5ypkcgru7syx4hz",
           "type": [
             "build",
             "link"
@@ -3049,14 +1757,14 @@
         },
         {
           "name": "pkgconf",
-          "hash": "efjbkluodrd5u3dv3woh3s7l4g3wgdyr",
+          "hash": "k4gexxg5idxhadssdjkifiqkgr5az4bk",
           "type": [
             "build"
           ]
         },
         {
           "name": "readline",
-          "hash": "rfnq7nqzwvkfsz7wcxbu3rrppuu5pyup",
+          "hash": "2d5q4vgm7nyhu5bj64c5j3bim245blub",
           "type": [
             "build",
             "link"
@@ -3064,7 +1772,7 @@
         },
         {
           "name": "sqlite",
-          "hash": "ohzd3mr5fb5hnt6z4x2erny2fynpnqdy",
+          "hash": "gpdw6tbjsnujy7mxuui6sce2zohbq2yy",
           "type": [
             "build",
             "link"
@@ -3072,7 +1780,7 @@
         },
         {
           "name": "util-linux-uuid",
-          "hash": "harrktatmtwmryqpeaikuln5x3i2lp3r",
+          "hash": "do5lyjwpwcz5e3nmevwo3o4brjeczgsa",
           "type": [
             "build",
             "link"
@@ -3080,7 +1788,7 @@
         },
         {
           "name": "xz",
-          "hash": "23g7c3x7n66wgzfpkbhbsv75dznqdu6p",
+          "hash": "wtu7z3rb4klpxi65yoexaa3anjrba37o",
           "type": [
             "build",
             "link"
@@ -3088,60 +1796,22 @@
         },
         {
           "name": "zlib",
-          "hash": "pxmyjlb3lf2ukznymvffyio7fq3ojy76",
+          "hash": "4a4hcyyb5o4jztxdzjxzu2sri67xebjf",
           "type": [
             "build",
             "link"
           ]
         }
       ],
-      "hash": "kgwjxruomf4qrgmxzer4w5fjll5ldfe2"
+      "hash": "3ewastha5fcfmqbvwz4dw3gkluse76dq"
     },
-    "uirw5l535co7uph6od4i2rsmiked52qk": {
+    "mc2w3wp6dllwkuzgpngfaxdtuxhsefms": {
       "name": "expat",
       "version": "2.5.0",
       "arch": {
         "platform": "linux",
         "platform_os": "ubuntu20.04",
-        "target": {
-          "name": "cascadelake",
-          "vendor": "GenuineIntel",
-          "features": [
-            "adx",
-            "aes",
-            "avx",
-            "avx2",
-            "avx512_vnni",
-            "avx512bw",
-            "avx512cd",
-            "avx512dq",
-            "avx512f",
-            "avx512vl",
-            "bmi1",
-            "bmi2",
-            "clflushopt",
-            "clwb",
-            "f16c",
-            "fma",
-            "mmx",
-            "movbe",
-            "pclmulqdq",
-            "popcnt",
-            "rdrand",
-            "rdseed",
-            "sse",
-            "sse2",
-            "sse4_1",
-            "sse4_2",
-            "ssse3",
-            "xsavec",
-            "xsaveopt"
-          ],
-          "generation": 0,
-          "parents": [
-            "skylake_avx512"
-          ]
-        }
+        "target": "x86_64"
       },
       "compiler": {
         "name": "gcc",
@@ -3162,60 +1832,22 @@
       "dependencies": [
         {
           "name": "libbsd",
-          "hash": "v5pokrarzzq3pw3pbqbiizcueodxsrqs",
+          "hash": "yghmqerjhm6czdcpwkzupl5ndlywz5ub",
           "type": [
             "build",
             "link"
           ]
         }
       ],
-      "hash": "uirw5l535co7uph6od4i2rsmiked52qk"
+      "hash": "mc2w3wp6dllwkuzgpngfaxdtuxhsefms"
     },
-    "v5pokrarzzq3pw3pbqbiizcueodxsrqs": {
+    "yghmqerjhm6czdcpwkzupl5ndlywz5ub": {
       "name": "libbsd",
       "version": "0.11.7",
       "arch": {
         "platform": "linux",
         "platform_os": "ubuntu20.04",
-        "target": {
-          "name": "cascadelake",
-          "vendor": "GenuineIntel",
-          "features": [
-            "adx",
-            "aes",
-            "avx",
-            "avx2",
-            "avx512_vnni",
-            "avx512bw",
-            "avx512cd",
-            "avx512dq",
-            "avx512f",
-            "avx512vl",
-            "bmi1",
-            "bmi2",
-            "clflushopt",
-            "clwb",
-            "f16c",
-            "fma",
-            "mmx",
-            "movbe",
-            "pclmulqdq",
-            "popcnt",
-            "rdrand",
-            "rdseed",
-            "sse",
-            "sse2",
-            "sse4_1",
-            "sse4_2",
-            "ssse3",
-            "xsavec",
-            "xsaveopt"
-          ],
-          "generation": 0,
-          "parents": [
-            "skylake_avx512"
-          ]
-        }
+        "target": "x86_64"
       },
       "compiler": {
         "name": "gcc",
@@ -3235,60 +1867,22 @@
       "dependencies": [
         {
           "name": "libmd",
-          "hash": "cfoy42f3ypx3k3peryl375ubrfjatnri",
+          "hash": "iumn6fgcu7via7s6ds5aoisjdzz6qhi7",
           "type": [
             "build",
             "link"
           ]
         }
       ],
-      "hash": "v5pokrarzzq3pw3pbqbiizcueodxsrqs"
+      "hash": "yghmqerjhm6czdcpwkzupl5ndlywz5ub"
     },
-    "cfoy42f3ypx3k3peryl375ubrfjatnri": {
+    "iumn6fgcu7via7s6ds5aoisjdzz6qhi7": {
       "name": "libmd",
       "version": "1.0.4",
       "arch": {
         "platform": "linux",
         "platform_os": "ubuntu20.04",
-        "target": {
-          "name": "cascadelake",
-          "vendor": "GenuineIntel",
-          "features": [
-            "adx",
-            "aes",
-            "avx",
-            "avx2",
-            "avx512_vnni",
-            "avx512bw",
-            "avx512cd",
-            "avx512dq",
-            "avx512f",
-            "avx512vl",
-            "bmi1",
-            "bmi2",
-            "clflushopt",
-            "clwb",
-            "f16c",
-            "fma",
-            "mmx",
-            "movbe",
-            "pclmulqdq",
-            "popcnt",
-            "rdrand",
-            "rdseed",
-            "sse",
-            "sse2",
-            "sse4_1",
-            "sse4_2",
-            "ssse3",
-            "xsavec",
-            "xsaveopt"
-          ],
-          "generation": 0,
-          "parents": [
-            "skylake_avx512"
-          ]
-        }
+        "target": "x86_64"
       },
       "compiler": {
         "name": "gcc",
@@ -3305,53 +1899,15 @@
         "ldlibs": []
       },
       "package_hash": "zs2e7fqr4dzthpj5fascqvfn7xcahf7dtc5bzdwfv6vqkzi7oncq====",
-      "hash": "cfoy42f3ypx3k3peryl375ubrfjatnri"
+      "hash": "iumn6fgcu7via7s6ds5aoisjdzz6qhi7"
     },
-    "nmjnju6fvwasivy5aghme5hlma34y7be": {
+    "tapsqxrck4rqfjtgwk3kzjyipv2eomab": {
       "name": "gettext",
       "version": "0.21.1",
       "arch": {
         "platform": "linux",
         "platform_os": "ubuntu20.04",
-        "target": {
-          "name": "cascadelake",
-          "vendor": "GenuineIntel",
-          "features": [
-            "adx",
-            "aes",
-            "avx",
-            "avx2",
-            "avx512_vnni",
-            "avx512bw",
-            "avx512cd",
-            "avx512dq",
-            "avx512f",
-            "avx512vl",
-            "bmi1",
-            "bmi2",
-            "clflushopt",
-            "clwb",
-            "f16c",
-            "fma",
-            "mmx",
-            "movbe",
-            "pclmulqdq",
-            "popcnt",
-            "rdrand",
-            "rdseed",
-            "sse",
-            "sse2",
-            "sse4_1",
-            "sse4_2",
-            "ssse3",
-            "xsavec",
-            "xsaveopt"
-          ],
-          "generation": 0,
-          "parents": [
-            "skylake_avx512"
-          ]
-        }
+        "target": "x86_64"
       },
       "compiler": {
         "name": "gcc",
@@ -3378,7 +1934,7 @@
       "dependencies": [
         {
           "name": "bzip2",
-          "hash": "jzuk7wlgdx3yepo455kdralkzn4vmeed",
+          "hash": "l62f6prnl4mfmfskqxtvhcstemom5vte",
           "type": [
             "build",
             "link"
@@ -3386,7 +1942,7 @@
         },
         {
           "name": "libiconv",
-          "hash": "m2sofhlfcn3bbmp36qtmel2vambzxmsb",
+          "hash": "m3pvej7psgqle3np2lvba64uvoea2csg",
           "type": [
             "build",
             "link"
@@ -3394,7 +1950,7 @@
         },
         {
           "name": "libxml2",
-          "hash": "yyjylmpbedev2cs2v5a72u2qyt2ghfr5",
+          "hash": "yarrongbw75g5lox22mc2wnbk2dviuef",
           "type": [
             "build",
             "link"
@@ -3402,7 +1958,7 @@
         },
         {
           "name": "ncurses",
-          "hash": "jvmqbafm4e3sw56jdvvqu3yhhr5hp3rr",
+          "hash": "w5d2qa23mw4wccvrrzs2ggwvn7fnuha7",
           "type": [
             "build",
             "link"
@@ -3410,7 +1966,7 @@
         },
         {
           "name": "tar",
-          "hash": "w7rirqmxa4ml4uxuo7h6y4xex73zeulo",
+          "hash": "ihb6sadvlxkdqedo2uopcdjcrjk57xov",
           "type": [
             "build",
             "link"
@@ -3418,7 +1974,7 @@
         },
         {
           "name": "xz",
-          "hash": "23g7c3x7n66wgzfpkbhbsv75dznqdu6p",
+          "hash": "wtu7z3rb4klpxi65yoexaa3anjrba37o",
           "type": [
             "build",
             "link",
@@ -3426,53 +1982,15 @@
           ]
         }
       ],
-      "hash": "nmjnju6fvwasivy5aghme5hlma34y7be"
+      "hash": "tapsqxrck4rqfjtgwk3kzjyipv2eomab"
     },
-    "w7rirqmxa4ml4uxuo7h6y4xex73zeulo": {
+    "ihb6sadvlxkdqedo2uopcdjcrjk57xov": {
       "name": "tar",
       "version": "1.34",
       "arch": {
         "platform": "linux",
         "platform_os": "ubuntu20.04",
-        "target": {
-          "name": "cascadelake",
-          "vendor": "GenuineIntel",
-          "features": [
-            "adx",
-            "aes",
-            "avx",
-            "avx2",
-            "avx512_vnni",
-            "avx512bw",
-            "avx512cd",
-            "avx512dq",
-            "avx512f",
-            "avx512vl",
-            "bmi1",
-            "bmi2",
-            "clflushopt",
-            "clwb",
-            "f16c",
-            "fma",
-            "mmx",
-            "movbe",
-            "pclmulqdq",
-            "popcnt",
-            "rdrand",
-            "rdseed",
-            "sse",
-            "sse2",
-            "sse4_1",
-            "sse4_2",
-            "ssse3",
-            "xsavec",
-            "xsaveopt"
-          ],
-          "generation": 0,
-          "parents": [
-            "skylake_avx512"
-          ]
-        }
+        "target": "x86_64"
       },
       "compiler": {
         "name": "gcc",
@@ -3493,14 +2011,14 @@
       "dependencies": [
         {
           "name": "bzip2",
-          "hash": "jzuk7wlgdx3yepo455kdralkzn4vmeed",
+          "hash": "l62f6prnl4mfmfskqxtvhcstemom5vte",
           "type": [
             "run"
           ]
         },
         {
           "name": "libiconv",
-          "hash": "m2sofhlfcn3bbmp36qtmel2vambzxmsb",
+          "hash": "m3pvej7psgqle3np2lvba64uvoea2csg",
           "type": [
             "build",
             "link"
@@ -3508,73 +2026,35 @@
         },
         {
           "name": "pigz",
-          "hash": "npkqrtoyfxnm3vm5i7m3ib32qg32gkal",
+          "hash": "4whp3qftojid2hplv7o5dc42jz3pjzyk",
           "type": [
             "run"
           ]
         },
         {
           "name": "xz",
-          "hash": "23g7c3x7n66wgzfpkbhbsv75dznqdu6p",
+          "hash": "wtu7z3rb4klpxi65yoexaa3anjrba37o",
           "type": [
             "run"
           ]
         },
         {
           "name": "zstd",
-          "hash": "le46qo6yshec5xmvnc2twtgxst53pjvf",
+          "hash": "hd2hz4gqvx2i4t2t7nul2sp3s3qmhb7s",
           "type": [
             "run"
           ]
         }
       ],
-      "hash": "w7rirqmxa4ml4uxuo7h6y4xex73zeulo"
+      "hash": "ihb6sadvlxkdqedo2uopcdjcrjk57xov"
     },
-    "npkqrtoyfxnm3vm5i7m3ib32qg32gkal": {
+    "4whp3qftojid2hplv7o5dc42jz3pjzyk": {
       "name": "pigz",
       "version": "2.7",
       "arch": {
         "platform": "linux",
         "platform_os": "ubuntu20.04",
-        "target": {
-          "name": "cascadelake",
-          "vendor": "GenuineIntel",
-          "features": [
-            "adx",
-            "aes",
-            "avx",
-            "avx2",
-            "avx512_vnni",
-            "avx512bw",
-            "avx512cd",
-            "avx512dq",
-            "avx512f",
-            "avx512vl",
-            "bmi1",
-            "bmi2",
-            "clflushopt",
-            "clwb",
-            "f16c",
-            "fma",
-            "mmx",
-            "movbe",
-            "pclmulqdq",
-            "popcnt",
-            "rdrand",
-            "rdseed",
-            "sse",
-            "sse2",
-            "sse4_1",
-            "sse4_2",
-            "ssse3",
-            "xsavec",
-            "xsaveopt"
-          ],
-          "generation": 0,
-          "parents": [
-            "skylake_avx512"
-          ]
-        }
+        "target": "x86_64"
       },
       "compiler": {
         "name": "gcc",
@@ -3594,60 +2074,22 @@
       "dependencies": [
         {
           "name": "zlib",
-          "hash": "pxmyjlb3lf2ukznymvffyio7fq3ojy76",
+          "hash": "4a4hcyyb5o4jztxdzjxzu2sri67xebjf",
           "type": [
             "build",
             "link"
           ]
         }
       ],
-      "hash": "npkqrtoyfxnm3vm5i7m3ib32qg32gkal"
+      "hash": "4whp3qftojid2hplv7o5dc42jz3pjzyk"
     },
-    "le46qo6yshec5xmvnc2twtgxst53pjvf": {
+    "hd2hz4gqvx2i4t2t7nul2sp3s3qmhb7s": {
       "name": "zstd",
       "version": "1.5.2",
       "arch": {
         "platform": "linux",
         "platform_os": "ubuntu20.04",
-        "target": {
-          "name": "cascadelake",
-          "vendor": "GenuineIntel",
-          "features": [
-            "adx",
-            "aes",
-            "avx",
-            "avx2",
-            "avx512_vnni",
-            "avx512bw",
-            "avx512cd",
-            "avx512dq",
-            "avx512f",
-            "avx512vl",
-            "bmi1",
-            "bmi2",
-            "clflushopt",
-            "clwb",
-            "f16c",
-            "fma",
-            "mmx",
-            "movbe",
-            "pclmulqdq",
-            "popcnt",
-            "rdrand",
-            "rdseed",
-            "sse",
-            "sse2",
-            "sse4_1",
-            "sse4_2",
-            "ssse3",
-            "xsavec",
-            "xsaveopt"
-          ],
-          "generation": 0,
-          "parents": [
-            "skylake_avx512"
-          ]
-        }
+        "target": "x86_64"
       },
       "compiler": {
         "name": "gcc",
@@ -3672,53 +2114,15 @@
         "ldlibs": []
       },
       "package_hash": "qepkpvgnidycnst4gail65ea3nxozmfvtoqqg4yogcb7rhmbyluq====",
-      "hash": "le46qo6yshec5xmvnc2twtgxst53pjvf"
+      "hash": "hd2hz4gqvx2i4t2t7nul2sp3s3qmhb7s"
     },
-    "qwcuvb4tpe7wv4odhwvvp3vgksuqgwec": {
+    "aybp4dx2izhl4hmm6zqppx2sabryef2k": {
       "name": "libffi",
       "version": "3.4.2",
       "arch": {
         "platform": "linux",
         "platform_os": "ubuntu20.04",
-        "target": {
-          "name": "cascadelake",
-          "vendor": "GenuineIntel",
-          "features": [
-            "adx",
-            "aes",
-            "avx",
-            "avx2",
-            "avx512_vnni",
-            "avx512bw",
-            "avx512cd",
-            "avx512dq",
-            "avx512f",
-            "avx512vl",
-            "bmi1",
-            "bmi2",
-            "clflushopt",
-            "clwb",
-            "f16c",
-            "fma",
-            "mmx",
-            "movbe",
-            "pclmulqdq",
-            "popcnt",
-            "rdrand",
-            "rdseed",
-            "sse",
-            "sse2",
-            "sse4_1",
-            "sse4_2",
-            "ssse3",
-            "xsavec",
-            "xsaveopt"
-          ],
-          "generation": 0,
-          "parents": [
-            "skylake_avx512"
-          ]
-        }
+        "target": "x86_64"
       },
       "compiler": {
         "name": "gcc",
@@ -3735,53 +2139,15 @@
         "ldlibs": []
       },
       "package_hash": "yhgovws6slvw2ebok2aajhvn3tqtbhdspzhsgsj3srifga5tyodq====",
-      "hash": "qwcuvb4tpe7wv4odhwvvp3vgksuqgwec"
+      "hash": "aybp4dx2izhl4hmm6zqppx2sabryef2k"
     },
-    "cae6pvu4bzcjzqusexjipslcc5yclgwq": {
+    "5agjq6aorthtit7ybxo4fpc5vbb6ymgz": {
       "name": "libxcrypt",
       "version": "4.4.33",
       "arch": {
         "platform": "linux",
         "platform_os": "ubuntu20.04",
-        "target": {
-          "name": "cascadelake",
-          "vendor": "GenuineIntel",
-          "features": [
-            "adx",
-            "aes",
-            "avx",
-            "avx2",
-            "avx512_vnni",
-            "avx512bw",
-            "avx512cd",
-            "avx512dq",
-            "avx512f",
-            "avx512vl",
-            "bmi1",
-            "bmi2",
-            "clflushopt",
-            "clwb",
-            "f16c",
-            "fma",
-            "mmx",
-            "movbe",
-            "pclmulqdq",
-            "popcnt",
-            "rdrand",
-            "rdseed",
-            "sse",
-            "sse2",
-            "sse4_1",
-            "sse4_2",
-            "ssse3",
-            "xsavec",
-            "xsaveopt"
-          ],
-          "generation": 0,
-          "parents": [
-            "skylake_avx512"
-          ]
-        }
+        "target": "x86_64"
       },
       "compiler": {
         "name": "gcc",
@@ -3802,59 +2168,21 @@
       "dependencies": [
         {
           "name": "perl",
-          "hash": "ghidyznr2uxgohumlnlpww6l3oqa4dun",
+          "hash": "ilztdwxzillcczeqar73im3bzvoxamgx",
           "type": [
             "build"
           ]
         }
       ],
-      "hash": "cae6pvu4bzcjzqusexjipslcc5yclgwq"
+      "hash": "5agjq6aorthtit7ybxo4fpc5vbb6ymgz"
     },
-    "ohzd3mr5fb5hnt6z4x2erny2fynpnqdy": {
+    "gpdw6tbjsnujy7mxuui6sce2zohbq2yy": {
       "name": "sqlite",
       "version": "3.40.1",
       "arch": {
         "platform": "linux",
         "platform_os": "ubuntu20.04",
-        "target": {
-          "name": "cascadelake",
-          "vendor": "GenuineIntel",
-          "features": [
-            "adx",
-            "aes",
-            "avx",
-            "avx2",
-            "avx512_vnni",
-            "avx512bw",
-            "avx512cd",
-            "avx512dq",
-            "avx512f",
-            "avx512vl",
-            "bmi1",
-            "bmi2",
-            "clflushopt",
-            "clwb",
-            "f16c",
-            "fma",
-            "mmx",
-            "movbe",
-            "pclmulqdq",
-            "popcnt",
-            "rdrand",
-            "rdseed",
-            "sse",
-            "sse2",
-            "sse4_1",
-            "sse4_2",
-            "ssse3",
-            "xsavec",
-            "xsaveopt"
-          ],
-          "generation": 0,
-          "parents": [
-            "skylake_avx512"
-          ]
-        }
+        "target": "x86_64"
       },
       "compiler": {
         "name": "gcc",
@@ -3879,7 +2207,7 @@
       "dependencies": [
         {
           "name": "readline",
-          "hash": "rfnq7nqzwvkfsz7wcxbu3rrppuu5pyup",
+          "hash": "2d5q4vgm7nyhu5bj64c5j3bim245blub",
           "type": [
             "build",
             "link"
@@ -3887,60 +2215,22 @@
         },
         {
           "name": "zlib",
-          "hash": "pxmyjlb3lf2ukznymvffyio7fq3ojy76",
+          "hash": "4a4hcyyb5o4jztxdzjxzu2sri67xebjf",
           "type": [
             "build",
             "link"
           ]
         }
       ],
-      "hash": "ohzd3mr5fb5hnt6z4x2erny2fynpnqdy"
+      "hash": "gpdw6tbjsnujy7mxuui6sce2zohbq2yy"
     },
-    "harrktatmtwmryqpeaikuln5x3i2lp3r": {
+    "do5lyjwpwcz5e3nmevwo3o4brjeczgsa": {
       "name": "util-linux-uuid",
       "version": "2.38.1",
       "arch": {
         "platform": "linux",
         "platform_os": "ubuntu20.04",
-        "target": {
-          "name": "cascadelake",
-          "vendor": "GenuineIntel",
-          "features": [
-            "adx",
-            "aes",
-            "avx",
-            "avx2",
-            "avx512_vnni",
-            "avx512bw",
-            "avx512cd",
-            "avx512dq",
-            "avx512f",
-            "avx512vl",
-            "bmi1",
-            "bmi2",
-            "clflushopt",
-            "clwb",
-            "f16c",
-            "fma",
-            "mmx",
-            "movbe",
-            "pclmulqdq",
-            "popcnt",
-            "rdrand",
-            "rdseed",
-            "sse",
-            "sse2",
-            "sse4_1",
-            "sse4_2",
-            "ssse3",
-            "xsavec",
-            "xsaveopt"
-          ],
-          "generation": 0,
-          "parents": [
-            "skylake_avx512"
-          ]
-        }
+        "target": "x86_64"
       },
       "compiler": {
         "name": "gcc",
@@ -3960,59 +2250,21 @@
       "dependencies": [
         {
           "name": "pkgconf",
-          "hash": "efjbkluodrd5u3dv3woh3s7l4g3wgdyr",
+          "hash": "k4gexxg5idxhadssdjkifiqkgr5az4bk",
           "type": [
             "build"
           ]
         }
       ],
-      "hash": "harrktatmtwmryqpeaikuln5x3i2lp3r"
+      "hash": "do5lyjwpwcz5e3nmevwo3o4brjeczgsa"
     },
-    "czz5ydik7jk6xj4ldanchtqd5km254rt": {
+    "hn54hhoh4e7u6nabyuucgr5pg3g2mhhq": {
       "name": "netlib-lapack",
       "version": "3.10.1",
       "arch": {
         "platform": "linux",
         "platform_os": "ubuntu20.04",
-        "target": {
-          "name": "cascadelake",
-          "vendor": "GenuineIntel",
-          "features": [
-            "adx",
-            "aes",
-            "avx",
-            "avx2",
-            "avx512_vnni",
-            "avx512bw",
-            "avx512cd",
-            "avx512dq",
-            "avx512f",
-            "avx512vl",
-            "bmi1",
-            "bmi2",
-            "clflushopt",
-            "clwb",
-            "f16c",
-            "fma",
-            "mmx",
-            "movbe",
-            "pclmulqdq",
-            "popcnt",
-            "rdrand",
-            "rdseed",
-            "sse",
-            "sse2",
-            "sse4_1",
-            "sse4_2",
-            "ssse3",
-            "xsavec",
-            "xsaveopt"
-          ],
-          "generation": 0,
-          "parents": [
-            "skylake_avx512"
-          ]
-        }
+        "target": "x86_64"
       },
       "compiler": {
         "name": "gcc",
@@ -4038,59 +2290,21 @@
       "dependencies": [
         {
           "name": "cmake",
-          "hash": "mauutu2p4b3y6tcdhdwypocm64y5vt4w",
+          "hash": "7mgkvd5ixhk2gvf2sduiq5lkm2f6gn4i",
           "type": [
             "build"
           ]
         }
       ],
-      "hash": "czz5ydik7jk6xj4ldanchtqd5km254rt"
+      "hash": "hn54hhoh4e7u6nabyuucgr5pg3g2mhhq"
     },
-    "lparxblzoirk4sxbteeurzjxpslyntfi": {
+    "lgmwrqwalgqrzw3je6cif7lrp2n3upa2": {
       "name": "rocprim",
       "version": "5.4.3",
       "arch": {
         "platform": "linux",
         "platform_os": "ubuntu20.04",
-        "target": {
-          "name": "cascadelake",
-          "vendor": "GenuineIntel",
-          "features": [
-            "adx",
-            "aes",
-            "avx",
-            "avx2",
-            "avx512_vnni",
-            "avx512bw",
-            "avx512cd",
-            "avx512dq",
-            "avx512f",
-            "avx512vl",
-            "bmi1",
-            "bmi2",
-            "clflushopt",
-            "clwb",
-            "f16c",
-            "fma",
-            "mmx",
-            "movbe",
-            "pclmulqdq",
-            "popcnt",
-            "rdrand",
-            "rdseed",
-            "sse",
-            "sse2",
-            "sse4_1",
-            "sse4_2",
-            "ssse3",
-            "xsavec",
-            "xsaveopt"
-          ],
-          "generation": 0,
-          "parents": [
-            "skylake_avx512"
-          ]
-        }
+        "target": "x86_64"
       },
       "compiler": {
         "name": "gcc",
@@ -4117,53 +2331,15 @@
         "extra_attributes": {}
       },
       "package_hash": "bu2m6y5uxnqh2gekzhytnkkdwoxzmdazshgqip56zxtnsagql3ja====",
-      "hash": "lparxblzoirk4sxbteeurzjxpslyntfi"
+      "hash": "lgmwrqwalgqrzw3je6cif7lrp2n3upa2"
     },
-    "pjinuavz6667yg4ojqy4r7sjtunoufru": {
+    "e6bzhtltseolkjmymjbtsu6rbhi7llzu": {
       "name": "rocrand",
       "version": "5.4.3",
       "arch": {
         "platform": "linux",
         "platform_os": "ubuntu20.04",
-        "target": {
-          "name": "cascadelake",
-          "vendor": "GenuineIntel",
-          "features": [
-            "adx",
-            "aes",
-            "avx",
-            "avx2",
-            "avx512_vnni",
-            "avx512bw",
-            "avx512cd",
-            "avx512dq",
-            "avx512f",
-            "avx512vl",
-            "bmi1",
-            "bmi2",
-            "clflushopt",
-            "clwb",
-            "f16c",
-            "fma",
-            "mmx",
-            "movbe",
-            "pclmulqdq",
-            "popcnt",
-            "rdrand",
-            "rdseed",
-            "sse",
-            "sse2",
-            "sse4_1",
-            "sse4_2",
-            "ssse3",
-            "xsavec",
-            "xsaveopt"
-          ],
-          "generation": 0,
-          "parents": [
-            "skylake_avx512"
-          ]
-        }
+        "target": "x86_64"
       },
       "compiler": {
         "name": "gcc",
@@ -4196,53 +2372,15 @@
         "a35e6895f4ab85c0eab224753f1f81117a46b2dffc68912e860869b539728187"
       ],
       "package_hash": "at5ums3uek6qrk3nde6vgfnwv7nkyrgcmrn65prd7cbczvzvi3ea====",
-      "hash": "pjinuavz6667yg4ojqy4r7sjtunoufru"
+      "hash": "e6bzhtltseolkjmymjbtsu6rbhi7llzu"
     },
-    "mczim2vtuhkoxvcvoeplzohbe6wblrkd": {
+    "oyk7qnckzz72wdr3gtqb53fk4gaozbui": {
       "name": "rocsparse",
       "version": "5.4.3",
       "arch": {
         "platform": "linux",
         "platform_os": "ubuntu20.04",
-        "target": {
-          "name": "cascadelake",
-          "vendor": "GenuineIntel",
-          "features": [
-            "adx",
-            "aes",
-            "avx",
-            "avx2",
-            "avx512_vnni",
-            "avx512bw",
-            "avx512cd",
-            "avx512dq",
-            "avx512f",
-            "avx512vl",
-            "bmi1",
-            "bmi2",
-            "clflushopt",
-            "clwb",
-            "f16c",
-            "fma",
-            "mmx",
-            "movbe",
-            "pclmulqdq",
-            "popcnt",
-            "rdrand",
-            "rdseed",
-            "sse",
-            "sse2",
-            "sse4_1",
-            "sse4_2",
-            "ssse3",
-            "xsavec",
-            "xsaveopt"
-          ],
-          "generation": 0,
-          "parents": [
-            "skylake_avx512"
-          ]
-        }
+        "target": "x86_64"
       },
       "compiler": {
         "name": "gcc",
@@ -4270,53 +2408,15 @@
         "extra_attributes": {}
       },
       "package_hash": "vfnlxepftzv3hvbiioalrouncyno26zb4jl4v52h6btp3cny52va====",
-      "hash": "mczim2vtuhkoxvcvoeplzohbe6wblrkd"
+      "hash": "oyk7qnckzz72wdr3gtqb53fk4gaozbui"
     },
-    "kry6ixsvjazvjdxxqaix4vnxahqx6w22": {
+    "rfdgcqjzu5u7ld35d5m56puy2mvzlhhl": {
       "name": "rocthrust",
       "version": "5.4.3",
       "arch": {
         "platform": "linux",
         "platform_os": "ubuntu20.04",
-        "target": {
-          "name": "cascadelake",
-          "vendor": "GenuineIntel",
-          "features": [
-            "adx",
-            "aes",
-            "avx",
-            "avx2",
-            "avx512_vnni",
-            "avx512bw",
-            "avx512cd",
-            "avx512dq",
-            "avx512f",
-            "avx512vl",
-            "bmi1",
-            "bmi2",
-            "clflushopt",
-            "clwb",
-            "f16c",
-            "fma",
-            "mmx",
-            "movbe",
-            "pclmulqdq",
-            "popcnt",
-            "rdrand",
-            "rdseed",
-            "sse",
-            "sse2",
-            "sse4_1",
-            "sse4_2",
-            "ssse3",
-            "xsavec",
-            "xsaveopt"
-          ],
-          "generation": 0,
-          "parents": [
-            "skylake_avx512"
-          ]
-        }
+        "target": "x86_64"
       },
       "compiler": {
         "name": "gcc",
@@ -4343,53 +2443,15 @@
         "extra_attributes": {}
       },
       "package_hash": "joq5oz4zdld26v6dfi2o23qtjf7gq2urvox6yxilm3m77qgw4k5a====",
-      "hash": "kry6ixsvjazvjdxxqaix4vnxahqx6w22"
+      "hash": "rfdgcqjzu5u7ld35d5m56puy2mvzlhhl"
     },
-    "d35tmc3vgxkunqdjo6ck4hdex74iri6u": {
+    "dogqwhxu6yzhmlsk276ngrlbpw2mhxka": {
       "name": "netcdf-c",
       "version": "4.7.4",
       "arch": {
         "platform": "linux",
         "platform_os": "ubuntu20.04",
-        "target": {
-          "name": "cascadelake",
-          "vendor": "GenuineIntel",
-          "features": [
-            "adx",
-            "aes",
-            "avx",
-            "avx2",
-            "avx512_vnni",
-            "avx512bw",
-            "avx512cd",
-            "avx512dq",
-            "avx512f",
-            "avx512vl",
-            "bmi1",
-            "bmi2",
-            "clflushopt",
-            "clwb",
-            "f16c",
-            "fma",
-            "mmx",
-            "movbe",
-            "pclmulqdq",
-            "popcnt",
-            "rdrand",
-            "rdseed",
-            "sse",
-            "sse2",
-            "sse4_1",
-            "sse4_2",
-            "ssse3",
-            "xsavec",
-            "xsaveopt"
-          ],
-          "generation": 0,
-          "parents": [
-            "skylake_avx512"
-          ]
-        }
+        "target": "x86_64"
       },
       "compiler": {
         "name": "gcc",
@@ -4424,7 +2486,7 @@
       "dependencies": [
         {
           "name": "hdf5",
-          "hash": "4aqzz6vcp7max4a6evn2clc46hbojpwo",
+          "hash": "bfdezhvn2pkr62e6fyutplrudihxhnar",
           "type": [
             "build",
             "link"
@@ -4432,14 +2494,14 @@
         },
         {
           "name": "m4",
-          "hash": "a5lbbtk2db573dn2e6ocw6nd4efdbvka",
+          "hash": "kub57xstdlwdaf37r5m2zlwgv3p35jyj",
           "type": [
             "build"
           ]
         },
         {
           "name": "mpich",
-          "hash": "hzrrrhzra5ggmqjhbjyawthjhfeswjdq",
+          "hash": "mqyckyt7dx446puub74tzrfcqcrx4plk",
           "type": [
             "build",
             "link"
@@ -4447,7 +2509,7 @@
         },
         {
           "name": "parallel-netcdf",
-          "hash": "adx4uk24hltxcgbro6cxec7nytkkbczf",
+          "hash": "6qnzzv324knxbka6ivnbb6auox374lhg",
           "type": [
             "build",
             "link"
@@ -4455,60 +2517,22 @@
         },
         {
           "name": "zlib",
-          "hash": "pxmyjlb3lf2ukznymvffyio7fq3ojy76",
+          "hash": "4a4hcyyb5o4jztxdzjxzu2sri67xebjf",
           "type": [
             "build",
             "link"
           ]
         }
       ],
-      "hash": "d35tmc3vgxkunqdjo6ck4hdex74iri6u"
+      "hash": "dogqwhxu6yzhmlsk276ngrlbpw2mhxka"
     },
-    "4aqzz6vcp7max4a6evn2clc46hbojpwo": {
+    "bfdezhvn2pkr62e6fyutplrudihxhnar": {
       "name": "hdf5",
       "version": "1.10.7",
       "arch": {
         "platform": "linux",
         "platform_os": "ubuntu20.04",
-        "target": {
-          "name": "cascadelake",
-          "vendor": "GenuineIntel",
-          "features": [
-            "adx",
-            "aes",
-            "avx",
-            "avx2",
-            "avx512_vnni",
-            "avx512bw",
-            "avx512cd",
-            "avx512dq",
-            "avx512f",
-            "avx512vl",
-            "bmi1",
-            "bmi2",
-            "clflushopt",
-            "clwb",
-            "f16c",
-            "fma",
-            "mmx",
-            "movbe",
-            "pclmulqdq",
-            "popcnt",
-            "rdrand",
-            "rdseed",
-            "sse",
-            "sse2",
-            "sse4_1",
-            "sse4_2",
-            "ssse3",
-            "xsavec",
-            "xsaveopt"
-          ],
-          "generation": 0,
-          "parents": [
-            "skylake_avx512"
-          ]
-        }
+        "target": "x86_64"
       },
       "compiler": {
         "name": "gcc",
@@ -4546,14 +2570,14 @@
       "dependencies": [
         {
           "name": "cmake",
-          "hash": "mauutu2p4b3y6tcdhdwypocm64y5vt4w",
+          "hash": "7mgkvd5ixhk2gvf2sduiq5lkm2f6gn4i",
           "type": [
             "build"
           ]
         },
         {
           "name": "mpich",
-          "hash": "hzrrrhzra5ggmqjhbjyawthjhfeswjdq",
+          "hash": "mqyckyt7dx446puub74tzrfcqcrx4plk",
           "type": [
             "build",
             "link"
@@ -4561,67 +2585,29 @@
         },
         {
           "name": "pkgconf",
-          "hash": "efjbkluodrd5u3dv3woh3s7l4g3wgdyr",
+          "hash": "k4gexxg5idxhadssdjkifiqkgr5az4bk",
           "type": [
             "run"
           ]
         },
         {
           "name": "zlib",
-          "hash": "pxmyjlb3lf2ukznymvffyio7fq3ojy76",
+          "hash": "4a4hcyyb5o4jztxdzjxzu2sri67xebjf",
           "type": [
             "build",
             "link"
           ]
         }
       ],
-      "hash": "4aqzz6vcp7max4a6evn2clc46hbojpwo"
+      "hash": "bfdezhvn2pkr62e6fyutplrudihxhnar"
     },
-    "adx4uk24hltxcgbro6cxec7nytkkbczf": {
+    "6qnzzv324knxbka6ivnbb6auox374lhg": {
       "name": "parallel-netcdf",
       "version": "1.12.2",
       "arch": {
         "platform": "linux",
         "platform_os": "ubuntu20.04",
-        "target": {
-          "name": "cascadelake",
-          "vendor": "GenuineIntel",
-          "features": [
-            "adx",
-            "aes",
-            "avx",
-            "avx2",
-            "avx512_vnni",
-            "avx512bw",
-            "avx512cd",
-            "avx512dq",
-            "avx512f",
-            "avx512vl",
-            "bmi1",
-            "bmi2",
-            "clflushopt",
-            "clwb",
-            "f16c",
-            "fma",
-            "mmx",
-            "movbe",
-            "pclmulqdq",
-            "popcnt",
-            "rdrand",
-            "rdseed",
-            "sse",
-            "sse2",
-            "sse4_1",
-            "sse4_2",
-            "ssse3",
-            "xsavec",
-            "xsaveopt"
-          ],
-          "generation": 0,
-          "parents": [
-            "skylake_avx512"
-          ]
-        }
+        "target": "x86_64"
       },
       "compiler": {
         "name": "gcc",
@@ -4646,14 +2632,14 @@
       "dependencies": [
         {
           "name": "m4",
-          "hash": "a5lbbtk2db573dn2e6ocw6nd4efdbvka",
+          "hash": "kub57xstdlwdaf37r5m2zlwgv3p35jyj",
           "type": [
             "build"
           ]
         },
         {
           "name": "mpich",
-          "hash": "hzrrrhzra5ggmqjhbjyawthjhfeswjdq",
+          "hash": "mqyckyt7dx446puub74tzrfcqcrx4plk",
           "type": [
             "build",
             "link"
@@ -4661,59 +2647,21 @@
         },
         {
           "name": "perl",
-          "hash": "ghidyznr2uxgohumlnlpww6l3oqa4dun",
+          "hash": "ilztdwxzillcczeqar73im3bzvoxamgx",
           "type": [
             "build"
           ]
         }
       ],
-      "hash": "adx4uk24hltxcgbro6cxec7nytkkbczf"
+      "hash": "6qnzzv324knxbka6ivnbb6auox374lhg"
     },
-    "gh2eib4hobt4chh3q5p4u3tbwhj6kyqk": {
+    "pvrl7j5rg4dnkmz52x6ttkez3w2reh4a": {
       "name": "nalu-wind",
       "version": "master",
       "arch": {
         "platform": "linux",
         "platform_os": "ubuntu20.04",
-        "target": {
-          "name": "cascadelake",
-          "vendor": "GenuineIntel",
-          "features": [
-            "adx",
-            "aes",
-            "avx",
-            "avx2",
-            "avx512_vnni",
-            "avx512bw",
-            "avx512cd",
-            "avx512dq",
-            "avx512f",
-            "avx512vl",
-            "bmi1",
-            "bmi2",
-            "clflushopt",
-            "clwb",
-            "f16c",
-            "fma",
-            "mmx",
-            "movbe",
-            "pclmulqdq",
-            "popcnt",
-            "rdrand",
-            "rdseed",
-            "sse",
-            "sse2",
-            "sse4_1",
-            "sse4_2",
-            "ssse3",
-            "xsavec",
-            "xsaveopt"
-          ],
-          "generation": 0,
-          "parents": [
-            "skylake_avx512"
-          ]
-        }
+        "target": "x86_64"
       },
       "compiler": {
         "name": "gcc",
@@ -4760,14 +2708,14 @@
       "dependencies": [
         {
           "name": "cmake",
-          "hash": "mauutu2p4b3y6tcdhdwypocm64y5vt4w",
+          "hash": "7mgkvd5ixhk2gvf2sduiq5lkm2f6gn4i",
           "type": [
             "build"
           ]
         },
         {
           "name": "hip",
-          "hash": "kerlnttvbf736mj4ew2i7ayydnrsu7wg",
+          "hash": "qf2vtz2lzvjkqyrf2lo2v7tgmu2i66hu",
           "type": [
             "build",
             "link"
@@ -4775,7 +2723,7 @@
         },
         {
           "name": "hsa-rocr-dev",
-          "hash": "w7wgrnxlo7oombe3tmmfy6msef6h4773",
+          "hash": "k62edx3xsbh7sj6rpunbg3lczcrmwnzf",
           "type": [
             "build",
             "link"
@@ -4783,7 +2731,7 @@
         },
         {
           "name": "hypre",
-          "hash": "sbpajbtyydvtcid3vsug3br6ygxdsepq",
+          "hash": "msp2lsvczyihe3mycff66ajr45ntg6jl",
           "type": [
             "build",
             "link"
@@ -4791,7 +2739,7 @@
         },
         {
           "name": "llvm-amdgpu",
-          "hash": "rpq35wu7v7zb2lw7fa7jbuht3ifz3xdr",
+          "hash": "ihrq566rfkzbh2zeixwcueqmxbnbsefl",
           "type": [
             "build",
             "link"
@@ -4799,7 +2747,7 @@
         },
         {
           "name": "mpich",
-          "hash": "hzrrrhzra5ggmqjhbjyawthjhfeswjdq",
+          "hash": "mqyckyt7dx446puub74tzrfcqcrx4plk",
           "type": [
             "build",
             "link"
@@ -4807,7 +2755,7 @@
         },
         {
           "name": "nccmp",
-          "hash": "kx44r2ud3w7aij2rlkwovuydev3mqpab",
+          "hash": "p7nhox6kxyt46nuknxghwchjxvjri5up",
           "type": [
             "build",
             "link"
@@ -4815,7 +2763,7 @@
         },
         {
           "name": "netcdf-c",
-          "hash": "d35tmc3vgxkunqdjo6ck4hdex74iri6u",
+          "hash": "dogqwhxu6yzhmlsk276ngrlbpw2mhxka",
           "type": [
             "build",
             "link"
@@ -4823,7 +2771,7 @@
         },
         {
           "name": "tioga",
-          "hash": "y5zx7zgxrwxcd7wkvegt6lp4pj375a2a",
+          "hash": "uyer326o55bejnebg3tonkcuftou7ay3",
           "type": [
             "build",
             "link"
@@ -4831,7 +2779,7 @@
         },
         {
           "name": "trilinos",
-          "hash": "gusct74pbqxbbqztmsslv4okfgpv5h6p",
+          "hash": "qdtbpgcnhd7qtv5ptolxfpzijfcuosdm",
           "type": [
             "build",
             "link"
@@ -4839,60 +2787,22 @@
         },
         {
           "name": "yaml-cpp",
-          "hash": "ijww6ct5xqcrpojnsbtyt7znpekipqoz",
+          "hash": "cxb6ojarxbnyynlso576cegwa435n6s6",
           "type": [
             "build",
             "link"
           ]
         }
       ],
-      "hash": "gh2eib4hobt4chh3q5p4u3tbwhj6kyqk"
+      "hash": "pvrl7j5rg4dnkmz52x6ttkez3w2reh4a"
     },
-    "kx44r2ud3w7aij2rlkwovuydev3mqpab": {
+    "p7nhox6kxyt46nuknxghwchjxvjri5up": {
       "name": "nccmp",
       "version": "1.9.0.1",
       "arch": {
         "platform": "linux",
         "platform_os": "ubuntu20.04",
-        "target": {
-          "name": "cascadelake",
-          "vendor": "GenuineIntel",
-          "features": [
-            "adx",
-            "aes",
-            "avx",
-            "avx2",
-            "avx512_vnni",
-            "avx512bw",
-            "avx512cd",
-            "avx512dq",
-            "avx512f",
-            "avx512vl",
-            "bmi1",
-            "bmi2",
-            "clflushopt",
-            "clwb",
-            "f16c",
-            "fma",
-            "mmx",
-            "movbe",
-            "pclmulqdq",
-            "popcnt",
-            "rdrand",
-            "rdseed",
-            "sse",
-            "sse2",
-            "sse4_1",
-            "sse4_2",
-            "ssse3",
-            "xsavec",
-            "xsaveopt"
-          ],
-          "generation": 0,
-          "parents": [
-            "skylake_avx512"
-          ]
-        }
+        "target": "x86_64"
       },
       "compiler": {
         "name": "gcc",
@@ -4914,67 +2824,29 @@
       "dependencies": [
         {
           "name": "cmake",
-          "hash": "mauutu2p4b3y6tcdhdwypocm64y5vt4w",
+          "hash": "7mgkvd5ixhk2gvf2sduiq5lkm2f6gn4i",
           "type": [
             "build"
           ]
         },
         {
           "name": "netcdf-c",
-          "hash": "d35tmc3vgxkunqdjo6ck4hdex74iri6u",
+          "hash": "dogqwhxu6yzhmlsk276ngrlbpw2mhxka",
           "type": [
             "build",
             "link"
           ]
         }
       ],
-      "hash": "kx44r2ud3w7aij2rlkwovuydev3mqpab"
+      "hash": "p7nhox6kxyt46nuknxghwchjxvjri5up"
     },
-    "y5zx7zgxrwxcd7wkvegt6lp4pj375a2a": {
+    "uyer326o55bejnebg3tonkcuftou7ay3": {
       "name": "tioga",
       "version": "develop",
       "arch": {
         "platform": "linux",
         "platform_os": "ubuntu20.04",
-        "target": {
-          "name": "cascadelake",
-          "vendor": "GenuineIntel",
-          "features": [
-            "adx",
-            "aes",
-            "avx",
-            "avx2",
-            "avx512_vnni",
-            "avx512bw",
-            "avx512cd",
-            "avx512dq",
-            "avx512f",
-            "avx512vl",
-            "bmi1",
-            "bmi2",
-            "clflushopt",
-            "clwb",
-            "f16c",
-            "fma",
-            "mmx",
-            "movbe",
-            "pclmulqdq",
-            "popcnt",
-            "rdrand",
-            "rdseed",
-            "sse",
-            "sse2",
-            "sse4_1",
-            "sse4_2",
-            "ssse3",
-            "xsavec",
-            "xsaveopt"
-          ],
-          "generation": 0,
-          "parents": [
-            "skylake_avx512"
-          ]
-        }
+        "target": "x86_64"
       },
       "compiler": {
         "name": "gcc",
@@ -5002,67 +2874,29 @@
       "dependencies": [
         {
           "name": "cmake",
-          "hash": "mauutu2p4b3y6tcdhdwypocm64y5vt4w",
+          "hash": "7mgkvd5ixhk2gvf2sduiq5lkm2f6gn4i",
           "type": [
             "build"
           ]
         },
         {
           "name": "mpich",
-          "hash": "hzrrrhzra5ggmqjhbjyawthjhfeswjdq",
+          "hash": "mqyckyt7dx446puub74tzrfcqcrx4plk",
           "type": [
             "build",
             "link"
           ]
         }
       ],
-      "hash": "y5zx7zgxrwxcd7wkvegt6lp4pj375a2a"
+      "hash": "uyer326o55bejnebg3tonkcuftou7ay3"
     },
-    "gusct74pbqxbbqztmsslv4okfgpv5h6p": {
+    "qdtbpgcnhd7qtv5ptolxfpzijfcuosdm": {
       "name": "trilinos",
       "version": "13.4.0.2023.02.28",
       "arch": {
         "platform": "linux",
         "platform_os": "ubuntu20.04",
-        "target": {
-          "name": "cascadelake",
-          "vendor": "GenuineIntel",
-          "features": [
-            "adx",
-            "aes",
-            "avx",
-            "avx2",
-            "avx512_vnni",
-            "avx512bw",
-            "avx512cd",
-            "avx512dq",
-            "avx512f",
-            "avx512vl",
-            "bmi1",
-            "bmi2",
-            "clflushopt",
-            "clwb",
-            "f16c",
-            "fma",
-            "mmx",
-            "movbe",
-            "pclmulqdq",
-            "popcnt",
-            "rdrand",
-            "rdseed",
-            "sse",
-            "sse2",
-            "sse4_1",
-            "sse4_2",
-            "ssse3",
-            "xsavec",
-            "xsaveopt"
-          ],
-          "generation": 0,
-          "parents": [
-            "skylake_avx512"
-          ]
-        }
+        "target": "x86_64"
       },
       "compiler": {
         "name": "gcc",
@@ -5163,7 +2997,7 @@
       "dependencies": [
         {
           "name": "boost",
-          "hash": "htfxysi66oy746nmdvy2ozqg2s7bewot",
+          "hash": "iayvqzh6nnrns47qg4emx5ykdopnhdl2",
           "type": [
             "build",
             "link"
@@ -5171,7 +3005,7 @@
         },
         {
           "name": "cgns",
-          "hash": "vjud4eo6oa7h6p37tgv2telkcibzg5yr",
+          "hash": "bqzjrgkjntj2dpxim4y2bxdwajdllbzm",
           "type": [
             "build",
             "link"
@@ -5179,14 +3013,14 @@
         },
         {
           "name": "cmake",
-          "hash": "mauutu2p4b3y6tcdhdwypocm64y5vt4w",
+          "hash": "7mgkvd5ixhk2gvf2sduiq5lkm2f6gn4i",
           "type": [
             "build"
           ]
         },
         {
           "name": "hdf5",
-          "hash": "4aqzz6vcp7max4a6evn2clc46hbojpwo",
+          "hash": "bfdezhvn2pkr62e6fyutplrudihxhnar",
           "type": [
             "build",
             "link"
@@ -5194,7 +3028,7 @@
         },
         {
           "name": "hip",
-          "hash": "kerlnttvbf736mj4ew2i7ayydnrsu7wg",
+          "hash": "qf2vtz2lzvjkqyrf2lo2v7tgmu2i66hu",
           "type": [
             "build",
             "link"
@@ -5202,7 +3036,7 @@
         },
         {
           "name": "hsa-rocr-dev",
-          "hash": "w7wgrnxlo7oombe3tmmfy6msef6h4773",
+          "hash": "k62edx3xsbh7sj6rpunbg3lczcrmwnzf",
           "type": [
             "build",
             "link"
@@ -5210,7 +3044,7 @@
         },
         {
           "name": "hwloc",
-          "hash": "pjfjuc72ptsrwo6bw2o6krolw3wddiqi",
+          "hash": "4b3sb3ut5hm2mq6qi72gltn6zlumbvuu",
           "type": [
             "build",
             "link"
@@ -5218,7 +3052,7 @@
         },
         {
           "name": "llvm-amdgpu",
-          "hash": "rpq35wu7v7zb2lw7fa7jbuht3ifz3xdr",
+          "hash": "ihrq566rfkzbh2zeixwcueqmxbnbsefl",
           "type": [
             "build",
             "link"
@@ -5226,7 +3060,7 @@
         },
         {
           "name": "matio",
-          "hash": "zgiurtmpnt2qd3g4563gis4gfogzn5wv",
+          "hash": "7ccgsspivsggg3ntozztmoat57bpar57",
           "type": [
             "build",
             "link"
@@ -5234,7 +3068,7 @@
         },
         {
           "name": "metis",
-          "hash": "zdkdkz4zpbh3edmh3nsi2iou3gc66rfn",
+          "hash": "fv7i7ztwj3yx6ttixhaz6gkrxx7rkpxu",
           "type": [
             "build",
             "link"
@@ -5242,7 +3076,7 @@
         },
         {
           "name": "mpich",
-          "hash": "hzrrrhzra5ggmqjhbjyawthjhfeswjdq",
+          "hash": "mqyckyt7dx446puub74tzrfcqcrx4plk",
           "type": [
             "build",
             "link"
@@ -5250,7 +3084,7 @@
         },
         {
           "name": "netcdf-c",
-          "hash": "d35tmc3vgxkunqdjo6ck4hdex74iri6u",
+          "hash": "dogqwhxu6yzhmlsk276ngrlbpw2mhxka",
           "type": [
             "build",
             "link"
@@ -5258,7 +3092,7 @@
         },
         {
           "name": "netlib-lapack",
-          "hash": "czz5ydik7jk6xj4ldanchtqd5km254rt",
+          "hash": "hn54hhoh4e7u6nabyuucgr5pg3g2mhhq",
           "type": [
             "build",
             "link"
@@ -5266,7 +3100,7 @@
         },
         {
           "name": "parallel-netcdf",
-          "hash": "adx4uk24hltxcgbro6cxec7nytkkbczf",
+          "hash": "6qnzzv324knxbka6ivnbb6auox374lhg",
           "type": [
             "build",
             "link"
@@ -5274,7 +3108,7 @@
         },
         {
           "name": "parmetis",
-          "hash": "objgtokidan4edvdaav6bu4x3imqpgpt",
+          "hash": "m3lxs32ogtemhmu7o44o46wgizqpxiyd",
           "type": [
             "build",
             "link"
@@ -5282,60 +3116,22 @@
         },
         {
           "name": "zlib",
-          "hash": "pxmyjlb3lf2ukznymvffyio7fq3ojy76",
+          "hash": "4a4hcyyb5o4jztxdzjxzu2sri67xebjf",
           "type": [
             "build",
             "link"
           ]
         }
       ],
-      "hash": "gusct74pbqxbbqztmsslv4okfgpv5h6p"
+      "hash": "qdtbpgcnhd7qtv5ptolxfpzijfcuosdm"
     },
-    "htfxysi66oy746nmdvy2ozqg2s7bewot": {
+    "iayvqzh6nnrns47qg4emx5ykdopnhdl2": {
       "name": "boost",
       "version": "1.76.0",
       "arch": {
         "platform": "linux",
         "platform_os": "ubuntu20.04",
-        "target": {
-          "name": "cascadelake",
-          "vendor": "GenuineIntel",
-          "features": [
-            "adx",
-            "aes",
-            "avx",
-            "avx2",
-            "avx512_vnni",
-            "avx512bw",
-            "avx512cd",
-            "avx512dq",
-            "avx512f",
-            "avx512vl",
-            "bmi1",
-            "bmi2",
-            "clflushopt",
-            "clwb",
-            "f16c",
-            "fma",
-            "mmx",
-            "movbe",
-            "pclmulqdq",
-            "popcnt",
-            "rdrand",
-            "rdseed",
-            "sse",
-            "sse2",
-            "sse4_1",
-            "sse4_2",
-            "ssse3",
-            "xsavec",
-            "xsaveopt"
-          ],
-          "generation": 0,
-          "parents": [
-            "skylake_avx512"
-          ]
-        }
+        "target": "x86_64"
       },
       "compiler": {
         "name": "gcc",
@@ -5402,53 +3198,15 @@
         "a440f9696d3bbb77e7eab1516c004730f622e59c71d39960b472026ef92f88e8"
       ],
       "package_hash": "gq5pg4qbvkrsmjagcaesyzmn2e4kqmuhgkokn73u4bwhv4wncwza====",
-      "hash": "htfxysi66oy746nmdvy2ozqg2s7bewot"
+      "hash": "iayvqzh6nnrns47qg4emx5ykdopnhdl2"
     },
-    "vjud4eo6oa7h6p37tgv2telkcibzg5yr": {
+    "bqzjrgkjntj2dpxim4y2bxdwajdllbzm": {
       "name": "cgns",
       "version": "4.3.0",
       "arch": {
         "platform": "linux",
         "platform_os": "ubuntu20.04",
-        "target": {
-          "name": "cascadelake",
-          "vendor": "GenuineIntel",
-          "features": [
-            "adx",
-            "aes",
-            "avx",
-            "avx2",
-            "avx512_vnni",
-            "avx512bw",
-            "avx512cd",
-            "avx512dq",
-            "avx512f",
-            "avx512vl",
-            "bmi1",
-            "bmi2",
-            "clflushopt",
-            "clwb",
-            "f16c",
-            "fma",
-            "mmx",
-            "movbe",
-            "pclmulqdq",
-            "popcnt",
-            "rdrand",
-            "rdseed",
-            "sse",
-            "sse2",
-            "sse4_1",
-            "sse4_2",
-            "ssse3",
-            "xsavec",
-            "xsaveopt"
-          ],
-          "generation": 0,
-          "parents": [
-            "skylake_avx512"
-          ]
-        }
+        "target": "x86_64"
       },
       "compiler": {
         "name": "gcc",
@@ -5481,14 +3239,14 @@
       "dependencies": [
         {
           "name": "cmake",
-          "hash": "mauutu2p4b3y6tcdhdwypocm64y5vt4w",
+          "hash": "7mgkvd5ixhk2gvf2sduiq5lkm2f6gn4i",
           "type": [
             "build"
           ]
         },
         {
           "name": "hdf5",
-          "hash": "4aqzz6vcp7max4a6evn2clc46hbojpwo",
+          "hash": "bfdezhvn2pkr62e6fyutplrudihxhnar",
           "type": [
             "build",
             "link"
@@ -5496,60 +3254,22 @@
         },
         {
           "name": "mpich",
-          "hash": "hzrrrhzra5ggmqjhbjyawthjhfeswjdq",
+          "hash": "mqyckyt7dx446puub74tzrfcqcrx4plk",
           "type": [
             "build",
             "link"
           ]
         }
       ],
-      "hash": "vjud4eo6oa7h6p37tgv2telkcibzg5yr"
+      "hash": "bqzjrgkjntj2dpxim4y2bxdwajdllbzm"
     },
-    "zgiurtmpnt2qd3g4563gis4gfogzn5wv": {
+    "7ccgsspivsggg3ntozztmoat57bpar57": {
       "name": "matio",
       "version": "1.5.17",
       "arch": {
         "platform": "linux",
         "platform_os": "ubuntu20.04",
-        "target": {
-          "name": "cascadelake",
-          "vendor": "GenuineIntel",
-          "features": [
-            "adx",
-            "aes",
-            "avx",
-            "avx2",
-            "avx512_vnni",
-            "avx512bw",
-            "avx512cd",
-            "avx512dq",
-            "avx512f",
-            "avx512vl",
-            "bmi1",
-            "bmi2",
-            "clflushopt",
-            "clwb",
-            "f16c",
-            "fma",
-            "mmx",
-            "movbe",
-            "pclmulqdq",
-            "popcnt",
-            "rdrand",
-            "rdseed",
-            "sse",
-            "sse2",
-            "sse4_1",
-            "sse4_2",
-            "ssse3",
-            "xsavec",
-            "xsaveopt"
-          ],
-          "generation": 0,
-          "parents": [
-            "skylake_avx512"
-          ]
-        }
+        "target": "x86_64"
       },
       "compiler": {
         "name": "gcc",
@@ -5572,7 +3292,7 @@
       "dependencies": [
         {
           "name": "hdf5",
-          "hash": "4aqzz6vcp7max4a6evn2clc46hbojpwo",
+          "hash": "bfdezhvn2pkr62e6fyutplrudihxhnar",
           "type": [
             "build",
             "link"
@@ -5580,60 +3300,22 @@
         },
         {
           "name": "zlib",
-          "hash": "pxmyjlb3lf2ukznymvffyio7fq3ojy76",
+          "hash": "4a4hcyyb5o4jztxdzjxzu2sri67xebjf",
           "type": [
             "build",
             "link"
           ]
         }
       ],
-      "hash": "zgiurtmpnt2qd3g4563gis4gfogzn5wv"
+      "hash": "7ccgsspivsggg3ntozztmoat57bpar57"
     },
-    "zdkdkz4zpbh3edmh3nsi2iou3gc66rfn": {
+    "fv7i7ztwj3yx6ttixhaz6gkrxx7rkpxu": {
       "name": "metis",
       "version": "5.1.0",
       "arch": {
         "platform": "linux",
         "platform_os": "ubuntu20.04",
-        "target": {
-          "name": "cascadelake",
-          "vendor": "GenuineIntel",
-          "features": [
-            "adx",
-            "aes",
-            "avx",
-            "avx2",
-            "avx512_vnni",
-            "avx512bw",
-            "avx512cd",
-            "avx512dq",
-            "avx512f",
-            "avx512vl",
-            "bmi1",
-            "bmi2",
-            "clflushopt",
-            "clwb",
-            "f16c",
-            "fma",
-            "mmx",
-            "movbe",
-            "pclmulqdq",
-            "popcnt",
-            "rdrand",
-            "rdseed",
-            "sse",
-            "sse2",
-            "sse4_1",
-            "sse4_2",
-            "ssse3",
-            "xsavec",
-            "xsaveopt"
-          ],
-          "generation": 0,
-          "parents": [
-            "skylake_avx512"
-          ]
-        }
+        "target": "x86_64"
       },
       "compiler": {
         "name": "gcc",
@@ -5669,59 +3351,21 @@
       "dependencies": [
         {
           "name": "cmake",
-          "hash": "mauutu2p4b3y6tcdhdwypocm64y5vt4w",
+          "hash": "7mgkvd5ixhk2gvf2sduiq5lkm2f6gn4i",
           "type": [
             "build"
           ]
         }
       ],
-      "hash": "zdkdkz4zpbh3edmh3nsi2iou3gc66rfn"
+      "hash": "fv7i7ztwj3yx6ttixhaz6gkrxx7rkpxu"
     },
-    "objgtokidan4edvdaav6bu4x3imqpgpt": {
+    "m3lxs32ogtemhmu7o44o46wgizqpxiyd": {
       "name": "parmetis",
       "version": "4.0.3",
       "arch": {
         "platform": "linux",
         "platform_os": "ubuntu20.04",
-        "target": {
-          "name": "cascadelake",
-          "vendor": "GenuineIntel",
-          "features": [
-            "adx",
-            "aes",
-            "avx",
-            "avx2",
-            "avx512_vnni",
-            "avx512bw",
-            "avx512cd",
-            "avx512dq",
-            "avx512f",
-            "avx512vl",
-            "bmi1",
-            "bmi2",
-            "clflushopt",
-            "clwb",
-            "f16c",
-            "fma",
-            "mmx",
-            "movbe",
-            "pclmulqdq",
-            "popcnt",
-            "rdrand",
-            "rdseed",
-            "sse",
-            "sse2",
-            "sse4_1",
-            "sse4_2",
-            "ssse3",
-            "xsavec",
-            "xsaveopt"
-          ],
-          "generation": 0,
-          "parents": [
-            "skylake_avx512"
-          ]
-        }
+        "target": "x86_64"
       },
       "compiler": {
         "name": "gcc",
@@ -5756,14 +3400,14 @@
       "dependencies": [
         {
           "name": "cmake",
-          "hash": "mauutu2p4b3y6tcdhdwypocm64y5vt4w",
+          "hash": "7mgkvd5ixhk2gvf2sduiq5lkm2f6gn4i",
           "type": [
             "build"
           ]
         },
         {
           "name": "metis",
-          "hash": "zdkdkz4zpbh3edmh3nsi2iou3gc66rfn",
+          "hash": "fv7i7ztwj3yx6ttixhaz6gkrxx7rkpxu",
           "type": [
             "build",
             "link"
@@ -5771,60 +3415,22 @@
         },
         {
           "name": "mpich",
-          "hash": "hzrrrhzra5ggmqjhbjyawthjhfeswjdq",
+          "hash": "mqyckyt7dx446puub74tzrfcqcrx4plk",
           "type": [
             "build",
             "link"
           ]
         }
       ],
-      "hash": "objgtokidan4edvdaav6bu4x3imqpgpt"
+      "hash": "m3lxs32ogtemhmu7o44o46wgizqpxiyd"
     },
-    "ijww6ct5xqcrpojnsbtyt7znpekipqoz": {
+    "cxb6ojarxbnyynlso576cegwa435n6s6": {
       "name": "yaml-cpp",
       "version": "0.6.3",
       "arch": {
         "platform": "linux",
         "platform_os": "ubuntu20.04",
-        "target": {
-          "name": "cascadelake",
-          "vendor": "GenuineIntel",
-          "features": [
-            "adx",
-            "aes",
-            "avx",
-            "avx2",
-            "avx512_vnni",
-            "avx512bw",
-            "avx512cd",
-            "avx512dq",
-            "avx512f",
-            "avx512vl",
-            "bmi1",
-            "bmi2",
-            "clflushopt",
-            "clwb",
-            "f16c",
-            "fma",
-            "mmx",
-            "movbe",
-            "pclmulqdq",
-            "popcnt",
-            "rdrand",
-            "rdseed",
-            "sse",
-            "sse2",
-            "sse4_1",
-            "sse4_2",
-            "ssse3",
-            "xsavec",
-            "xsaveopt"
-          ],
-          "generation": 0,
-          "parents": [
-            "skylake_avx512"
-          ]
-        }
+        "target": "x86_64"
       },
       "compiler": {
         "name": "gcc",
@@ -5849,13 +3455,13 @@
       "dependencies": [
         {
           "name": "cmake",
-          "hash": "mauutu2p4b3y6tcdhdwypocm64y5vt4w",
+          "hash": "7mgkvd5ixhk2gvf2sduiq5lkm2f6gn4i",
           "type": [
             "build"
           ]
         }
       ],
-      "hash": "ijww6ct5xqcrpojnsbtyt7znpekipqoz"
+      "hash": "cxb6ojarxbnyynlso576cegwa435n6s6"
     }
   }
 }
