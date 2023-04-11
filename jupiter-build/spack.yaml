@@ -1,0 +1,122 @@
+spack:
+  view: false
+  concretizer:
+    unify: false
+    reuse: false
+  repos:
+  - $spack/var/spack/repos/exawind
+
+  packages:
+    all:
+      require: '%gcc@11.2.0'
+      variants: build_type=Release amdgpu_target=gfx90a
+      providers:
+        mpi: [mpich]
+        blas: [openblas, netlib-lapack]
+        lapack: [openblas, netlib-lapack]
+    rocprim:
+      buildable: false
+      require: '@5.4.3'
+      externals:
+      - spec: rocprim@5.4.3
+        prefix: /opt/rocm-5.4.3/rocprim
+    rocrand:
+      buildable: false
+      require: '@5.4.3'
+      externals:
+      - spec: rocrand@5.4.3
+        prefix: /opt/rocm-5.4.3/rocrand
+    rocthrust:
+      buildable: false
+      require: '@5.4.3'
+      externals:
+      - spec: rocthrust@5.4.3
+        prefix: /opt/rocm-5.4.3/rocthrust
+    rocsparse:
+      buildable: false
+      require: '@5.4.3'
+      externals:
+      - spec: rocsparse@5.4.3
+        prefix: /opt/rocm-5.4.3/rocsparse
+    hip:
+      require: '@5.4.3'
+      buildable: false
+      externals:
+      - spec: hip@5.4.3
+        prefix: /opt/rocm-5.4.3
+    hsa-rocr-dev:
+      buildable: false
+      require: '@5.4.3'
+      externals:
+      - spec: hsa-rocr-dev@5.4.3
+        prefix: /opt/rocm-5.4.3/hsa
+    llvm-amdgpu:
+      buildable: false
+      require: '@5.4.3'
+      externals:
+      - spec: llvm-amdgpu@5.4.3
+        prefix: /opt/rocm-5.4.3/llvm
+    openblas:
+      require: '@0.3.17 ~bignuma ~consistent_fpcsr ~ilp64 +locking +pic +shared threads=none
+        %gcc@7.5.0'
+    umpire:
+      require: '@6.0.0 build_type=RelWithDebInfo +c ~cuda ~device_alloc ~deviceconst
+        ~examples ~fortran ~ipo ~numa ~openmp +shared tests=none +rocm amdgpu_target=gfx90a'
+    trilinos:
+      require: '@13.4.0.2023.02.28'
+      variants: ~adios2~alloptpkgs~amesos~anasazi~aztec+boost~chaco~complex~debug~dtk~epetra~epetraext+exodus+explicit_template_instantiation~float~fortran~fortrilinos+glm+gtest+hdf5~hypre~ifpack~intrepid~intrepid2~isorropia+kokkos~mesquite+metis~minitensor~ml+mpi~mumps~nox~openmp~phalanx~piro~python~rol~rythmos~sacado+shards~shylu+stk~stratimikos~suite-sparse~superlu~superlu-dist~teko~tempus+teuchos+tpetra+uvm~x11~xsdkflags+zlib+zoltan+zoltan2
+        gotype=long cxxstd=17 build_type=Release
+    nalu-wind:
+      variants: +trilinos-solvers
+    libffi:
+      require: '@3.4.2'
+    ascent:
+      variants: ~fortran~openmp
+    amr-wind:
+      variants: +tiny_profile
+    conduit:
+      variants: ~fortran~hdf5_compat
+    boost:
+      version: [1.76.0]
+      variants: cxxstd=17
+    hdf5:
+      version: [1.10.7]
+      variants: +cxx+hl
+    masa:
+      variants: ~fortran~python
+    netcdf-c:
+      version: [4.7.4]
+      variants: +parallel-netcdf maxdims=65536 maxvars=524288
+    openfast:
+      version: [master]
+      variants: +cxx
+    parallel-netcdf:
+      version: [1.12.2]
+      variants: ~fortran
+    tioga:
+      version: [develop]
+    hypre:
+      require: '@develop'
+      variants: ~fortran
+    hypre2:
+      require: '@develop'
+      variants: ~fortran
+    yaml-cpp:
+      version: [0.6.3]
+  specs:
+  - exawind +hypre +amr_wind_gpu +nalu_wind_gpu +rocm ^amr-wind ~tests ^nalu-wind
+    ~tests
+  compilers:
+  - compiler:
+      spec: gcc@11.2.0
+      paths:
+        cc: /usr/bin/gcc
+        cxx: /usr/bin/g++
+        f77: /usr/bin/gfortran
+        fc: /usr/bin/gfortran
+      flags: {}
+      operating_system: ubuntu20.04
+      target: x86_64
+      modules: []
+      environment: {}
+      extra_rpaths: []

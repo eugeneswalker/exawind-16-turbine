@@ -1,0 +1,67 @@
+==> Starting concretization
+==> Environment concretized in 43.28 seconds.
+==> Concretized exawind+amr_wind_gpu+hypre+nalu_wind_gpu+rocm ^amr-wind~tests ^nalu-wind~tests
+ -   rtm2oaa  exawind@master%gcc@11.2.0+amr_wind_gpu~asan~cuda~fsi+hypre~ipo+nalu_wind_gpu~openfast+rocm~stk_simd~tiny_profile~umpire amdgpu_target=gfx90a build_system=cmake build_type=Release arch=linux-ubuntu20.04-cascadelake
+ -   eb34zlr      ^amr-wind@main%gcc@11.2.0~asan~ascent~clangtidy~cppcheck~cuda~hdf5+hypre~ipo~masa+mpi+netcdf~openfast~openmp+rocm+shared~tests+tiny_profile~umpire amdgpu_target=gfx90a build_system=cmake build_type=RelWithDebInfo arch=linux-ubuntu20.04-cascadelake
+ -   sbpajbt          ^hypre@develop%gcc@11.2.0~complex~cublas~cuda~debug~fortran~gptune~gpu-aware-mpi~int64~internal-superlu~mixedint+mpi~openmp~rocblas+rocm+shared~superlu-dist~sycl~umpire~unified-memory amdgpu_target=gfx90a build_system=autotools arch=linux-ubuntu20.04-cascadelake
+ -   lparxbl              ^rocprim@5.4.3%gcc@11.2.0~ipo amdgpu_target=gfx90a build_system=cmake build_type=Release arch=linux-ubuntu20.04-cascadelake
+ -   pjinuav              ^rocrand@5.4.3%gcc@11.2.0~ipo amdgpu_target=gfx90a build_system=cmake build_type=Release patches=a35e689 arch=linux-ubuntu20.04-cascadelake
+ -   mczim2v              ^rocsparse@5.4.3%gcc@11.2.0~ipo~test amdgpu_target=gfx90a build_system=cmake build_type=Release arch=linux-ubuntu20.04-cascadelake
+ -   kry6ixs              ^rocthrust@5.4.3%gcc@11.2.0~ipo amdgpu_target=gfx90a build_system=cmake build_type=Release arch=linux-ubuntu20.04-cascadelake
+ -   d35tmc3          ^netcdf-c@4.7.4%gcc@11.2.0~dap~fsync~hdf4~jna+mpi+optimize+parallel-netcdf+pic+shared build_system=autotools patches=2c88dfb arch=linux-ubuntu20.04-cascadelake
+ -   a5lbbtk              ^m4@1.4.19%gcc@11.2.0+sigsegv build_system=autotools patches=9dc5fbd,bfdffa7 arch=linux-ubuntu20.04-cascadelake
+ -   qizyllb                  ^diffutils@3.8%gcc@11.2.0 build_system=autotools arch=linux-ubuntu20.04-cascadelake
+ -   6l5d3qx                  ^libsigsegv@2.13%gcc@11.2.0 build_system=autotools arch=linux-ubuntu20.04-cascadelake
+ -   mauutu2      ^cmake@3.25.2%gcc@11.2.0~doc+ncurses+ownlibs~qt build_system=generic build_type=Release arch=linux-ubuntu20.04-cascadelake
+ -   jvmqbaf          ^ncurses@6.4%gcc@11.2.0~symlinks+termlib abi=none build_system=autotools arch=linux-ubuntu20.04-cascadelake
+ -   4qwezra          ^openssl@1.1.1t%gcc@11.2.0~docs~shared build_system=generic certs=mozilla arch=linux-ubuntu20.04-cascadelake
+ -   5mzoq3a              ^ca-certificates-mozilla@2023-01-10%gcc@11.2.0 build_system=generic arch=linux-ubuntu20.04-cascadelake
+ -   ghidyzn              ^perl@5.36.0%gcc@11.2.0+cpanm+open+shared+threads build_system=generic arch=linux-ubuntu20.04-cascadelake
+ -   he3difo                  ^berkeley-db@18.1.40%gcc@11.2.0+cxx~docs+stl build_system=autotools patches=26090f4,b231fcc arch=linux-ubuntu20.04-cascadelake
+ -   jzuk7wl                  ^bzip2@1.0.8%gcc@11.2.0~debug~pic+shared build_system=generic arch=linux-ubuntu20.04-cascadelake
+ -   if5x5rm                  ^gdbm@1.23%gcc@11.2.0 build_system=autotools arch=linux-ubuntu20.04-cascadelake
+ -   kerlntt      ^hip@5.4.3%gcc@11.2.0~cuda~ipo+rocm build_system=cmake build_type=Release patches=ca523f1 arch=linux-ubuntu20.04-cascadelake
+ -   w7wgrnx      ^hsa-rocr-dev@5.4.3%gcc@11.2.0+image~ipo+shared build_system=cmake build_type=Release patches=71e6851 arch=linux-ubuntu20.04-cascadelake
+ -   rpq35wu      ^llvm-amdgpu@5.4.3%gcc@11.2.0~ipo~link_llvm_dylib~llvm_dylib~openmp+rocm-device-libs build_system=cmake build_type=Release patches=a08bbe1 arch=linux-ubuntu20.04-cascadelake
+ -   hzrrrhz      ^mpich@4.1%gcc@11.2.0~argobots~cuda+fortran+hwloc+hydra+libxml2+pci~rocm+romio~slurm~two_level_namespace~vci~verbs+wrapperrpath build_system=autotools datatype-engine=auto device=ch4 netmod=ofi pmi=pmi arch=linux-ubuntu20.04-cascadelake
+ -   6onaj5v          ^findutils@4.9.0%gcc@11.2.0 build_system=autotools patches=440b954 arch=linux-ubuntu20.04-cascadelake
+ -   pjfjuc7          ^hwloc@2.9.0%gcc@11.2.0~cairo~cuda~gl~libudev+libxml2~netloc~nvml~oneapi-level-zero~opencl+pci~rocm build_system=autotools libs=shared,static arch=linux-ubuntu20.04-cascadelake
+ -   25rr5nk          ^libfabric@1.16.1%gcc@11.2.0~debug~kdreg build_system=autotools fabrics=sockets,tcp,udp arch=linux-ubuntu20.04-cascadelake
+ -   5kgwnka          ^libpciaccess@0.16%gcc@11.2.0 build_system=autotools arch=linux-ubuntu20.04-cascadelake
+ -   jnr6cxb              ^libtool@2.4.7%gcc@11.2.0 build_system=autotools arch=linux-ubuntu20.04-cascadelake
+ -   bgstyuc              ^util-macros@1.19.3%gcc@11.2.0 build_system=autotools arch=linux-ubuntu20.04-cascadelake
+ -   yyjylmp          ^libxml2@2.10.3%gcc@11.2.0~python build_system=autotools arch=linux-ubuntu20.04-cascadelake
+ -   m2sofhl              ^libiconv@1.17%gcc@11.2.0 build_system=autotools libs=shared,static arch=linux-ubuntu20.04-cascadelake
+ -   23g7c3x              ^xz@5.4.1%gcc@11.2.0~pic build_system=autotools libs=shared,static arch=linux-ubuntu20.04-cascadelake
+ -   efjbklu          ^pkgconf@1.8.0%gcc@11.2.0 build_system=autotools arch=linux-ubuntu20.04-cascadelake
+ -   ah7uos6          ^yaksa@0.2%gcc@11.2.0~cuda~rocm build_system=autotools arch=linux-ubuntu20.04-cascadelake
+ -   7q2maq5              ^autoconf@2.69%gcc@11.2.0 build_system=autotools patches=35c4492,7793209,a49dd5b arch=linux-ubuntu20.04-cascadelake
+ -   h5mwa55              ^automake@1.16.5%gcc@11.2.0 build_system=autotools arch=linux-ubuntu20.04-cascadelake
+ -   kgwjxru              ^python@3.10.8%gcc@11.2.0+bz2+crypt+ctypes+dbm~debug+libxml2+lzma~nis~optimizations+pic+pyexpat+pythoncmd+readline+shared+sqlite3+ssl~tkinter+uuid+zlib build_system=generic patches=0d98e93,7d40923,f2fd060 arch=linux-ubuntu20.04-cascadelake
+ -   uirw5l5                  ^expat@2.5.0%gcc@11.2.0+libbsd build_system=autotools arch=linux-ubuntu20.04-cascadelake
+ -   v5pokra                      ^libbsd@0.11.7%gcc@11.2.0 build_system=autotools arch=linux-ubuntu20.04-cascadelake
+ -   cfoy42f                          ^libmd@1.0.4%gcc@11.2.0 build_system=autotools arch=linux-ubuntu20.04-cascadelake
+ -   nmjnju6                  ^gettext@0.21.1%gcc@11.2.0+bzip2+curses+git~libunistring+libxml2+tar+xz build_system=autotools arch=linux-ubuntu20.04-cascadelake
+ -   w7rirqm                      ^tar@1.34%gcc@11.2.0 build_system=autotools zip=pigz arch=linux-ubuntu20.04-cascadelake
+ -   npkqrto                          ^pigz@2.7%gcc@11.2.0 build_system=makefile arch=linux-ubuntu20.04-cascadelake
+ -   le46qo6                          ^zstd@1.5.2%gcc@11.2.0+programs build_system=makefile compression=none libs=shared,static arch=linux-ubuntu20.04-cascadelake
+ -   qwcuvb4                  ^libffi@3.4.2%gcc@11.2.0 build_system=autotools arch=linux-ubuntu20.04-cascadelake
+ -   cae6pvu                  ^libxcrypt@4.4.33%gcc@11.2.0~obsolete_api build_system=autotools arch=linux-ubuntu20.04-cascadelake
+ -   rfnq7nq                  ^readline@8.2%gcc@11.2.0 build_system=autotools patches=bbf97f1 arch=linux-ubuntu20.04-cascadelake
+ -   ohzd3mr                  ^sqlite@3.40.1%gcc@11.2.0+column_metadata+dynamic_extensions+fts~functions+rtree build_system=autotools arch=linux-ubuntu20.04-cascadelake
+ -   harrkta                  ^util-linux-uuid@2.38.1%gcc@11.2.0 build_system=autotools arch=linux-ubuntu20.04-cascadelake
+ -   gh2eib4      ^nalu-wind@master%gcc@11.2.0~asan~boost~catalyst~cuda~fftw~fsi+hypre~hypre2~ipo~openfast+pic+rocm~shared~stk_simd~tests+tioga+trilinos-solvers~umpire+unit-tests~wind-utils abs_tol=1e-15 amdgpu_target=gfx90a build_system=cmake build_type=RelWithDebInfo cxxstd=17 rel_tol=1e-12 arch=linux-ubuntu20.04-cascadelake
+ -   kx44r2u          ^nccmp@1.9.0.1%gcc@11.2.0~ipo build_system=cmake build_type=Release arch=linux-ubuntu20.04-cascadelake
+ -   y5zx7zg      ^tioga@develop%gcc@11.2.0~asan~ipo~nodegid+pic+shared~stats~timers build_system=cmake build_type=Release arch=linux-ubuntu20.04-cascadelake
+ -   gusct74      ^trilinos@13.4.0.2023.02.28%gcc@11.2.0~adelus~adios2~amesos+amesos2~anasazi~asan~aztec~basker+belos+boost~chaco~complex~cuda~cuda_rdc~debug~dtk~epetra~epetraext~epetraextbtf~epetraextexperimental~epetraextgraphreorderings+exodus+explicit_template_instantiation~float~fortran+gtest+hdf5~hypre~ifpack+ifpack2~intrepid~intrepid2~ipo~isorropia+kokkos~mesquite~minitensor~ml+mpi+muelu~mumps~nox~openmp~panzer~phalanx+pic~piro~python+rocm~rocm_rdc~rol~rythmos~sacado~scorec+shards~shared~shylu+stk~stk_simd~stk_unit_tests~stokhos~stratimikos~strumpack~suite-sparse~superlu~superlu-dist~teko~tempus~thyra+tpetra~trilinoscouplings~wrapper~x11+zoltan+zoltan2 amdgpu_target=gfx90a build_system=cmake build_type=Release cxxstd=17 gotype=long arch=linux-ubuntu20.04-cascadelake
+ -   htfxysi          ^boost@1.76.0%gcc@11.2.0~atomic~chrono~clanglibcpp~container~context~contract~coroutine~date_time~debug+exception~fiber~filesystem+graph~graph_parallel~icu~iostreams~json~locale~log+math~mpi+multithreaded~nowide~numpy~pic~program_options~python~random~regex~serialization+shared~signals~singlethreaded+stacktrace~system~taggedlayout~test~thread~timer~type_erasure~versionedlayout~wave build_system=generic cxxstd=17 patches=a440f96 visibility=hidden arch=linux-ubuntu20.04-cascadelake
+ -   vjud4eo          ^cgns@4.3.0%gcc@11.2.0~base_scope~fortran+hdf5~int64~ipo~legacy~mem_debug+mpi+scoping+shared~static~testing build_system=cmake build_type=Release arch=linux-ubuntu20.04-cascadelake
+ -   4aqzz6v          ^hdf5@1.10.7%gcc@11.2.0+cxx~fortran+hl~ipo~java+mpi+shared~szip~threadsafe+tools api=default build_system=cmake build_type=RelWithDebInfo patches=2a1e311 arch=linux-ubuntu20.04-cascadelake
+ -   zgiurtm          ^matio@1.5.17%gcc@11.2.0+hdf5+shared+zlib build_system=autotools arch=linux-ubuntu20.04-cascadelake
+ -   zdkdkz4          ^metis@5.1.0%gcc@11.2.0~gdb~int64~ipo~real64+shared build_system=cmake build_type=Release patches=4991da9,93a7903,b1225da arch=linux-ubuntu20.04-cascadelake
+ -   czz5ydi          ^netlib-lapack@3.10.1%gcc@11.2.0~external-blas~ipo+lapacke+shared~xblas build_system=cmake build_type=Release arch=linux-ubuntu20.04-cascadelake
+ -   adx4uk2          ^parallel-netcdf@1.12.2%gcc@11.2.0~burstbuffer+cxx~fortran+pic+shared build_system=autotools arch=linux-ubuntu20.04-cascadelake
+ -   objgtok          ^parmetis@4.0.3%gcc@11.2.0~gdb~int64~ipo+shared build_system=cmake build_type=Release patches=4f89253,50ed208,704b84f arch=linux-ubuntu20.04-cascadelake
+ -   pxmyjlb          ^zlib@1.2.13%gcc@11.2.0+optimize+pic+shared build_system=makefile arch=linux-ubuntu20.04-cascadelake
+ -   ijww6ct      ^yaml-cpp@0.6.3%gcc@11.2.0~ipo+pic+shared~tests build_system=cmake build_type=Release arch=linux-ubuntu20.04-cascadelake
+
