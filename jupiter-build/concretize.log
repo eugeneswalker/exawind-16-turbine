@@ -1,13 +1,13 @@
 ==> Starting concretization
-==> Environment concretized in 42.84 seconds.
+==> Environment concretized in 44.06 seconds.
 ==> Concretized exawind+amr_wind_gpu+hypre+nalu_wind_gpu+rocm ^amr-wind~tests ^nalu-wind~tests
-[+]  wjpybxu  exawind@master%gcc@11.2.0+amr_wind_gpu~asan~cuda~fsi+hypre~ipo+nalu_wind_gpu~openfast+rocm~stk_simd~tiny_profile~umpire amdgpu_target=gfx90a build_system=cmake build_type=Release arch=linux-ubuntu20.04-x86_64
-[+]  dqu527r      ^amr-wind@main%gcc@11.2.0~asan~ascent~clangtidy~cppcheck~cuda~hdf5+hypre~ipo~masa+mpi+netcdf~openfast~openmp+rocm+shared~tests+tiny_profile~umpire amdgpu_target=gfx90a build_system=cmake build_type=RelWithDebInfo arch=linux-ubuntu20.04-x86_64
-[+]  msp2lsv          ^hypre@develop%gcc@11.2.0~complex~cublas~cuda~debug~fortran~gptune~gpu-aware-mpi~int64~internal-superlu~mixedint+mpi~openmp~rocblas+rocm+shared~superlu-dist~sycl~umpire~unified-memory amdgpu_target=gfx90a build_system=autotools arch=linux-ubuntu20.04-x86_64
-[+]  lgmwrqw              ^rocprim@5.4.3%gcc@11.2.0~ipo amdgpu_target=gfx90a build_system=cmake build_type=Release arch=linux-ubuntu20.04-x86_64
-[+]  e6bzhtl              ^rocrand@5.4.3%gcc@11.2.0~ipo amdgpu_target=gfx90a build_system=cmake build_type=Release patches=a35e689 arch=linux-ubuntu20.04-x86_64
-[+]  oyk7qnc              ^rocsparse@5.4.3%gcc@11.2.0~ipo~test amdgpu_target=gfx90a build_system=cmake build_type=Release arch=linux-ubuntu20.04-x86_64
-[+]  rfdgcqj              ^rocthrust@5.4.3%gcc@11.2.0~ipo amdgpu_target=gfx90a build_system=cmake build_type=Release arch=linux-ubuntu20.04-x86_64
+[+]  uuyvbcd  exawind@master%gcc@11.2.0+amr_wind_gpu~asan~cuda~fsi+hypre~ipo+nalu_wind_gpu~openfast+rocm~stk_simd~tiny_profile~umpire amdgpu_target=gfx90a build_system=cmake build_type=Release arch=linux-ubuntu20.04-x86_64
+[+]  u42gakg      ^amr-wind@main%gcc@11.2.0~asan~ascent~clangtidy~cppcheck~cuda~hdf5+hypre~ipo~masa+mpi+netcdf~openfast~openmp+rocm+shared~tests+tiny_profile~umpire amdgpu_target=gfx90a build_system=cmake build_type=RelWithDebInfo arch=linux-ubuntu20.04-x86_64
+[+]  6qrs6iy          ^hypre@develop%gcc@11.2.0~complex~cublas~cuda~debug~fortran~gptune~gpu-aware-mpi~int64~internal-superlu~mixedint+mpi~openmp~rocblas+rocm+shared~superlu-dist~sycl~umpire~unified-memory amdgpu_target=gfx90a build_system=autotools arch=linux-ubuntu20.04-x86_64
+[+]  4nyt34y              ^rocprim@5.4.0%gcc@11.2.0~ipo amdgpu_target=gfx90a build_system=cmake build_type=Release arch=linux-ubuntu20.04-x86_64
+[+]  7lb7rtb              ^rocrand@5.4.0%gcc@11.2.0~ipo amdgpu_target=gfx90a build_system=cmake build_type=Release patches=a35e689 arch=linux-ubuntu20.04-x86_64
+[+]  zi37q2x              ^rocsparse@5.4.0%gcc@11.2.0~ipo~test amdgpu_target=gfx90a build_system=cmake build_type=Release arch=linux-ubuntu20.04-x86_64
+[+]  7jng4hd              ^rocthrust@5.4.0%gcc@11.2.0~ipo amdgpu_target=gfx90a build_system=cmake build_type=Release arch=linux-ubuntu20.04-x86_64
 [+]  dogqwhx          ^netcdf-c@4.7.4%gcc@11.2.0~dap~fsync~hdf4~jna+mpi+optimize+parallel-netcdf+pic+shared build_system=autotools patches=2c88dfb arch=linux-ubuntu20.04-x86_64
 [+]  kub57xs              ^m4@1.4.19%gcc@11.2.0+sigsegv build_system=autotools patches=9dc5fbd,bfdffa7 arch=linux-ubuntu20.04-x86_64
 [+]  q5jegbp                  ^diffutils@3.8%gcc@11.2.0 build_system=autotools arch=linux-ubuntu20.04-x86_64
@@ -20,9 +20,9 @@
 [+]  3npiopn                  ^berkeley-db@18.1.40%gcc@11.2.0+cxx~docs+stl build_system=autotools patches=26090f4,b231fcc arch=linux-ubuntu20.04-x86_64
 [+]  l62f6pr                  ^bzip2@1.0.8%gcc@11.2.0~debug~pic+shared build_system=generic arch=linux-ubuntu20.04-x86_64
 [+]  yfzzydf                  ^gdbm@1.23%gcc@11.2.0 build_system=autotools arch=linux-ubuntu20.04-x86_64
-[+]  qf2vtz2      ^hip@5.4.3%gcc@11.2.0~cuda~ipo+rocm build_system=cmake build_type=Release patches=ca523f1 arch=linux-ubuntu20.04-x86_64
-[+]  k62edx3      ^hsa-rocr-dev@5.4.3%gcc@11.2.0+image~ipo+shared build_system=cmake build_type=Release patches=71e6851 arch=linux-ubuntu20.04-x86_64
-[+]  ihrq566      ^llvm-amdgpu@5.4.3%gcc@11.2.0~ipo~link_llvm_dylib~llvm_dylib~openmp+rocm-device-libs build_system=cmake build_type=Release patches=a08bbe1 arch=linux-ubuntu20.04-x86_64
+[+]  feuxtkp      ^hip@5.4.0%gcc@11.2.0~cuda~ipo+rocm build_system=cmake build_type=Release patches=ca523f1 arch=linux-ubuntu20.04-x86_64
+[+]  rumbwxo      ^hsa-rocr-dev@5.4.0%gcc@11.2.0+image~ipo+shared build_system=cmake build_type=Release patches=71e6851 arch=linux-ubuntu20.04-x86_64
+[+]  corkguq      ^llvm-amdgpu@5.4.0%gcc@11.2.0~ipo~link_llvm_dylib~llvm_dylib~openmp+rocm-device-libs build_system=cmake build_type=Release patches=a08bbe1 arch=linux-ubuntu20.04-x86_64
 [+]  mqyckyt      ^mpich@4.1%gcc@11.2.0~argobots~cuda+fortran+hwloc+hydra+libxml2+pci~rocm+romio~slurm~two_level_namespace~vci~verbs+wrapperrpath build_system=autotools datatype-engine=auto device=ch4 netmod=ofi pmi=pmi arch=linux-ubuntu20.04-x86_64
 [+]  ybkua77          ^findutils@4.9.0%gcc@11.2.0 build_system=autotools patches=440b954 arch=linux-ubuntu20.04-x86_64
 [+]  4b3sb3u          ^hwloc@2.9.0%gcc@11.2.0~cairo~cuda~gl~libudev+libxml2~netloc~nvml~oneapi-level-zero~opencl+pci~rocm build_system=autotools libs=shared,static arch=linux-ubuntu20.04-x86_64
@@ -50,10 +50,10 @@
 [+]  2d5q4vg                  ^readline@8.2%gcc@11.2.0 build_system=autotools patches=bbf97f1 arch=linux-ubuntu20.04-x86_64
 [+]  gpdw6tb                  ^sqlite@3.40.1%gcc@11.2.0+column_metadata+dynamic_extensions+fts~functions+rtree build_system=autotools arch=linux-ubuntu20.04-x86_64
 [+]  do5lyjw                  ^util-linux-uuid@2.38.1%gcc@11.2.0 build_system=autotools arch=linux-ubuntu20.04-x86_64
-[+]  pvrl7j5      ^nalu-wind@master%gcc@11.2.0~asan~boost~catalyst~cuda~fftw~fsi+hypre~hypre2~ipo~openfast+pic+rocm~shared~stk_simd~tests+tioga+trilinos-solvers~umpire+unit-tests~wind-utils abs_tol=1e-15 amdgpu_target=gfx90a build_system=cmake build_type=RelWithDebInfo cxxstd=17 rel_tol=1e-12 arch=linux-ubuntu20.04-x86_64
+[+]  wkgv2as      ^nalu-wind@master%gcc@11.2.0~asan~boost~catalyst~cuda~fftw~fsi+hypre~hypre2~ipo~openfast+pic+rocm~shared~stk_simd~tests+tioga+trilinos-solvers~umpire+unit-tests~wind-utils abs_tol=1e-15 amdgpu_target=gfx90a build_system=cmake build_type=RelWithDebInfo cxxstd=17 rel_tol=1e-12 arch=linux-ubuntu20.04-x86_64
 [+]  p7nhox6          ^nccmp@1.9.0.1%gcc@11.2.0~ipo build_system=cmake build_type=Release arch=linux-ubuntu20.04-x86_64
 [+]  uyer326      ^tioga@develop%gcc@11.2.0~asan~ipo~nodegid+pic+shared~stats~timers build_system=cmake build_type=Release arch=linux-ubuntu20.04-x86_64
-[+]  qdtbpgc      ^trilinos@13.4.0.2023.02.28%gcc@11.2.0~adelus~adios2~amesos+amesos2~anasazi~asan~aztec~basker+belos+boost~chaco~complex~cuda~cuda_rdc~debug~dtk~epetra~epetraext~epetraextbtf~epetraextexperimental~epetraextgraphreorderings+exodus+explicit_template_instantiation~float~fortran+gtest+hdf5~hypre~ifpack+ifpack2~intrepid~intrepid2~ipo~isorropia+kokkos~mesquite~minitensor~ml+mpi+muelu~mumps~nox~openmp~panzer~phalanx+pic~piro~python+rocm~rocm_rdc~rol~rythmos~sacado~scorec+shards~shared~shylu+stk~stk_simd~stk_unit_tests~stokhos~stratimikos~strumpack~suite-sparse~superlu~superlu-dist~teko~tempus~thyra+tpetra~trilinoscouplings~wrapper~x11+zoltan+zoltan2 amdgpu_target=gfx90a build_system=cmake build_type=Release cxxstd=17 gotype=long arch=linux-ubuntu20.04-x86_64
+[+]  eytiahv      ^trilinos@13.4.0.2023.02.28%gcc@11.2.0~adelus~adios2~amesos+amesos2~anasazi~asan~aztec~basker+belos+boost~chaco~complex~cuda~cuda_rdc~debug~dtk~epetra~epetraext~epetraextbtf~epetraextexperimental~epetraextgraphreorderings+exodus+explicit_template_instantiation~float~fortran+gtest+hdf5~hypre~ifpack+ifpack2~intrepid~intrepid2~ipo~isorropia+kokkos~mesquite~minitensor~ml+mpi+muelu~mumps~nox~openmp~panzer~phalanx+pic~piro~python+rocm~rocm_rdc~rol~rythmos~sacado~scorec+shards~shared~shylu+stk~stk_simd~stk_unit_tests~stokhos~stratimikos~strumpack~suite-sparse~superlu~superlu-dist~teko~tempus~thyra+tpetra~trilinoscouplings~wrapper~x11+zoltan+zoltan2 amdgpu_target=gfx90a build_system=cmake build_type=Release cxxstd=17 gotype=long arch=linux-ubuntu20.04-x86_64
 [+]  iayvqzh          ^boost@1.76.0%gcc@11.2.0~atomic~chrono~clanglibcpp~container~context~contract~coroutine~date_time~debug+exception~fiber~filesystem+graph~graph_parallel~icu~iostreams~json~locale~log+math~mpi+multithreaded~nowide~numpy~pic~program_options~python~random~regex~serialization+shared~signals~singlethreaded+stacktrace~system~taggedlayout~test~thread~timer~type_erasure~versionedlayout~wave build_system=generic cxxstd=17 patches=a440f96 visibility=hidden arch=linux-ubuntu20.04-x86_64
 [+]  bqzjrgk          ^cgns@4.3.0%gcc@11.2.0~base_scope~fortran+hdf5~int64~ipo~legacy~mem_debug+mpi+scoping+shared~static~testing build_system=cmake build_type=Release arch=linux-ubuntu20.04-x86_64
 [+]  bfdezhv          ^hdf5@1.10.7%gcc@11.2.0+cxx~fortran+hl~ipo~java+mpi+shared~szip~threadsafe+tools api=default build_system=cmake build_type=RelWithDebInfo patches=2a1e311 arch=linux-ubuntu20.04-x86_64
