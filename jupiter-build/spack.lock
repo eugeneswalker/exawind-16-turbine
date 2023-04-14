@@ -6,12 +6,12 @@
   },
   "roots": [
     {
-      "hash": "wjpybxu2kbslnomcf2sjoupjha3wzotp",
+      "hash": "uuyvbcdo4yipgc55lhelvu7z5r47w6vt",
       "spec": "exawind+amr_wind_gpu+hypre+nalu_wind_gpu+rocm ^amr-wind~tests ^nalu-wind~tests"
     }
   ],
   "concrete_specs": {
-    "wjpybxu2kbslnomcf2sjoupjha3wzotp": {
+    "uuyvbcdo4yipgc55lhelvu7z5r47w6vt": {
       "name": "exawind",
       "version": "master",
       "arch": {
@@ -53,7 +53,7 @@
       "dependencies": [
         {
           "name": "amr-wind",
-          "hash": "dqu527rgrvw6gxnzdugcrzmpae4zxexq",
+          "hash": "u42gakg5blbpvbxop6grxzfc72h4ffa2",
           "type": [
             "build",
             "link"
@@ -69,7 +69,7 @@
         },
         {
           "name": "hip",
-          "hash": "qf2vtz2lzvjkqyrf2lo2v7tgmu2i66hu",
+          "hash": "feuxtkpezhojebaghxobgftkavxmy5lh",
           "type": [
             "build",
             "link"
@@ -77,7 +77,7 @@
         },
         {
           "name": "hsa-rocr-dev",
-          "hash": "k62edx3xsbh7sj6rpunbg3lczcrmwnzf",
+          "hash": "rumbwxol4k5bfk2uz3d5uxrhjs4etg6o",
           "type": [
             "build",
             "link"
@@ -85,7 +85,7 @@
         },
         {
           "name": "llvm-amdgpu",
-          "hash": "ihrq566rfkzbh2zeixwcueqmxbnbsefl",
+          "hash": "corkguqfaea6dl32rh57vvdis3f5bcjw",
           "type": [
             "build",
             "link"
@@ -101,7 +101,7 @@
         },
         {
           "name": "nalu-wind",
-          "hash": "pvrl7j5rg4dnkmz52x6ttkez3w2reh4a",
+          "hash": "wkgv2as46ebebqeemuknobzlz4mdhv6f",
           "type": [
             "build",
             "link"
@@ -117,7 +117,7 @@
         },
         {
           "name": "trilinos",
-          "hash": "qdtbpgcnhd7qtv5ptolxfpzijfcuosdm",
+          "hash": "eytiahvos7bcz7hczcajovigoy3wbrr2",
           "type": [
             "build",
             "link"
@@ -132,9 +132,9 @@
           ]
         }
       ],
-      "hash": "wjpybxu2kbslnomcf2sjoupjha3wzotp"
+      "hash": "uuyvbcdo4yipgc55lhelvu7z5r47w6vt"
     },
-    "dqu527rgrvw6gxnzdugcrzmpae4zxexq": {
+    "u42gakg5blbpvbxop6grxzfc72h4ffa2": {
       "name": "amr-wind",
       "version": "main",
       "arch": {
@@ -189,7 +189,7 @@
         },
         {
           "name": "hip",
-          "hash": "qf2vtz2lzvjkqyrf2lo2v7tgmu2i66hu",
+          "hash": "feuxtkpezhojebaghxobgftkavxmy5lh",
           "type": [
             "build",
             "link"
@@ -197,7 +197,7 @@
         },
         {
           "name": "hsa-rocr-dev",
-          "hash": "k62edx3xsbh7sj6rpunbg3lczcrmwnzf",
+          "hash": "rumbwxol4k5bfk2uz3d5uxrhjs4etg6o",
           "type": [
             "build",
             "link"
@@ -205,7 +205,7 @@
         },
         {
           "name": "hypre",
-          "hash": "msp2lsvczyihe3mycff66ajr45ntg6jl",
+          "hash": "6qrs6iyzjaxvwdx6a2yvotm27dxfionj",
           "type": [
             "build",
             "link"
@@ -213,7 +213,7 @@
         },
         {
           "name": "llvm-amdgpu",
-          "hash": "ihrq566rfkzbh2zeixwcueqmxbnbsefl",
+          "hash": "corkguqfaea6dl32rh57vvdis3f5bcjw",
           "type": [
             "build",
             "link"
@@ -236,7 +236,7 @@
           ]
         }
       ],
-      "hash": "dqu527rgrvw6gxnzdugcrzmpae4zxexq"
+      "hash": "u42gakg5blbpvbxop6grxzfc72h4ffa2"
     },
     "7mgkvd5ixhk2gvf2sduiq5lkm2f6gn4i": {
       "name": "cmake",
@@ -729,9 +729,9 @@
       "package_hash": "y6ahhnjjjsfh5dx2y7sci7fhthq5aolyl5dgwif57qqbtjxwdwbq====",
       "hash": "4a4hcyyb5o4jztxdzjxzu2sri67xebjf"
     },
-    "qf2vtz2lzvjkqyrf2lo2v7tgmu2i66hu": {
+    "feuxtkpezhojebaghxobgftkavxmy5lh": {
       "name": "hip",
-      "version": "5.4.3",
+      "version": "5.4.0",
       "arch": {
         "platform": "linux",
         "platform_os": "ubuntu20.04",
@@ -759,19 +759,19 @@
         "ldlibs": []
       },
       "external": {
-        "path": "/opt/rocm-5.4.3",
+        "path": "/opt/rocm-5.4.0",
         "module": null,
         "extra_attributes": {}
       },
       "patches": [
         "ca523f177897a7509257ab15561efa11092383cfb9bc91b737db3496df388530"
       ],
-      "package_hash": "eybymstzjp5xyigsq5mwd6bemvwa2nz4bm7podkzyezyk26hb26a====",
-      "hash": "qf2vtz2lzvjkqyrf2lo2v7tgmu2i66hu"
+      "package_hash": "pgvr6zs7zcgrszn33su6p6c5n5ksfs5w3k7thitbquwbjpezeniq====",
+      "hash": "feuxtkpezhojebaghxobgftkavxmy5lh"
     },
-    "k62edx3xsbh7sj6rpunbg3lczcrmwnzf": {
+    "rumbwxol4k5bfk2uz3d5uxrhjs4etg6o": {
       "name": "hsa-rocr-dev",
-      "version": "5.4.3",
+      "version": "5.4.0",
       "arch": {
         "platform": "linux",
         "platform_os": "ubuntu20.04",
@@ -799,17 +799,17 @@
         "ldlibs": []
       },
       "external": {
-        "path": "/opt/rocm-5.4.3/hsa",
+        "path": "/opt/rocm-5.4.0/hsa",
         "module": null,
         "extra_attributes": {}
       },
       "patches": [
         "71e6851d9be8113bfb8d71b66a3171e0d0401bae5e6f161c9e7fe32558261a46"
       ],
-      "package_hash": "u3juf2fovqegwimnlbk6ci55ykuhczq7yzbbguzj76f3jxslwa6q====",
-      "hash": "k62edx3xsbh7sj6rpunbg3lczcrmwnzf"
+      "package_hash": "edrsecxicernonhz4x6qck5vn3orle5yfxurtfxgpdl43hiljjua====",
+      "hash": "rumbwxol4k5bfk2uz3d5uxrhjs4etg6o"
     },
-    "msp2lsvczyihe3mycff66ajr45ntg6jl": {
+    "6qrs6iyzjaxvwdx6a2yvotm27dxfionj": {
       "name": "hypre",
       "version": "develop",
       "arch": {
@@ -857,7 +857,7 @@
       "dependencies": [
         {
           "name": "hip",
-          "hash": "qf2vtz2lzvjkqyrf2lo2v7tgmu2i66hu",
+          "hash": "feuxtkpezhojebaghxobgftkavxmy5lh",
           "type": [
             "build",
             "link"
@@ -865,7 +865,7 @@
         },
         {
           "name": "hsa-rocr-dev",
-          "hash": "k62edx3xsbh7sj6rpunbg3lczcrmwnzf",
+          "hash": "rumbwxol4k5bfk2uz3d5uxrhjs4etg6o",
           "type": [
             "build",
             "link"
@@ -873,7 +873,7 @@
         },
         {
           "name": "llvm-amdgpu",
-          "hash": "ihrq566rfkzbh2zeixwcueqmxbnbsefl",
+          "hash": "corkguqfaea6dl32rh57vvdis3f5bcjw",
           "type": [
             "build",
             "link"
@@ -897,7 +897,7 @@
         },
         {
           "name": "rocprim",
-          "hash": "lgmwrqwalgqrzw3je6cif7lrp2n3upa2",
+          "hash": "4nyt34ynxyb3yiy2lk7gdbgehsglnbmh",
           "type": [
             "build",
             "link"
@@ -905,7 +905,7 @@
         },
         {
           "name": "rocrand",
-          "hash": "e6bzhtltseolkjmymjbtsu6rbhi7llzu",
+          "hash": "7lb7rtbjjwzxx3bpfoq4irui4ujjgnih",
           "type": [
             "build",
             "link"
@@ -913,7 +913,7 @@
         },
         {
           "name": "rocsparse",
-          "hash": "oyk7qnckzz72wdr3gtqb53fk4gaozbui",
+          "hash": "zi37q2x3a5id4k27uhbj5c4w2yer3k7i",
           "type": [
             "build",
             "link"
@@ -921,18 +921,18 @@
         },
         {
           "name": "rocthrust",
-          "hash": "rfdgcqjzu5u7ld35d5m56puy2mvzlhhl",
+          "hash": "7jng4hdsfvikw72nnoxujbhzqmgsrjre",
           "type": [
             "build",
             "link"
           ]
         }
       ],
-      "hash": "msp2lsvczyihe3mycff66ajr45ntg6jl"
+      "hash": "6qrs6iyzjaxvwdx6a2yvotm27dxfionj"
     },
-    "ihrq566rfkzbh2zeixwcueqmxbnbsefl": {
+    "corkguqfaea6dl32rh57vvdis3f5bcjw": {
       "name": "llvm-amdgpu",
-      "version": "5.4.3",
+      "version": "5.4.0",
       "arch": {
         "platform": "linux",
         "platform_os": "ubuntu20.04",
@@ -962,15 +962,15 @@
         "ldlibs": []
       },
       "external": {
-        "path": "/opt/rocm-5.4.3/llvm",
+        "path": "/opt/rocm-5.4.0/llvm",
         "module": null,
         "extra_attributes": {}
       },
       "patches": [
         "a08bbe106983acfcbadb1d29310201feca8407a242d86abfe6e5829c325c2a6a"
       ],
-      "package_hash": "ghrbfiib7togrrxkvavpbeja5aeyx3xgwmbjsaq6ftfzbb6bxlea====",
-      "hash": "ihrq566rfkzbh2zeixwcueqmxbnbsefl"
+      "package_hash": "45qk35rsqozvja35oub5omcngkiybmf2gvfxyjjvlrrhb6gh3qca====",
+      "hash": "corkguqfaea6dl32rh57vvdis3f5bcjw"
     },
     "mqyckyt7dx446puub74tzrfcqcrx4plk": {
       "name": "mpich",
@@ -2298,9 +2298,9 @@
       ],
       "hash": "hn54hhoh4e7u6nabyuucgr5pg3g2mhhq"
     },
-    "lgmwrqwalgqrzw3je6cif7lrp2n3upa2": {
+    "4nyt34ynxyb3yiy2lk7gdbgehsglnbmh": {
       "name": "rocprim",
-      "version": "5.4.3",
+      "version": "5.4.0",
       "arch": {
         "platform": "linux",
         "platform_os": "ubuntu20.04",
@@ -2326,16 +2326,16 @@
         "ldlibs": []
       },
       "external": {
-        "path": "/opt/rocm-5.4.3/rocprim",
+        "path": "/opt/rocm-5.4.0/rocprim",
         "module": null,
         "extra_attributes": {}
       },
-      "package_hash": "bu2m6y5uxnqh2gekzhytnkkdwoxzmdazshgqip56zxtnsagql3ja====",
-      "hash": "lgmwrqwalgqrzw3je6cif7lrp2n3upa2"
+      "package_hash": "6razvxu5ggpzity323bpt2ijdgsvp6zwxjevefsbeok5p3saj6fa====",
+      "hash": "4nyt34ynxyb3yiy2lk7gdbgehsglnbmh"
     },
-    "e6bzhtltseolkjmymjbtsu6rbhi7llzu": {
+    "7lb7rtbjjwzxx3bpfoq4irui4ujjgnih": {
       "name": "rocrand",
-      "version": "5.4.3",
+      "version": "5.4.0",
       "arch": {
         "platform": "linux",
         "platform_os": "ubuntu20.04",
@@ -2364,19 +2364,19 @@
         "ldlibs": []
       },
       "external": {
-        "path": "/opt/rocm-5.4.3/rocrand",
+        "path": "/opt/rocm-5.4.0/rocrand",
         "module": null,
         "extra_attributes": {}
       },
       "patches": [
         "a35e6895f4ab85c0eab224753f1f81117a46b2dffc68912e860869b539728187"
       ],
-      "package_hash": "at5ums3uek6qrk3nde6vgfnwv7nkyrgcmrn65prd7cbczvzvi3ea====",
-      "hash": "e6bzhtltseolkjmymjbtsu6rbhi7llzu"
+      "package_hash": "i7dv6kkooht4h3k32lhapsd3x2jhr3e3lejemb7uopln3s45d3nq====",
+      "hash": "7lb7rtbjjwzxx3bpfoq4irui4ujjgnih"
     },
-    "oyk7qnckzz72wdr3gtqb53fk4gaozbui": {
+    "zi37q2x3a5id4k27uhbj5c4w2yer3k7i": {
       "name": "rocsparse",
-      "version": "5.4.3",
+      "version": "5.4.0",
       "arch": {
         "platform": "linux",
         "platform_os": "ubuntu20.04",
@@ -2403,16 +2403,16 @@
         "ldlibs": []
       },
       "external": {
-        "path": "/opt/rocm-5.4.3/rocsparse",
+        "path": "/opt/rocm-5.4.0/rocsparse",
         "module": null,
         "extra_attributes": {}
       },
-      "package_hash": "vfnlxepftzv3hvbiioalrouncyno26zb4jl4v52h6btp3cny52va====",
-      "hash": "oyk7qnckzz72wdr3gtqb53fk4gaozbui"
+      "package_hash": "vnsmihe6bocy7d6xtvl5ukj3ypmckiuene7akrt4eq2dbopmt35a====",
+      "hash": "zi37q2x3a5id4k27uhbj5c4w2yer3k7i"
     },
-    "rfdgcqjzu5u7ld35d5m56puy2mvzlhhl": {
+    "7jng4hdsfvikw72nnoxujbhzqmgsrjre": {
       "name": "rocthrust",
-      "version": "5.4.3",
+      "version": "5.4.0",
       "arch": {
         "platform": "linux",
         "platform_os": "ubuntu20.04",
@@ -2438,12 +2438,12 @@
         "ldlibs": []
       },
       "external": {
-        "path": "/opt/rocm-5.4.3/rocthrust",
+        "path": "/opt/rocm-5.4.0/rocthrust",
         "module": null,
         "extra_attributes": {}
       },
-      "package_hash": "joq5oz4zdld26v6dfi2o23qtjf7gq2urvox6yxilm3m77qgw4k5a====",
-      "hash": "rfdgcqjzu5u7ld35d5m56puy2mvzlhhl"
+      "package_hash": "mgt727mtsvripnbvhtlpfexi3rquj5qk2hp4qnuf5ldfuvg2y4va====",
+      "hash": "7jng4hdsfvikw72nnoxujbhzqmgsrjre"
     },
     "dogqwhxu6yzhmlsk276ngrlbpw2mhxka": {
       "name": "netcdf-c",
@@ -2655,7 +2655,7 @@
       ],
       "hash": "6qnzzv324knxbka6ivnbb6auox374lhg"
     },
-    "pvrl7j5rg4dnkmz52x6ttkez3w2reh4a": {
+    "wkgv2as46ebebqeemuknobzlz4mdhv6f": {
       "name": "nalu-wind",
       "version": "master",
       "arch": {
@@ -2715,7 +2715,7 @@
         },
         {
           "name": "hip",
-          "hash": "qf2vtz2lzvjkqyrf2lo2v7tgmu2i66hu",
+          "hash": "feuxtkpezhojebaghxobgftkavxmy5lh",
           "type": [
             "build",
             "link"
@@ -2723,7 +2723,7 @@
         },
         {
           "name": "hsa-rocr-dev",
-          "hash": "k62edx3xsbh7sj6rpunbg3lczcrmwnzf",
+          "hash": "rumbwxol4k5bfk2uz3d5uxrhjs4etg6o",
           "type": [
             "build",
             "link"
@@ -2731,7 +2731,7 @@
         },
         {
           "name": "hypre",
-          "hash": "msp2lsvczyihe3mycff66ajr45ntg6jl",
+          "hash": "6qrs6iyzjaxvwdx6a2yvotm27dxfionj",
           "type": [
             "build",
             "link"
@@ -2739,7 +2739,7 @@
         },
         {
           "name": "llvm-amdgpu",
-          "hash": "ihrq566rfkzbh2zeixwcueqmxbnbsefl",
+          "hash": "corkguqfaea6dl32rh57vvdis3f5bcjw",
           "type": [
             "build",
             "link"
@@ -2779,7 +2779,7 @@
         },
         {
           "name": "trilinos",
-          "hash": "qdtbpgcnhd7qtv5ptolxfpzijfcuosdm",
+          "hash": "eytiahvos7bcz7hczcajovigoy3wbrr2",
           "type": [
             "build",
             "link"
@@ -2794,7 +2794,7 @@
           ]
         }
       ],
-      "hash": "pvrl7j5rg4dnkmz52x6ttkez3w2reh4a"
+      "hash": "wkgv2as46ebebqeemuknobzlz4mdhv6f"
     },
     "p7nhox6kxyt46nuknxghwchjxvjri5up": {
       "name": "nccmp",
@@ -2890,7 +2890,7 @@
       ],
       "hash": "uyer326o55bejnebg3tonkcuftou7ay3"
     },
-    "qdtbpgcnhd7qtv5ptolxfpzijfcuosdm": {
+    "eytiahvos7bcz7hczcajovigoy3wbrr2": {
       "name": "trilinos",
       "version": "13.4.0.2023.02.28",
       "arch": {
@@ -3028,7 +3028,7 @@
         },
         {
           "name": "hip",
-          "hash": "qf2vtz2lzvjkqyrf2lo2v7tgmu2i66hu",
+          "hash": "feuxtkpezhojebaghxobgftkavxmy5lh",
           "type": [
             "build",
             "link"
@@ -3036,7 +3036,7 @@
         },
         {
           "name": "hsa-rocr-dev",
-          "hash": "k62edx3xsbh7sj6rpunbg3lczcrmwnzf",
+          "hash": "rumbwxol4k5bfk2uz3d5uxrhjs4etg6o",
           "type": [
             "build",
             "link"
@@ -3052,7 +3052,7 @@
         },
         {
           "name": "llvm-amdgpu",
-          "hash": "ihrq566rfkzbh2zeixwcueqmxbnbsefl",
+          "hash": "corkguqfaea6dl32rh57vvdis3f5bcjw",
           "type": [
             "build",
             "link"
@@ -3123,7 +3123,7 @@
           ]
         }
       ],
-      "hash": "qdtbpgcnhd7qtv5ptolxfpzijfcuosdm"
+      "hash": "eytiahvos7bcz7hczcajovigoy3wbrr2"
     },
     "iayvqzh6nnrns47qg4emx5ykdopnhdl2": {
       "name": "boost",

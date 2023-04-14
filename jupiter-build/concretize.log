@@ -1,5 +1,5 @@
 ==> Starting concretization
-==> Environment concretized in 44.06 seconds.
+==> Environment concretized in 43.81 seconds.
 ==> Concretized exawind+amr_wind_gpu+hypre+nalu_wind_gpu+rocm ^amr-wind~tests ^nalu-wind~tests
 [+]  uuyvbcd  exawind@master%gcc@11.2.0+amr_wind_gpu~asan~cuda~fsi+hypre~ipo+nalu_wind_gpu~openfast+rocm~stk_simd~tiny_profile~umpire amdgpu_target=gfx90a build_system=cmake build_type=Release arch=linux-ubuntu20.04-x86_64
 [+]  u42gakg      ^amr-wind@main%gcc@11.2.0~asan~ascent~clangtidy~cppcheck~cuda~hdf5+hypre~ipo~masa+mpi+netcdf~openfast~openmp+rocm+shared~tests+tiny_profile~umpire amdgpu_target=gfx90a build_system=cmake build_type=RelWithDebInfo arch=linux-ubuntu20.04-x86_64
