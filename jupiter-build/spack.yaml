@@ -1,3 +1,8 @@
+# spack@develop
+# b8d15e816bf7388774e65ca59daf3831b4fa4180
+# custom exawind package repo for spack, stripped of spack-manager components
+# had to manually patch hipcc script to include -std=c++17 and --gcc-toolchain=
+
 spack:
   view: false
   concretizer:
