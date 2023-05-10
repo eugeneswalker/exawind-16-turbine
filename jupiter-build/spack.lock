@@ -6,12 +6,12 @@
   },
   "roots": [
     {
-      "hash": "uuyvbcdo4yipgc55lhelvu7z5r47w6vt",
+      "hash": "2mjyspcpbwyu2gyfwchvcvhetqhdoebu",
       "spec": "exawind+amr_wind_gpu+hypre+nalu_wind_gpu+rocm ^amr-wind~tests ^nalu-wind~tests"
     }
   ],
   "concrete_specs": {
-    "uuyvbcdo4yipgc55lhelvu7z5r47w6vt": {
+    "2mjyspcpbwyu2gyfwchvcvhetqhdoebu": {
       "name": "exawind",
       "version": "master",
       "arch": {
@@ -49,7 +49,7 @@
         "ldflags": [],
         "ldlibs": []
       },
-      "package_hash": "ungn2kamesbxpz4hamiamsgyvi3w24qywxr33dyngutr3gy4lftq====",
+      "package_hash": "ayygprkcwzbxt5mhlxjpmu537ybsxjtbokbiqdait2c4uluxv7ia====",
       "dependencies": [
         {
           "name": "amr-wind",
@@ -132,7 +132,7 @@
           ]
         }
       ],
-      "hash": "uuyvbcdo4yipgc55lhelvu7z5r47w6vt"
+      "hash": "2mjyspcpbwyu2gyfwchvcvhetqhdoebu"
     },
     "u42gakg5blbpvbxop6grxzfc72h4ffa2": {
       "name": "amr-wind",
