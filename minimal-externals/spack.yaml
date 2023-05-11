@@ -10,7 +10,7 @@ spack:
 
   packages:
     all:
-      require: "%clang@15.0.0"
+      require: "%clang@15.0.0 target=zen3"
       variants: build_type=Release amdgpu_target=gfx90a
       providers:
         mpi: [cray-mpich@8.1.17]
@@ -95,7 +95,7 @@ spack:
 
     # FACILITY-INSTALLED, NON-CRAY EXTERNALS
     openblas:
-      require: '@0.3.17 ~bignuma ~consistent_fpcsr ~ilp64 +locking +pic +shared threads=none %gcc@7.5.0'
+      require: '@0.3.17 ~bignuma ~consistent_fpcsr ~ilp64 +locking +pic +shared threads=none %gcc'
     umpire:
       require: '@6.0.0 build_type=RelWithDebInfo +c ~cuda ~device_alloc ~deviceconst ~examples ~fortran ~ipo ~numa ~openmp +shared tests=none +rocm amdgpu_target=gfx90a'
     trilinos:
@@ -166,12 +166,12 @@ spack:
         prepend_path:
           PKG_CONFIG_PATH: /opt/cray/xpmem/2.4.4-2.3_11.2__gff0e1d9.shasta/lib64/pkgconfig
   - compiler:
-      spec: gcc@7.5.0
+      spec: gcc@11.2.0
       paths:
-        cc: /usr/bin/gcc
-        cxx: /usr/bin/g++
-        f77: /usr/bin/gfortran
-        fc: /usr/bin/gfortran
+        cc: /opt/cray/pe/gcc/11.2.0/bin/gcc
+        cxx: /opt/cray/pe/gcc/11.2.0/bin/g++
+        f77: /opt/cray/pe/gcc/11.2.0/bin/gfortran
+        fc: /opt/cray/pe/gcc/11.2.0/bin/gfortran
       flags: {}
       operating_system: sles15
       target: x86_64
