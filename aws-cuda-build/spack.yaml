@@ -1,0 +1,102 @@
+# spack@develop
+# b8d15e816bf7388774e65ca59daf3831b4fa4180
+# custom exawind package repo for spack, stripped of spack-manager components
+# had to manually patch hipcc script to include -std=c++17 and --gcc-toolchain=
+
+spack:
+  view: false
+  concretizer:
+    unify: false
+    reuse: false
+  repos:
+  - $spack/var/spack/repos/exawind
+
+  packages:
+    all:
+      target: [x86_64]
+      require: '%gcc'
+      variants: build_type=Release +cuda cuda_arch=75
+      providers:
+        mpi: [mvapich2x]
+        blas: [openblas, netlib-lapack]
+        lapack: [openblas, netlib-lapack]
+    openblas:
+      require: '@0.3.17 ~bignuma ~consistent_fpcsr ~ilp64 +locking +pic +shared threads=none
+        %gcc@7.5.0'
+    umpire:
+      require: '@6.0.0 build_type=RelWithDebInfo +c ~cuda ~device_alloc ~deviceconst
+        ~examples ~fortran ~ipo ~numa ~openmp +shared tests=none +rocm amdgpu_target=gfx90a'
+    trilinos:
+      require: '@13.4.0.2023.02.28'
+      variants: ~adios2~alloptpkgs~amesos~anasazi~aztec+boost~chaco~complex~debug~dtk~epetra~epetraext+exodus+explicit_template_instantiation~float~fortran~fortrilinos+glm+gtest+hdf5~hypre~ifpack~intrepid~intrepid2~isorropia+kokkos~mesquite+metis~minitensor~ml+mpi~mumps~nox~openmp~phalanx~piro~python~rol~rythmos~sacado+shards~shylu+stk~stratimikos~suite-sparse~superlu~superlu-dist~teko~tempus+teuchos+tpetra+uvm~x11~xsdkflags+zlib+zoltan+zoltan2
+        gotype=long cxxstd=17 build_type=Release
+    nalu-wind:
+      variants: +trilinos-solvers
+    libffi:
+      require: '@3.4.2'
+    ascent:
+      variants: ~fortran~openmp
+    amr-wind:
+      variants: +tiny_profile
+    conduit:
+      variants: ~fortran~hdf5_compat
+    boost:
+      version: [1.76.0]
+      variants: cxxstd=17
+    hdf5:
+      version: [1.10.7]
+      variants: +cxx+hl
+    masa:
+      variants: ~fortran~python
+    netcdf-c:
+      version: [4.7.4]
+      variants: +parallel-netcdf maxdims=65536 maxvars=524288
+    openfast:
+      version: [master]
+      variants: +cxx
+    parallel-netcdf:
+      version: [1.12.2]
+      variants: ~fortran
+    tioga:
+      version: [develop]
+    hypre:
+      require: '@develop'
+      variants: ~fortran
+    hypre2:
+      require: '@develop'
+      variants: ~fortran
+    yaml-cpp:
+      version: [0.6.3]
+    cuda:
+      require: '@11.8.0'
+      buildable: false
+      externals:
+      - spec: cuda@11.8.0
+        prefix: /usr/local/cuda
+    mpi:
+      require: mvapich2x
+    mvapich2x:
+      buildable: false
+      externals:
+      - spec: mvapich2x@3.7
+        prefix: /opt/mvapich2-x/gnu11.1.0/mofed/aws-nompit/mpirun/
+        modules: [mvapich2x]
+    libfabric:
+      buildable: false
+      externals:
+      - spec: libfabric@1.17.0 fabrics=efa
+        modules:
+        - libfabric-aws/1.17.0 # module avail libfabric 2>&1 | grep libfabric | head -n 1 | xargs
+        prefix: /opt/amazon/efa
+    pmix:
+      externals:
+      - spec: pmix@3.2.3 ~pmi_backwards_compatibility
+        prefix: /opt/pmix
+    slurm:
+      buildable: false
+      externals:
+      - spec: slurm@22-05-8 +pmix sysconfdir=/opt/slurm/etc
+        prefix: /opt/slurm
+  specs:
+  - exawind +hypre +amr_wind_gpu +nalu_wind_gpu +cuda cuda_arch=75 ^amr-wind ~tests
+    ^nalu-wind ~tests
