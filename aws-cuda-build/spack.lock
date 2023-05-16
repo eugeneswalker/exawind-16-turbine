@@ -6,12 +6,12 @@
   },
   "roots": [
     {
-      "hash": "tnumf7td2sqygzw54dbhmelyvzuiklm6",
-      "spec": "exawind+amr_wind_gpu+cuda+hypre+nalu_wind_gpu cuda_arch=75 ^amr-wind~tests ^nalu-wind~tests"
+      "hash": "sukln4krpahrmdssrwsnp7haq5y2rev6",
+      "spec": "exawind+amr_wind_gpu+cuda+hypre+nalu_wind_gpu cuda_arch=75 ^amr-wind~tests ^berkeley-db@18.1.40%gcc@11.1.0+cxx~docs+stl build_system=autotools patches=26090f4,b231fcc arch=linux-ubuntu20.04-x86_64 ^boost@1.76.0%gcc@11.1.0~atomic~chrono~clanglibcpp~container~context~contract~coroutine~date_time~debug+exception~fiber~filesystem+graph~graph_parallel~icu~iostreams~json~locale~log+math~mpi+multithreaded~nowide~numpy~pic~program_options~python~random~regex~serialization+shared~signals~singlethreaded+stacktrace~system~taggedlayout~test~thread~timer~type_erasure~versionedlayout~wave build_system=generic cxxstd=17 patches=a440f96 visibility=hidden arch=linux-ubuntu20.04-x86_64 ^bzip2@1.0.8%gcc@11.1.0~debug~pic+shared build_system=generic arch=linux-ubuntu20.04-x86_64 ^ca-certificates-mozilla@2023-01-10%gcc@11.1.0 build_system=generic arch=linux-ubuntu20.04-x86_64 ^cgns@4.3.0%gcc@11.1.0~base_scope~fortran+hdf5~int64~ipo~legacy~mem_debug+mpi+scoping+shared~static~testing build_system=cmake build_type=Release arch=linux-ubuntu20.04-x86_64 ^cmake@3.25.2%gcc@11.1.0~doc+ncurses+ownlibs~qt build_system=generic build_type=Release arch=linux-ubuntu20.04-x86_64 ^cuda@11.8.0%gcc@11.1.0~allow-unsupported-compilers~dev build_system=generic arch=linux-ubuntu20.04-x86_64 ^diffutils@3.8%gcc@11.1.0 build_system=autotools arch=linux-ubuntu20.04-x86_64 ^gdbm@1.23%gcc@11.1.0 build_system=autotools arch=linux-ubuntu20.04-x86_64 ^hdf5@1.10.7%gcc@11.1.0+cxx~fortran+hl~ipo~java+mpi+shared~szip~threadsafe+tools api=default build_system=cmake build_type=RelWithDebInfo patches=2a1e311 arch=linux-ubuntu20.04-x86_64 ^hwloc@2.9.0%gcc@11.1.0~cairo+cuda~gl~libudev+libxml2~netloc~nvml~oneapi-level-zero~opencl+pci~rocm build_system=autotools cuda_arch=75 libs=shared,static arch=linux-ubuntu20.04-x86_64 ^kokkos-nvcc-wrapper@3.2.00%gcc@11.1.0+mpi build_system=generic arch=linux-ubuntu20.04-x86_64 ^libiconv@1.17%gcc@11.1.0 build_system=autotools libs=shared,static arch=linux-ubuntu20.04-x86_64 ^libpciaccess@0.16%gcc@11.1.0 build_system=autotools arch=linux-ubuntu20.04-x86_64 ^libsigsegv@2.13%gcc@11.1.0 build_system=autotools arch=linux-ubuntu20.04-x86_64 ^libtool@2.4.7%gcc@11.1.0 build_system=autotools arch=linux-ubuntu20.04-x86_64 ^libxml2@2.10.3%gcc@11.1.0~python build_system=autotools arch=linux-ubuntu20.04-x86_64 ^m4@1.4.19%gcc@11.1.0+sigsegv build_system=autotools patches=9dc5fbd,bfdffa7 arch=linux-ubuntu20.04-x86_64 ^matio@1.5.17%gcc@11.1.0+hdf5+shared+zlib build_system=autotools arch=linux-ubuntu20.04-x86_64 ^metis@5.1.0%gcc@11.1.0~gdb~int64~ipo~real64+shared build_system=cmake build_type=Release patches=4991da9,93a7903,b1225da arch=linux-ubuntu20.04-x86_64 ^mvapich2x@3.7%gcc@11.1.0 build_system=autotools distribution=stock-ofed feature=basic pmi_version=pmi1 process_managers=mpirun arch=linux-ubuntu20.04-x86_64 ^nalu-wind~tests ^ncurses@6.4%gcc@11.1.0~symlinks+termlib abi=none build_system=autotools arch=linux-ubuntu20.04-x86_64 ^netcdf-c@4.7.4%gcc@11.1.0~dap~fsync~hdf4~jna+mpi+optimize+parallel-netcdf+pic+shared build_system=autotools patches=2c88dfb arch=linux-ubuntu20.04-x86_64 ^netlib-lapack@3.10.1%gcc@11.1.0~external-blas~ipo+lapacke+shared~xblas build_system=cmake build_type=Release arch=linux-ubuntu20.04-x86_64 ^openssl@1.1.1s%gcc@11.1.0~docs~shared build_system=generic certs=mozilla arch=linux-ubuntu20.04-x86_64 ^parallel-netcdf@1.12.2%gcc@11.1.0~burstbuffer+cxx~fortran+pic+shared build_system=autotools arch=linux-ubuntu20.04-x86_64 ^parmetis@4.0.3%gcc@11.1.0~gdb~int64~ipo+shared build_system=cmake build_type=Release patches=4f89253,50ed208,704b84f arch=linux-ubuntu20.04-x86_64 ^perl@5.36.0%gcc@11.1.0+cpanm+open+shared+threads build_system=generic arch=linux-ubuntu20.04-x86_64 ^pkgconf@1.8.0%gcc@11.1.0 build_system=autotools arch=linux-ubuntu20.04-x86_64 ^readline@8.2%gcc@11.1.0 build_system=autotools patches=bbf97f1 arch=linux-ubuntu20.04-x86_64 ^trilinos@13.4.0.2023.02.28%gcc@11.1.0~adelus~adios2~amesos+amesos2~anasazi~asan~aztec~basker+belos+boost~chaco~complex+cuda+cuda_rdc~debug~dtk~epetra~epetraext~epetraextbtf~epetraextexperimental~epetraextgraphreorderings+exodus+explicit_template_instantiation~float~fortran+gtest+hdf5~hypre~ifpack+ifpack2~intrepid~intrepid2~ipo~isorropia+kokkos~mesquite~minitensor~ml+mpi+muelu~mumps~nox~openmp~panzer~phalanx+pic~piro~python~rocm~rocm_rdc~rol~rythmos~sacado~scorec+shards~shared~shylu+stk~stk_simd~stk_unit_tests~stokhos~stratimikos~strumpack~suite-sparse~superlu~superlu-dist~teko~tempus~thyra+tpetra~trilinoscouplings+uvm+wrapper~x11+zoltan+zoltan2 build_system=cmake build_type=Release cuda_arch=75 cxxstd=17 gotype=long arch=linux-ubuntu20.04-x86_64 ^util-macros@1.19.3%gcc@11.1.0 build_system=autotools arch=linux-ubuntu20.04-x86_64 ^xz@5.4.1%gcc@11.1.0~pic build_system=autotools libs=shared,static arch=linux-ubuntu20.04-x86_64 ^zlib@1.2.13%gcc@11.1.0+optimize+pic+shared build_system=makefile arch=linux-ubuntu20.04-x86_64"
     }
   ],
   "concrete_specs": {
-    "tnumf7td2sqygzw54dbhmelyvzuiklm6": {
+    "sukln4krpahrmdssrwsnp7haq5y2rev6": {
       "name": "exawind",
       "version": "master",
       "arch": {
@@ -85,7 +85,7 @@
         },
         {
           "name": "nalu-wind",
-          "hash": "xeujhzv2vqo6zdq2vlaaecihq3nuoudv",
+          "hash": "eiybvk7y7deehtbryqvwhdnxeiir34lt",
           "type": [
             "build",
             "link"
@@ -101,7 +101,7 @@
         },
         {
           "name": "trilinos",
-          "hash": "upqxqdkruzjd5blhtutvcx6fsy567eld",
+          "hash": "jhins4fnqwka3ubsncp733eo23c35aqc",
           "type": [
             "build",
             "link"
@@ -116,7 +116,7 @@
           ]
         }
       ],
-      "hash": "tnumf7td2sqygzw54dbhmelyvzuiklm6"
+      "hash": "sukln4krpahrmdssrwsnp7haq5y2rev6"
     },
     "wivnbjlr4762mhf7qkcn2645hvht3ps3": {
       "name": "amr-wind",
@@ -1164,7 +1164,7 @@
       ],
       "hash": "q4ktm62logjj2qyj6vbjspn5jek4fxut"
     },
-    "xeujhzv2vqo6zdq2vlaaecihq3nuoudv": {
+    "eiybvk7y7deehtbryqvwhdnxeiir34lt": {
       "name": "nalu-wind",
       "version": "master",
       "arch": {
@@ -1279,7 +1279,7 @@
         },
         {
           "name": "trilinos",
-          "hash": "upqxqdkruzjd5blhtutvcx6fsy567eld",
+          "hash": "jhins4fnqwka3ubsncp733eo23c35aqc",
           "type": [
             "build",
             "link"
@@ -1294,7 +1294,7 @@
           ]
         }
       ],
-      "hash": "xeujhzv2vqo6zdq2vlaaecihq3nuoudv"
+      "hash": "eiybvk7y7deehtbryqvwhdnxeiir34lt"
     },
     "7boabkkpfrfeoc3mvcvkdhkai5bnkp5v": {
       "name": "kokkos-nvcc-wrapper",
@@ -1441,7 +1441,7 @@
       ],
       "hash": "fsxa4qeupm5qlrguglnce524usnf4e74"
     },
-    "upqxqdkruzjd5blhtutvcx6fsy567eld": {
+    "jhins4fnqwka3ubsncp733eo23c35aqc": {
       "name": "trilinos",
       "version": "13.4.0.2023.02.28",
       "arch": {
@@ -1545,7 +1545,7 @@
         "ldflags": [],
         "ldlibs": []
       },
-      "package_hash": "l675eto7zqwszdi7uzwjuqihroxfcx3rbvwkqo3ie4dvbrqbox3a====",
+      "package_hash": "eeqm5zpem2a22ladgbo4mrflzypmxwk4ei3g3v53v632adlrh36a====",
       "dependencies": [
         {
           "name": "boost",
@@ -1667,7 +1667,7 @@
           ]
         }
       ],
-      "hash": "upqxqdkruzjd5blhtutvcx6fsy567eld"
+      "hash": "jhins4fnqwka3ubsncp733eo23c35aqc"
     },
     "ysc4agk26pasvrkd2htnerff3zjo5yb6": {
       "name": "boost",
