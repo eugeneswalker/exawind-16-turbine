@@ -99,4 +99,4 @@ spack:
         prefix: /opt/slurm
   specs:
   - exawind +hypre +amr_wind_gpu +nalu_wind_gpu +cuda cuda_arch=75 ^amr-wind ~tests
-    ^nalu-wind ~tests ^/jhins4f
+    ^nalu-wind ~tests
