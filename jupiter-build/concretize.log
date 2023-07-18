@@ -1,67 +1,72 @@
 ==> Starting concretization
-==> Environment concretized in 43.81 seconds.
+==> Environment concretized in 46.92 seconds.
 ==> Concretized exawind+amr_wind_gpu+hypre+nalu_wind_gpu+rocm ^amr-wind~tests ^nalu-wind~tests
-[+]  uuyvbcd  exawind@master%gcc@11.2.0+amr_wind_gpu~asan~cuda~fsi+hypre~ipo+nalu_wind_gpu~openfast+rocm~stk_simd~tiny_profile~umpire amdgpu_target=gfx90a build_system=cmake build_type=Release arch=linux-ubuntu20.04-x86_64
-[+]  u42gakg      ^amr-wind@main%gcc@11.2.0~asan~ascent~clangtidy~cppcheck~cuda~hdf5+hypre~ipo~masa+mpi+netcdf~openfast~openmp+rocm+shared~tests+tiny_profile~umpire amdgpu_target=gfx90a build_system=cmake build_type=RelWithDebInfo arch=linux-ubuntu20.04-x86_64
-[+]  6qrs6iy          ^hypre@develop%gcc@11.2.0~complex~cublas~cuda~debug~fortran~gptune~gpu-aware-mpi~int64~internal-superlu~mixedint+mpi~openmp~rocblas+rocm+shared~superlu-dist~sycl~umpire~unified-memory amdgpu_target=gfx90a build_system=autotools arch=linux-ubuntu20.04-x86_64
-[+]  4nyt34y              ^rocprim@5.4.0%gcc@11.2.0~ipo amdgpu_target=gfx90a build_system=cmake build_type=Release arch=linux-ubuntu20.04-x86_64
-[+]  7lb7rtb              ^rocrand@5.4.0%gcc@11.2.0~ipo amdgpu_target=gfx90a build_system=cmake build_type=Release patches=a35e689 arch=linux-ubuntu20.04-x86_64
-[+]  zi37q2x              ^rocsparse@5.4.0%gcc@11.2.0~ipo~test amdgpu_target=gfx90a build_system=cmake build_type=Release arch=linux-ubuntu20.04-x86_64
-[+]  7jng4hd              ^rocthrust@5.4.0%gcc@11.2.0~ipo amdgpu_target=gfx90a build_system=cmake build_type=Release arch=linux-ubuntu20.04-x86_64
-[+]  dogqwhx          ^netcdf-c@4.7.4%gcc@11.2.0~dap~fsync~hdf4~jna+mpi+optimize+parallel-netcdf+pic+shared build_system=autotools patches=2c88dfb arch=linux-ubuntu20.04-x86_64
-[+]  kub57xs              ^m4@1.4.19%gcc@11.2.0+sigsegv build_system=autotools patches=9dc5fbd,bfdffa7 arch=linux-ubuntu20.04-x86_64
-[+]  q5jegbp                  ^diffutils@3.8%gcc@11.2.0 build_system=autotools arch=linux-ubuntu20.04-x86_64
-[+]  qhzhqvi                  ^libsigsegv@2.13%gcc@11.2.0 build_system=autotools arch=linux-ubuntu20.04-x86_64
-[+]  7mgkvd5      ^cmake@3.25.2%gcc@11.2.0~doc+ncurses+ownlibs~qt build_system=generic build_type=Release arch=linux-ubuntu20.04-x86_64
-[+]  w5d2qa2          ^ncurses@6.4%gcc@11.2.0~symlinks+termlib abi=none build_system=autotools arch=linux-ubuntu20.04-x86_64
-[+]  mvxj5nk          ^openssl@1.1.1t%gcc@11.2.0~docs~shared build_system=generic certs=mozilla arch=linux-ubuntu20.04-x86_64
-[+]  u4lngtf              ^ca-certificates-mozilla@2023-01-10%gcc@11.2.0 build_system=generic arch=linux-ubuntu20.04-x86_64
-[+]  ilztdwx              ^perl@5.36.0%gcc@11.2.0+cpanm+open+shared+threads build_system=generic arch=linux-ubuntu20.04-x86_64
-[+]  3npiopn                  ^berkeley-db@18.1.40%gcc@11.2.0+cxx~docs+stl build_system=autotools patches=26090f4,b231fcc arch=linux-ubuntu20.04-x86_64
-[+]  l62f6pr                  ^bzip2@1.0.8%gcc@11.2.0~debug~pic+shared build_system=generic arch=linux-ubuntu20.04-x86_64
-[+]  yfzzydf                  ^gdbm@1.23%gcc@11.2.0 build_system=autotools arch=linux-ubuntu20.04-x86_64
-[+]  feuxtkp      ^hip@5.4.0%gcc@11.2.0~cuda~ipo+rocm build_system=cmake build_type=Release patches=ca523f1 arch=linux-ubuntu20.04-x86_64
-[+]  rumbwxo      ^hsa-rocr-dev@5.4.0%gcc@11.2.0+image~ipo+shared build_system=cmake build_type=Release patches=71e6851 arch=linux-ubuntu20.04-x86_64
-[+]  corkguq      ^llvm-amdgpu@5.4.0%gcc@11.2.0~ipo~link_llvm_dylib~llvm_dylib~openmp+rocm-device-libs build_system=cmake build_type=Release patches=a08bbe1 arch=linux-ubuntu20.04-x86_64
-[+]  mqyckyt      ^mpich@4.1%gcc@11.2.0~argobots~cuda+fortran+hwloc+hydra+libxml2+pci~rocm+romio~slurm~two_level_namespace~vci~verbs+wrapperrpath build_system=autotools datatype-engine=auto device=ch4 netmod=ofi pmi=pmi arch=linux-ubuntu20.04-x86_64
-[+]  ybkua77          ^findutils@4.9.0%gcc@11.2.0 build_system=autotools patches=440b954 arch=linux-ubuntu20.04-x86_64
-[+]  4b3sb3u          ^hwloc@2.9.0%gcc@11.2.0~cairo~cuda~gl~libudev+libxml2~netloc~nvml~oneapi-level-zero~opencl+pci~rocm build_system=autotools libs=shared,static arch=linux-ubuntu20.04-x86_64
-[+]  2kqs3hq          ^libfabric@1.16.1%gcc@11.2.0~debug~kdreg build_system=autotools fabrics=sockets,tcp,udp arch=linux-ubuntu20.04-x86_64
-[+]  3uwybxz          ^libpciaccess@0.16%gcc@11.2.0 build_system=autotools arch=linux-ubuntu20.04-x86_64
-[+]  q3utows              ^libtool@2.4.7%gcc@11.2.0 build_system=autotools arch=linux-ubuntu20.04-x86_64
-[+]  v64trbu              ^util-macros@1.19.3%gcc@11.2.0 build_system=autotools arch=linux-ubuntu20.04-x86_64
-[+]  yarrong          ^libxml2@2.10.3%gcc@11.2.0~python build_system=autotools arch=linux-ubuntu20.04-x86_64
-[+]  m3pvej7              ^libiconv@1.17%gcc@11.2.0 build_system=autotools libs=shared,static arch=linux-ubuntu20.04-x86_64
-[+]  wtu7z3r              ^xz@5.4.1%gcc@11.2.0~pic build_system=autotools libs=shared,static arch=linux-ubuntu20.04-x86_64
-[+]  k4gexxg          ^pkgconf@1.8.0%gcc@11.2.0 build_system=autotools arch=linux-ubuntu20.04-x86_64
-[+]  c4p3af7          ^yaksa@0.2%gcc@11.2.0~cuda~rocm build_system=autotools arch=linux-ubuntu20.04-x86_64
-[+]  zrfrxyt              ^autoconf@2.69%gcc@11.2.0 build_system=autotools patches=35c4492,7793209,a49dd5b arch=linux-ubuntu20.04-x86_64
-[+]  eysm2tk              ^automake@1.16.5%gcc@11.2.0 build_system=autotools arch=linux-ubuntu20.04-x86_64
-[+]  3ewasth              ^python@3.10.8%gcc@11.2.0+bz2+crypt+ctypes+dbm~debug+libxml2+lzma~nis~optimizations+pic+pyexpat+pythoncmd+readline+shared+sqlite3+ssl~tkinter+uuid+zlib build_system=generic patches=0d98e93,7d40923,f2fd060 arch=linux-ubuntu20.04-x86_64
-[+]  mc2w3wp                  ^expat@2.5.0%gcc@11.2.0+libbsd build_system=autotools arch=linux-ubuntu20.04-x86_64
-[+]  yghmqer                      ^libbsd@0.11.7%gcc@11.2.0 build_system=autotools arch=linux-ubuntu20.04-x86_64
-[+]  iumn6fg                          ^libmd@1.0.4%gcc@11.2.0 build_system=autotools arch=linux-ubuntu20.04-x86_64
-[+]  tapsqxr                  ^gettext@0.21.1%gcc@11.2.0+bzip2+curses+git~libunistring+libxml2+tar+xz build_system=autotools arch=linux-ubuntu20.04-x86_64
-[+]  ihb6sad                      ^tar@1.34%gcc@11.2.0 build_system=autotools zip=pigz arch=linux-ubuntu20.04-x86_64
-[+]  4whp3qf                          ^pigz@2.7%gcc@11.2.0 build_system=makefile arch=linux-ubuntu20.04-x86_64
-[+]  hd2hz4g                          ^zstd@1.5.2%gcc@11.2.0+programs build_system=makefile compression=none libs=shared,static arch=linux-ubuntu20.04-x86_64
-[+]  aybp4dx                  ^libffi@3.4.2%gcc@11.2.0 build_system=autotools arch=linux-ubuntu20.04-x86_64
-[+]  5agjq6a                  ^libxcrypt@4.4.33%gcc@11.2.0~obsolete_api build_system=autotools arch=linux-ubuntu20.04-x86_64
-[+]  2d5q4vg                  ^readline@8.2%gcc@11.2.0 build_system=autotools patches=bbf97f1 arch=linux-ubuntu20.04-x86_64
-[+]  gpdw6tb                  ^sqlite@3.40.1%gcc@11.2.0+column_metadata+dynamic_extensions+fts~functions+rtree build_system=autotools arch=linux-ubuntu20.04-x86_64
-[+]  do5lyjw                  ^util-linux-uuid@2.38.1%gcc@11.2.0 build_system=autotools arch=linux-ubuntu20.04-x86_64
-[+]  wkgv2as      ^nalu-wind@master%gcc@11.2.0~asan~boost~catalyst~cuda~fftw~fsi+hypre~hypre2~ipo~openfast+pic+rocm~shared~stk_simd~tests+tioga+trilinos-solvers~umpire+unit-tests~wind-utils abs_tol=1e-15 amdgpu_target=gfx90a build_system=cmake build_type=RelWithDebInfo cxxstd=17 rel_tol=1e-12 arch=linux-ubuntu20.04-x86_64
-[+]  p7nhox6          ^nccmp@1.9.0.1%gcc@11.2.0~ipo build_system=cmake build_type=Release arch=linux-ubuntu20.04-x86_64
-[+]  uyer326      ^tioga@develop%gcc@11.2.0~asan~ipo~nodegid+pic+shared~stats~timers build_system=cmake build_type=Release arch=linux-ubuntu20.04-x86_64
-[+]  eytiahv      ^trilinos@13.4.0.2023.02.28%gcc@11.2.0~adelus~adios2~amesos+amesos2~anasazi~asan~aztec~basker+belos+boost~chaco~complex~cuda~cuda_rdc~debug~dtk~epetra~epetraext~epetraextbtf~epetraextexperimental~epetraextgraphreorderings+exodus+explicit_template_instantiation~float~fortran+gtest+hdf5~hypre~ifpack+ifpack2~intrepid~intrepid2~ipo~isorropia+kokkos~mesquite~minitensor~ml+mpi+muelu~mumps~nox~openmp~panzer~phalanx+pic~piro~python+rocm~rocm_rdc~rol~rythmos~sacado~scorec+shards~shared~shylu+stk~stk_simd~stk_unit_tests~stokhos~stratimikos~strumpack~suite-sparse~superlu~superlu-dist~teko~tempus~thyra+tpetra~trilinoscouplings~wrapper~x11+zoltan+zoltan2 amdgpu_target=gfx90a build_system=cmake build_type=Release cxxstd=17 gotype=long arch=linux-ubuntu20.04-x86_64
-[+]  iayvqzh          ^boost@1.76.0%gcc@11.2.0~atomic~chrono~clanglibcpp~container~context~contract~coroutine~date_time~debug+exception~fiber~filesystem+graph~graph_parallel~icu~iostreams~json~locale~log+math~mpi+multithreaded~nowide~numpy~pic~program_options~python~random~regex~serialization+shared~signals~singlethreaded+stacktrace~system~taggedlayout~test~thread~timer~type_erasure~versionedlayout~wave build_system=generic cxxstd=17 patches=a440f96 visibility=hidden arch=linux-ubuntu20.04-x86_64
-[+]  bqzjrgk          ^cgns@4.3.0%gcc@11.2.0~base_scope~fortran+hdf5~int64~ipo~legacy~mem_debug+mpi+scoping+shared~static~testing build_system=cmake build_type=Release arch=linux-ubuntu20.04-x86_64
-[+]  bfdezhv          ^hdf5@1.10.7%gcc@11.2.0+cxx~fortran+hl~ipo~java+mpi+shared~szip~threadsafe+tools api=default build_system=cmake build_type=RelWithDebInfo patches=2a1e311 arch=linux-ubuntu20.04-x86_64
-[+]  7ccgssp          ^matio@1.5.17%gcc@11.2.0+hdf5+shared+zlib build_system=autotools arch=linux-ubuntu20.04-x86_64
-[+]  fv7i7zt          ^metis@5.1.0%gcc@11.2.0~gdb~int64~ipo~real64+shared build_system=cmake build_type=Release patches=4991da9,93a7903,b1225da arch=linux-ubuntu20.04-x86_64
-[+]  hn54hho          ^netlib-lapack@3.10.1%gcc@11.2.0~external-blas~ipo+lapacke+shared~xblas build_system=cmake build_type=Release arch=linux-ubuntu20.04-x86_64
-[+]  6qnzzv3          ^parallel-netcdf@1.12.2%gcc@11.2.0~burstbuffer+cxx~fortran+pic+shared build_system=autotools arch=linux-ubuntu20.04-x86_64
-[+]  m3lxs32          ^parmetis@4.0.3%gcc@11.2.0~gdb~int64~ipo+shared build_system=cmake build_type=Release patches=4f89253,50ed208,704b84f arch=linux-ubuntu20.04-x86_64
-[+]  4a4hcyy          ^zlib@1.2.13%gcc@11.2.0+optimize+pic+shared build_system=makefile arch=linux-ubuntu20.04-x86_64
-[+]  cxb6oja      ^yaml-cpp@0.6.3%gcc@11.2.0~ipo+pic+shared~tests build_system=cmake build_type=Release arch=linux-ubuntu20.04-x86_64
+ -   aauwpzf  exawind@=master%gcc@=11.1.0+amr_wind_gpu~asan~cuda~fsi+hypre~ipo+nalu_wind_gpu~openfast+rocm~stk_simd~tiny_profile~umpire amdgpu_target=gfx90a build_system=cmake build_type=Release generator=make arch=linux-ubuntu20.04-x86_64
+[+]  oej2m7m      ^amr-wind@=main%gcc@=11.1.0~asan~ascent~clangtidy~cppcheck~cuda~hdf5+hypre~ipo~masa+mpi+netcdf~openfast~openmp+rocm+shared~tests+tiny_profile~umpire amdgpu_target=gfx90a build_system=cmake build_type=Release generator=make arch=linux-ubuntu20.04-x86_64
+[+]  reyyt7k          ^hypre@=develop%gcc@=11.1.0~complex~cublas~cuda~debug~fortran~gptune~gpu-aware-mpi~int64~internal-superlu~mixedint+mpi~openmp~rocblas+rocm+shared~superlu-dist~sycl~umpire~unified-memory amdgpu_target=gfx90a build_system=autotools arch=linux-ubuntu20.04-x86_64
+[+]  3ct56wz              ^rocprim@=5.4.3%gcc@=11.1.0~ipo amdgpu_target=gfx90a build_system=cmake build_type=Release generator=make arch=linux-ubuntu20.04-x86_64
+[+]  ytucegj              ^rocrand@=5.4.3%gcc@=11.1.0+hiprand~ipo amdgpu_target=gfx90a build_system=cmake build_type=Release generator=make patches=a35e689 arch=linux-ubuntu20.04-x86_64
+[+]  qmamlou              ^rocsparse@=5.4.3%gcc@=11.1.0~ipo~test amdgpu_target=gfx90a build_system=cmake build_type=Release generator=make arch=linux-ubuntu20.04-x86_64
+[+]  aj6zrzp              ^rocthrust@=5.4.3%gcc@=11.1.0~ipo amdgpu_target=gfx90a build_system=cmake build_type=Release generator=make arch=linux-ubuntu20.04-x86_64
+[+]  yvlfgdy          ^netcdf-c@=4.9.2%gcc@=11.1.0+blosc~byterange~dap~fsync~hdf4~jna+mpi~nczarr_zip+optimize+parallel-netcdf+pic+shared+szip+zstd build_system=autotools arch=linux-ubuntu20.04-x86_64
+[+]  onsas2b              ^bzip2@=1.0.8%gcc@=11.1.0~debug~pic+shared build_system=generic arch=linux-ubuntu20.04-x86_64
+[+]  j2tlgt4                  ^diffutils@=3.9%gcc@=11.1.0 build_system=autotools arch=linux-ubuntu20.04-x86_64
+[+]  ohfowrz              ^c-blosc@=1.21.2%gcc@=11.1.0+avx2~ipo build_system=cmake build_type=Release generator=make arch=linux-ubuntu20.04-x86_64
+[+]  pff3ody                  ^lz4@=1.9.4%gcc@=11.1.0 build_system=makefile libs=shared,static arch=linux-ubuntu20.04-x86_64
+[+]  snhllz5                  ^snappy@=1.1.10%gcc@=11.1.0~ipo+pic+shared build_system=cmake build_type=Release generator=make arch=linux-ubuntu20.04-x86_64
+[+]  3b2hckh              ^libaec@=1.0.6%gcc@=11.1.0~ipo+shared build_system=cmake build_type=Release generator=make arch=linux-ubuntu20.04-x86_64
+[+]  so6noth              ^zstd@=1.5.5%gcc@=11.1.0+programs build_system=makefile compression=none libs=shared,static arch=linux-ubuntu20.04-x86_64
+[+]  fa3aiyc      ^cmake@=3.26.3%gcc@=11.1.0~doc+ncurses+ownlibs~qt build_system=generic build_type=Release arch=linux-ubuntu20.04-x86_64
+[+]  4fprpvk          ^ncurses@=6.4%gcc@=11.1.0~symlinks+termlib abi=none build_system=autotools arch=linux-ubuntu20.04-x86_64
+[+]  o6bm4gu          ^openssl@=1.1.1t%gcc@=11.1.0~docs~shared build_system=generic certs=mozilla arch=linux-ubuntu20.04-x86_64
+[+]  w233qs7              ^ca-certificates-mozilla@=2023-01-10%gcc@=11.1.0 build_system=generic arch=linux-ubuntu20.04-x86_64
+[+]  ft2syg5              ^perl@=5.36.0%gcc@=11.1.0+cpanm+open+shared+threads build_system=generic arch=linux-ubuntu20.04-x86_64
+[+]  alkzfee                  ^berkeley-db@=18.1.40%gcc@=11.1.0+cxx~docs+stl build_system=autotools patches=26090f4,b231fcc arch=linux-ubuntu20.04-x86_64
+[+]  7g4keyi                  ^gdbm@=1.23%gcc@=11.1.0 build_system=autotools arch=linux-ubuntu20.04-x86_64
+[+]  ac6p2ol      ^gmake@=4.4.1%gcc@=11.1.0~guile build_system=autotools arch=linux-ubuntu20.04-x86_64
+[+]  ylt76sy      ^hip@=5.4.3%gcc@=11.1.0~cuda~ipo+rocm build_system=cmake build_type=Release generator=make patches=5068750,ca523f1 arch=linux-ubuntu20.04-x86_64
+[+]  meqtfoo      ^hsa-rocr-dev@=5.4.3%gcc@=11.1.0+image~ipo+shared build_system=cmake build_type=Release generator=make patches=71e6851 arch=linux-ubuntu20.04-x86_64
+[+]  jau2uot      ^llvm-amdgpu@=5.4.3%gcc@=11.1.0~ipo~link_llvm_dylib~llvm_dylib~openmp+rocm-device-libs build_system=cmake build_type=Release generator=ninja patches=a08bbe1 arch=linux-ubuntu20.04-x86_64
+[+]  7yl2ysa      ^mpich@=4.1.1%gcc@=11.1.0~argobots~cuda+fortran+hwloc+hydra+libxml2+pci~rocm+romio~slurm~two_level_namespace~vci~verbs+wrapperrpath build_system=autotools datatype-engine=auto device=ch4 netmod=ofi pmi=pmi arch=linux-ubuntu20.04-x86_64
+[+]  bqre6so          ^findutils@=4.9.0%gcc@=11.1.0 build_system=autotools patches=440b954 arch=linux-ubuntu20.04-x86_64
+[+]  74rpejd          ^hwloc@=2.9.1%gcc@=11.1.0~cairo~cuda~gl~libudev+libxml2~netloc~nvml~oneapi-level-zero~opencl+pci~rocm build_system=autotools libs=shared,static arch=linux-ubuntu20.04-x86_64
+[+]  hw5f2eb          ^libfabric@=1.18.0%gcc@=11.1.0~debug~kdreg build_system=autotools fabrics=sockets,tcp,udp arch=linux-ubuntu20.04-x86_64
+[+]  3gsijv7          ^libpciaccess@=0.17%gcc@=11.1.0 build_system=autotools arch=linux-ubuntu20.04-x86_64
+[+]  kagjqhf              ^libtool@=2.4.7%gcc@=11.1.0 build_system=autotools arch=linux-ubuntu20.04-x86_64
+[+]  i5p6x5b              ^util-macros@=1.19.3%gcc@=11.1.0 build_system=autotools arch=linux-ubuntu20.04-x86_64
+[+]  r3qtpxj          ^libxml2@=2.10.3%gcc@=11.1.0~python build_system=autotools arch=linux-ubuntu20.04-x86_64
+[+]  5f66p4a              ^libiconv@=1.17%gcc@=11.1.0 build_system=autotools libs=shared,static arch=linux-ubuntu20.04-x86_64
+[+]  5g2lvqk              ^xz@=5.4.1%gcc@=11.1.0~pic build_system=autotools libs=shared,static arch=linux-ubuntu20.04-x86_64
+[+]  pkn6xtc          ^pkgconf@=1.9.5%gcc@=11.1.0 build_system=autotools arch=linux-ubuntu20.04-x86_64
+[+]  e63i5hx          ^yaksa@=0.2%gcc@=11.1.0~cuda~rocm build_system=autotools arch=linux-ubuntu20.04-x86_64
+[+]  y3erpgh              ^autoconf@=2.69%gcc@=11.1.0 build_system=autotools patches=35c4492,7793209,a49dd5b arch=linux-ubuntu20.04-x86_64
+[+]  ayaibtp              ^automake@=1.16.5%gcc@=11.1.0 build_system=autotools arch=linux-ubuntu20.04-x86_64
+[+]  e6fw62o              ^m4@=1.4.19%gcc@=11.1.0+sigsegv build_system=autotools patches=9dc5fbd,bfdffa7 arch=linux-ubuntu20.04-x86_64
+[+]  b2tzsvo                  ^libsigsegv@=2.14%gcc@=11.1.0 build_system=autotools arch=linux-ubuntu20.04-x86_64
+[+]  dm63rvn              ^python@=3.10.10%gcc@=11.1.0+bz2+crypt+ctypes+dbm~debug+libxml2+lzma~nis~optimizations+pic+pyexpat+pythoncmd+readline+shared+sqlite3+ssl~tkinter+uuid+zlib build_system=generic patches=0d98e93,7d40923,f2fd060 arch=linux-ubuntu20.04-x86_64
+[+]  ewn4mh2                  ^expat@=2.5.0%gcc@=11.1.0+libbsd build_system=autotools arch=linux-ubuntu20.04-x86_64
+[+]  bstssvl                      ^libbsd@=0.11.7%gcc@=11.1.0 build_system=autotools arch=linux-ubuntu20.04-x86_64
+[+]  cb26zci                          ^libmd@=1.0.4%gcc@=11.1.0 build_system=autotools arch=linux-ubuntu20.04-x86_64
+[+]  c2auxr6                  ^gettext@=0.21.1%gcc@=11.1.0+bzip2+curses+git~libunistring+libxml2+tar+xz build_system=autotools arch=linux-ubuntu20.04-x86_64
+[+]  b4rjw4f                      ^tar@=1.34%gcc@=11.1.0 build_system=autotools zip=pigz arch=linux-ubuntu20.04-x86_64
+[+]  gojgmg4                          ^pigz@=2.7%gcc@=11.1.0 build_system=makefile arch=linux-ubuntu20.04-x86_64
+[+]  yabw5mq                  ^libffi@=3.4.2%gcc@=11.1.0 build_system=autotools arch=linux-ubuntu20.04-x86_64
+[+]  sitmrrx                  ^libxcrypt@=4.4.33%gcc@=11.1.0~obsolete_api build_system=autotools arch=linux-ubuntu20.04-x86_64
+[+]  ps6bopd                  ^readline@=8.2%gcc@=11.1.0 build_system=autotools patches=bbf97f1 arch=linux-ubuntu20.04-x86_64
+[+]  2y466ym                  ^sqlite@=3.40.1%gcc@=11.1.0+column_metadata+dynamic_extensions+fts~functions+rtree build_system=autotools arch=linux-ubuntu20.04-x86_64
+[+]  yeqinad                  ^util-linux-uuid@=2.38.1%gcc@=11.1.0 build_system=autotools arch=linux-ubuntu20.04-x86_64
+[+]  cuysgr5      ^nalu-wind@=master%gcc@=11.1.0~asan~boost~catalyst~cuda~fftw~fsi+hypre~hypre2~ipo~openfast+pic+rocm~shared~stk_simd~tests+tioga+trilinos-solvers~umpire+unit-tests~wind-utils abs_tol=1e-15 amdgpu_target=gfx90a build_system=cmake build_type=Release cxxstd=17 generator=make rel_tol=1e-12 arch=linux-ubuntu20.04-x86_64
+[+]  e2ovapf          ^nccmp@=1.9.0.1%gcc@=11.1.0~ipo build_system=cmake build_type=Release generator=make arch=linux-ubuntu20.04-x86_64
+[+]  ayk2n54      ^tioga@=develop%gcc@=11.1.0~asan~ipo~nodegid+pic+shared~stats~timers build_system=cmake build_type=Release generator=make arch=linux-ubuntu20.04-x86_64
+[+]  dal2ol6      ^trilinos@=13.4.0.2023.02.28%gcc@=11.1.0~adelus~adios2~amesos+amesos2~anasazi~asan~aztec~basker+belos+boost~chaco~complex~cuda~cuda_rdc~debug~dtk~epetra~epetraext~epetraextbtf~epetraextexperimental~epetraextgraphreorderings+exodus+explicit_template_instantiation~float~fortran+gtest+hdf5~hypre~ifpack+ifpack2~intrepid~intrepid2~ipo~isorropia+kokkos~mesquite~minitensor~ml+mpi+muelu~mumps~nox~openmp~panzer~phalanx+pic~piro~python+rocm~rocm_rdc~rol~rythmos~sacado~scorec+shards~shared~shylu+stk~stk_simd~stk_unit_tests~stokhos~stratimikos~strumpack~suite-sparse~superlu~superlu-dist~teko~tempus~thyra+tpetra~trilinoscouplings~wrapper~x11+zoltan+zoltan2 amdgpu_target=gfx90a build_system=cmake build_type=Release cxxstd=17 generator=make gotype=long arch=linux-ubuntu20.04-x86_64
+[+]  ysc4agk          ^boost@=1.76.0%gcc@=11.1.0~atomic~chrono~clanglibcpp~container~context~contract~coroutine~date_time~debug+exception~fiber~filesystem+graph~graph_parallel~icu~iostreams~json~locale~log+math~mpi+multithreaded~nowide~numpy~pic~program_options~python~random~regex~serialization+shared~signals~singlethreaded+stacktrace~system~taggedlayout~test~thread~timer~type_erasure~versionedlayout~wave build_system=generic cxxstd=17 patches=a440f96 visibility=hidden arch=linux-ubuntu20.04-x86_64
+[+]  nsn6hzu          ^cgns@=4.3.0%gcc@=11.1.0~base_scope~fortran+hdf5~int64~ipo~legacy~mem_debug+mpi+scoping+shared~static~testing~tools build_system=cmake build_type=Release generator=make arch=linux-ubuntu20.04-x86_64
+[+]  jap6rtw          ^hdf5@=1.10.7%gcc@=11.1.0+cxx~fortran+hl~ipo~java+mpi+shared~szip~threadsafe+tools api=default build_system=cmake build_type=Release generator=make patches=2a1e311 arch=linux-ubuntu20.04-x86_64
+[+]  ezfygvl          ^matio@=1.5.17%gcc@=11.1.0+hdf5+shared+zlib build_system=autotools arch=linux-ubuntu20.04-x86_64
+[+]  zufgopr          ^metis@=5.1.0%gcc@=11.1.0~gdb~int64~ipo~real64+shared build_system=cmake build_type=Release generator=make patches=4991da9,93a7903,b1225da arch=linux-ubuntu20.04-x86_64
+[+]  e4knvv3          ^netlib-lapack@=3.11.0%gcc@=11.1.0~external-blas~ipo+lapacke+shared~xblas build_system=cmake build_type=Release generator=make arch=linux-ubuntu20.04-x86_64
+[+]  eewe5by          ^parallel-netcdf@=1.12.2%gcc@=11.1.0~burstbuffer+cxx~fortran+pic+shared build_system=autotools arch=linux-ubuntu20.04-x86_64
+[+]  33yfnlr          ^parmetis@=4.0.3%gcc@=11.1.0~gdb~int64~ipo+shared build_system=cmake build_type=Release generator=make patches=4f89253,50ed208,704b84f arch=linux-ubuntu20.04-x86_64
+[+]  hi2xsgc          ^zlib@=1.2.13%gcc@=11.1.0+optimize+pic+shared build_system=makefile arch=linux-ubuntu20.04-x86_64
+[+]  ximlzi4      ^yaml-cpp@=0.6.3%gcc@=11.1.0~ipo+pic+shared~tests build_system=cmake build_type=Release generator=make arch=linux-ubuntu20.04-x86_64
 
